@@ -5,21 +5,22 @@ import { Helmet } from 'react-helmet'
 
 
 
-// Импортировал helmet, с помощью которого изменил page title. 
+// Импортировал Helmet, с помощью которого изменил page title. 
 // Насколько я понял, это самый простой способ делать это на реакте
-const PageTitle = 'Alexander Timoshuk'
-class MyComponent extends React.PureComponent {
+class Application extends React.Component {
   render () {
     return (
-      <>
-        <Helmet>
-          <title>{ PageTitle }</title>
-        </Helmet>
-        ...
-      </>
-    )
+        <div className="application">
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Alexander Timoshuk</title>
+                <link rel="canonical" href="https://cat-in-a-box.github.io/webpage/"/>
+            </Helmet>
+            ...
+        </div>
+    );
   }
-}
+};
 
 function App() {
   return (
