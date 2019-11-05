@@ -13,7 +13,7 @@ class MyComponent extends React.PureComponent {
     return (
       <>
         <Helmet>
-          <title>Alexander Timoshuk</title>
+          <title>{ PageTitle }</title>
         </Helmet>
         ...
       </>
