@@ -1,6 +1,24 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Helmet } from 'react-helmet'
+
+
+
+//
+const PageTitle = 'Alexander Timoshuk'
+class MyComponent extends React.PureComponent {
+  render () {
+    return (
+      <>
+        <Helmet>
+          <title>Alexander Timoshuk</title>
+        </Helmet>
+        ...
+      </>
+    )
+  }
+}
 
 function App() {
   return (
