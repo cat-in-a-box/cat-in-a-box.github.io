@@ -1,5 +1,6 @@
 {
-  "name": "my-app",
+  "name": "webpage",
+  "homepage": "https://cat-in-a-box.github.io/webpage",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
