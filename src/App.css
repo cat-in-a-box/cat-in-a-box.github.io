@@ -13,17 +13,16 @@
 }
 
 .navbar a {
-
-    color: #0e0e0e;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    padding: 15px;
-    position: relative;
-    left: 37%;
-    background: transparent;
-    font-size: 18px;
+  color: #0e0e0e;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  padding: 15px;
+  position: relative;
+  left: 40%;
+  background: transparent;
+  font-size: 18px;
 }
 
 .navbar p {
@@ -36,8 +35,51 @@
   font-size: 16px;
 }
 
-.Face h1{
-  font-size: 34px;
+.Face h1 {
+  font-size: 42px;
   text-align: center;
-  padding-top: 300px;
+  padding-top: 280px;
+  padding-bottom: 10px;
+  color: rgb(66, 66, 66);
+}
+
+.Face h2 {
+  text-align: center;
+  font-size: 42px;
+  position: relative;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: rgb(66, 66, 66);
+}
+
+.Face h3 {
+  text-align: center;
+  font-size: 42px;
+  position: relative;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  animation-name: spin;
+  animation-duration: 18000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+}
+
+@keyframes spin {
+  from {transform:rotate(0deg);}
+  to {transform:rotate(360deg);}
+}
+
+.About h1{
+  font-size: 42px;
+  text-align: center;
+  padding-top:420px;  
+  padding-bottom:16px;  
+  color: rgb(66, 66, 66);
+}
+
+.About p{
+  font-size: 18px;
+  text-align: center;
+  padding-top:8px;  
+  padding-bottom:8px;  
 }
