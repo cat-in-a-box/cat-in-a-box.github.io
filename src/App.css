@@ -4,80 +4,75 @@
   margin: 0;
   padding: 0;
   font-family: 'Josefin Sans', sans-serif;
+  color: rgb(41, 41, 41);
 }
 
 .navbar {
-  color: transparent;
-  background: transparent;
+  position: absolute;
+  left: 50%;
+  top: 5%;
+  transform: translate(-50%, -50%);
 }
 
 .navbarButton1 {
-  float: center;
-  left: 40.5%;
+  display:inline-block;
   padding: 1em;
-  padding-top: 2em;
-  position: absolute;
+  padding-top: 1em;
 }
 
 .navbarButton2 {
-  float: center;
-  left: 44.5%;
+  display:inline-block;
   padding: 1em;
-  padding-top: 2em;
-  position: absolute;
+  padding-top: 1em;
 }
 
 .navbarButton3 {
-  float: center;
-  left: 48.5%;
+  display:inline-block;
   padding: 1em;
-  padding-top: 2em;
-  position: absolute;
+  padding-top: 1em;
 }
 
 .navbarButton4 {
-  float: center;
-  left: 52.5%;
+  display:inline-block;
   padding: 1em;
-  padding-top: 2em;
-  position: absolute;
+  padding-top: 1em;
 }
 
 .navbar a {
-  padding: 0.6em;
-  color: #252525;
+  display:inline-block;
+  letter-spacing: 1px;
+  text-align:center;
   text-decoration: none;
-  background: transparent;
-  font-size: 1.2em;
-}
-
-.navbar a:hover { 
   font-size: 1.3em;
 }
 
+.navbar a:hover { 
+  font-weight:bold;
+}
+
+.Face {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+}
+
 .Face h1 {
-  font-size: 2.7em;
+  float: center;
   text-align: center;
-  padding-top: 8.1em;
-  padding-bottom: 10px;
-  color: rgb(66, 66, 66);
+  font-size: 42px;
 }
 
 .Face h2 {
+  float: center;
   text-align: center;
   font-size: 42px;
-  position: relative;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  color: rgb(66, 66, 66);
 }
 
 .Face h3 {
+  float: center;
   text-align: center;
   font-size: 42px;
-  position: relative;
-  padding-top: 4px;
-  padding-bottom: 4px;
   animation-name: spin;
   animation-duration: 18000ms;
   animation-iteration-count: infinite;
@@ -89,17 +84,24 @@
   to {transform:rotate(360deg);}
 }
 
+.About {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, -50%);
+}
+
 .About h1{
-  font-size: 42px;
+  float: center;
   text-align: center;
-  padding-top:420px;  
-  padding-bottom:16px;  
+  font-size: 42px;
   color: rgb(66, 66, 66);
 }
 
 .About p{
-  font-size: 18px;
+  float: center;
   text-align: center;
+  font-size: 18px;
   padding-top:8px;  
   padding-bottom:8px;  
 }
