@@ -1,21 +1,18 @@
-.navbar {
-  overflow: hidden;
-  background-color: transparent;
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
-}
 
 .navbar a {
-  float: left;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 20px;
-  text-decoration: none;
+    float: center;
+    color: #0e0e0e;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    position: relative;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    top: 50%;
 }
 
 .navbar a:hover {
-  background-color: rgb(182, 41, 41);
+  background-color: rgb(77, 178, 236);
   color: black;
 }
