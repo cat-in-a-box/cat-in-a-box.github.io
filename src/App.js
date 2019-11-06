@@ -4,6 +4,8 @@ import { Helmet } from "react-helmet";
 import Header from './components/Header.jsx';
 import Face from "./components/Face.jsx";
 import About from "./components/About.jsx";
+import Works from "./components/Works.jsx";
+import Footer from "./components/Footer.jsx";
 
 // Импортировал helmet, с помощью которого изменил page title.
 // Насколько я понял, это самый простой способ делать это на реакте
@@ -19,6 +21,8 @@ function App() {
       <Header/>
       <Face/>
       <About/>
+      <Works/>
+      <Footer/>
     </div>
   );
 }
