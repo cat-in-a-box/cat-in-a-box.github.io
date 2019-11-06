@@ -9,36 +9,56 @@
 .navbar {
   color: transparent;
   background: transparent;
-  padding: 25px;
+}
+
+.navbarButton1 {
+  float: center;
+  left: 40.5%;
+  padding: 1em;
+  padding-top: 2em;
+  position: absolute;
+}
+
+.navbarButton2 {
+  float: center;
+  left: 44.5%;
+  padding: 1em;
+  padding-top: 2em;
+  position: absolute;
+}
+
+.navbarButton3 {
+  float: center;
+  left: 48.5%;
+  padding: 1em;
+  padding-top: 2em;
+  position: absolute;
+}
+
+.navbarButton4 {
+  float: center;
+  left: 52.5%;
+  padding: 1em;
+  padding-top: 2em;
+  position: absolute;
 }
 
 .navbar a {
-  color: #0e0e0e;
-  text-align: center;
-  padding: 14px 16px;
+  padding: 0.6em;
+  color: #252525;
   text-decoration: none;
-  font-size: 17px;
-  padding: 15px;
-  position: relative;
-  left: 40%;
   background: transparent;
-  font-size: 18px;
+  font-size: 1.2em;
 }
 
-.navbar p {
-  color: #0e0e0e;
-  padding: 55px;
-  position: absolute;
-
-}
 .navbar a:hover { 
-  font-size: 16px;
+  font-size: 1.3em;
 }
 
 .Face h1 {
-  font-size: 42px;
+  font-size: 2.7em;
   text-align: center;
-  padding-top: 280px;
+  padding-top: 8.1em;
   padding-bottom: 10px;
   color: rgb(66, 66, 66);
 }
