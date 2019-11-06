@@ -1,22 +1,21 @@
-.App {
+.navbar {
+  overflow: hidden;
+  background-color: transparent;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
   text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #09d3ac;
+.navbar a:hover {
+  background-color: rgb(182, 41, 41);
+  color: black;
 }
