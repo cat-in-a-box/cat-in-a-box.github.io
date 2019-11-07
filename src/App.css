@@ -113,7 +113,7 @@
 .Works {
   position: absolute;
   left: 50%;
-  top: 150%;
+  top: 165%;
   width: 100em;
   height: 50%;
   padding-top:5em;  
@@ -202,7 +202,7 @@
 .Footer {
   position: absolute;
   left: 50%;
-  top: 180%;
+  top: 200%;
   height:2%;
   transform: translate(-50%, -50%);
 }
