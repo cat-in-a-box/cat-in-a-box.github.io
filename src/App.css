@@ -189,7 +189,6 @@
 }
 
 .Card:hover {
-  /*box-shadow: 15px 15px 15px 0 rgba(0, 0, 0, 0.144);*/
   transform: scale(1.03);
   background: white;
 }
