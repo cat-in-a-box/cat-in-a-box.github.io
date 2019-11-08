@@ -19,14 +19,14 @@ const Works = () => {
                      </div>
                 </a>
                 <a href="https://google.com" className="Card">
-                    <img src="paw.png" alt="Overwatch" width="150px" />
+                    <img src="paw.png" alt="PawIcon" width="150px" />
                     <div className="CardContainer">
                         <h3><b>Animal Gallery</b></h3>
                         <h4>Check these beautiful pictures of cats, dogs and other creatures</h4>
                      </div>
                 </a>
                 <a href="https://google.com" className="Card">
-                    <img src="chicken.png" alt="Flowers" width="150px" />
+                    <img src="chicken.png" alt="ChickenIcon" width="150px" />
                     <div className="CardContainer">
                         <h3><b>Petushok</b></h3>
                         <h4>Ko ko ko Roxik ti gde? Prihodi bistrei!</h4>
