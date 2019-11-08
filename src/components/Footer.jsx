@@ -2,8 +2,8 @@ import React from "react";
 
 const Footer = () => {
     return (
-        <div className="Footer">Developed with Fenush and WoW 
-            <p>2019</p>
+        <div className="Footer">
+            <p>Developed with Fenush and WoW. 2019</p>
         </div>
     )   
 }

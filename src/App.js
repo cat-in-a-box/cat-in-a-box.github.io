@@ -8,7 +8,7 @@ import Face from "./components/Face.jsx";
 import About from "./components/About.jsx";
 import Works from "./components/Works.jsx";
 import Footer from "./components/Footer.jsx";
-import Contact from "./components/Contact";
+import Contact from "./components/Contact.jsx";
 
 function App() {
   return (

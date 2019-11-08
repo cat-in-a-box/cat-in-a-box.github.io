@@ -19,26 +19,26 @@
 
 .navbarButton1 {
   display:inline-block;
-  padding: 1em;
-  padding-top: 1em;
+  margin: 1em;
+  margin-top: 1em;
 }
 
 .navbarButton2 {
   display:inline-block;
-  padding: 1em;
-  padding-top: 1em;
+  margin: 1em;
+  margin-top: 1em;
 }
 
 .navbarButton3 {
   display:inline-block;
-  padding: 1em;
-  padding-top: 1em;
+  margin: 1em;
+  margin-top: 1em;
 }
 
 .navbarButton4 {
   display:inline-block;
-  padding: 1em;
-  padding-top: 1em;
+  margin: 1em;
+  margin-top: 1em;
 }
 
 .navbar a {
@@ -102,24 +102,25 @@
   float: center;
   text-align: center;
   font-size: 2.5em;
-  padding-bottom:22px;  
+  margin-bottom:1em;  
 }
 
 .About p{
   float: center;
   text-align: center;
   font-size: 18px;
-  padding-top:18px;  
-  padding-bottom:18px;  
+  margin-top:18px;  
+  margin-bottom:18px;  
 }
 
 .Works {
   position: absolute;
   left: 50%;
   top: 165%;
-  width: 100em;
+  width: 50em;
   height: 50%;
-  padding-top:5em;  
+  margin-top:6em;  
+  margin-bottom:5em;
   transform: translate(-50%, -50%);
   
 }
@@ -202,22 +203,38 @@
 }
 
 .CardContainer {
-  padding: 2px 16px;
+  margin: 2px 16px;
   background: white;
 }
 
 .Footer {
   position: absolute;
   left: 50%;
-  top: 200%;
-  height:2%;
+  top: 240%;
   transform: translate(-50%, -50%);
+  text-align: center;
+  border: black;
 }
 
 .Footer p {
-  text-align: center;
+  margin-bottom:1em;
+}
+
+.Contact {
   position: absolute;
+  top: 215%;
   left: 50%;
-  top: 200%;
+  text-align: center;
+  border: black;
   transform: translate(-50%, -50%);
+}
+
+.Contact h1 {
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.Contact p {
+  font-size: 1.5em;
+  text-align: center;  
 }
