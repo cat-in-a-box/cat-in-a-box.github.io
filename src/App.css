@@ -92,15 +92,16 @@
 }
 
 .About {
-  position: absolute;
+  position: absolute; 
   left: 50%;
-  top: 110%;
+  top: 95%;
   transform: translate(-50%, -50%);
 }
 
 .About h1{
   float: center;
   text-align: center;
+  margin-top:6em; 
   font-size: 2.5em;
   margin-bottom:1em;  
 }
@@ -181,6 +182,18 @@
   background: white;
 }
 
+.Card img:nth-child(2){
+  display: none;
+}
+
+.Card:hover img:nth-child(2) {
+  display: inline;  
+}
+
+.Card:hover img:nth-child(1) {
+  display: none;  
+}
+
 .Card h3 {
   font-size: 1.2em;
   background: white;
@@ -222,7 +235,7 @@
 
 .Contact {
   position: absolute;
-  top: 215%;
+  top: 217%;
   left: 50%;
   text-align: center;
   border: black;
