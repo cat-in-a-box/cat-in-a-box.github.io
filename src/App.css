@@ -1,12 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
 
+ /*CSS в Реакте не хочет грузить бэкграунд из public, ругается на это. Поэтому добавил в src/components, оттуда грузит нормально*/
 * {
   margin: 0;
   padding: 0;
   font-family: 'Josefin Sans', sans-serif;
-  color: rgb(41, 41, 41);
-  background-image: url("https://www.designbolts.com/wp-content/uploads/2013/02/crafted-paper-pattern-Grey-Seamless-Pattern-For-Website-Background.jpg");
+  background-image: url(components/Background.jpg);
   background-repeat: repeat;
+  color: rgb(66, 66, 66);
 }
 
 .navbar {
@@ -67,12 +68,12 @@
 
 .Face h2 {
   float: center;
+  margin-top:0.2em;
   text-align: center;
   font-size: 3em;
 }
 
 /* Анимация реакт иконки */
-
 .reactIcon {
   float: center;
   text-align: center;
@@ -84,6 +85,7 @@
   background: transparent;
 }
 
+/*Собственно сама анимация: */
 @keyframes spin {
   from {transform:rotate(0deg);}
   to {transform:rotate(360deg);}
@@ -100,7 +102,6 @@
   float: center;
   text-align: center;
   font-size: 2.5em;
-  color: rgb(66, 66, 66);
   padding-bottom:22px;  
 }
 
@@ -120,7 +121,6 @@
   height: 50%;
   padding-top:5em;  
   transform: translate(-50%, -50%);
-  color: rgb(66, 66, 66);
   
 }
 .Works b {
@@ -189,6 +189,12 @@
  font-weight: 2;
  background: white;
 }
+
+.Card h4:hover {
+  margin-top: 0.8em;
+  font-weight: 2;
+  background: white;
+ }
 
 .Card:hover {
   transform: scale(1.03);
