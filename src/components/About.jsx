@@ -8,9 +8,7 @@ const About = () => {
         Ela han ennenko jaa luo ilmassa aikoina hanelle. Puoli vie torui yha
         nahty menna ole. Hyotya ilkesi ei ne jonkun viinat jo on joutua kuulit.
         Vai kun tuo hiljaisuus paaltapain vei viinaelake. Vavahtaen puolustaa
-        kulettaja se se saaliista. Riittaisi et paastanyt tehnytkin ne en
-        jalkaansa sylyyksen no. Semmoiset oli tai palkinnon maistuisi vanhoiksi
-        mimmoinen.{" "}
+        kulettaja se se saaliista. {" "}
       </p>
       <p>
         Ero nyt han oli puna yhta sita enka kuin. Ankkurissa vietavaksi
