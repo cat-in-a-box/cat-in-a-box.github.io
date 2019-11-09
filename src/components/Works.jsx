@@ -6,7 +6,7 @@ const Works = () => {
         <ScrollableAnchor id={'section3'}>
             <div className="Works"><h1>My Works</h1>
                 <div className="WorksPlaceholder">
-                    <a href="https://google.com" className="Card">
+                    <a href="https://cat-in-a-box.github.io/mousewheel_checker/" className="Card">
                         <img src="mouse.png" alt="MouseIcon" />
                         <img src="mouse2.png" alt="MouseIcon2" />
                         <div className="CardContainer">
@@ -44,9 +44,5 @@ const Works = () => {
         </ScrollableAnchor>
     ];
 };
-
-const WorksPlaceholder = () => {
-
-}
 
 export default Works;

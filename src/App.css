@@ -10,6 +10,7 @@
   color: rgb(66, 66, 66);
 }
 
+/***Navigation bar***/
 .navbar {
   position: absolute;
   left: 50%;
@@ -52,7 +53,11 @@
 .navbar a:hover { 
   font-weight:bold;
 }
+/***Navigation bar***/
 
+
+
+/***Face***/
 .Face {
   position: absolute;
   left: 50%;
@@ -85,12 +90,64 @@
   background: transparent;
 }
 
-/*Собственно сама анимация: */
+/*Собственно сама анимация*/
 @keyframes spin {
   from {transform:rotate(0deg);}
   to {transform:rotate(360deg);}
 }
 
+.ScrollButton {
+  position: absolute;
+    float: center;
+  text-align: center;
+  top: 87%;
+  left: 48.45%;
+  z-index: 2;
+  -webkit-animation: bounce 2s infinite 2s;
+  animation: bounce 2s infinite 2s;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+  transform: scale(1);
+}
+
+.ScrollButton img:nth-child(2){
+  display: none;
+}
+
+.ScrollButton:hover img:nth-child(2) {
+  display: inline;  
+}
+
+.ScrollButton:hover img:nth-child(1) {
+  display: none;  
+}
+
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
+/***Face***/
+
+
+
+/***About***/
 .About {
   position: absolute; 
   left: 50%;
@@ -113,7 +170,11 @@
   margin-top:18px;  
   margin-bottom:18px;  
 }
+/***About***/
 
+
+
+/***Works***/
 .Works {
   position: absolute;
   left: 50%;
@@ -198,10 +259,11 @@
   font-size: 1.2em;
   background: white;
  }
+
 .Card h4 {
- margin-top: 0.8em;
- font-weight: 2;
- background: white;
+  margin-top: 0.8em;
+  font-weight: 2;
+  background: white;
 }
 
 .Card h4:hover {
@@ -219,20 +281,11 @@
   margin: 2px 16px;
   background: white;
 }
+/***Works***/
 
-.Footer {
-  position: absolute;
-  left: 50%;
-  top: 240%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  border: black;
-}
 
-.Footer p {
-  margin-bottom:1em;
-}
 
+/***Contact***/
 .Contact {
   position: absolute;
   top: 217%;
@@ -251,3 +304,21 @@
   font-size: 1.5em;
   text-align: center;  
 }
+/***Contact***/
+
+
+
+/***Footer***/
+.Footer {
+  position: absolute;
+  left: 50%;
+  top: 240%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border: black;
+}
+
+.Footer p {
+  margin-bottom:1em;
+}
+/***Footer***/
