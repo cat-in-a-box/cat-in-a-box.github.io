@@ -30,7 +30,7 @@ const Works = () => {
                             <h4>Check these beautiful pictures of cats, dogs and other creatures</h4>
                         </div>
                     </a>
-                    <a href="https://google.com" className="Card">
+                    <a href="-" className="Card">
                         <img src="chicken.png" alt="ChickenIcon" width="180px" />
                         <img src="chicken2.png" alt="ChickenIcon2" width="180px" />
                         <div className="CardContainer">
