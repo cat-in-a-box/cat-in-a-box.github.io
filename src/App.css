@@ -1,13 +1,16 @@
-@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
-
+@font-face {
+    font-family: "Josefin Sans";
+    src: url("components/files/font.woff2");
+}
 
 /*CSS в Реакте не хочет грузить бэкграунд из public, ругается на это.
 Поэтому добавил в src/components, оттуда грузит нормально*/
+
 * {
     margin: 0;
     padding: 0;
     font-family: 'Josefin Sans', sans-serif;
-    background-image: url(components/Background.jpg);
+    background-image: url(components/files/Background.jpg);
     background-repeat: repeat;
     color: rgb(66, 66, 66);
 }

@@ -23,7 +23,7 @@ function App() {
                 <title>Alexander Timoshuk</title>
                 <meta charSet="utf-8"/>
                 <link rel="preload" href="App.css" as="style"/>
-                {/*прелоад шрифтов, который не работает*/}
+                {/*прелоад стилей, шрифтов, вот это всё*/}
             </Helmet>
             <Header/>
             <Face/>
