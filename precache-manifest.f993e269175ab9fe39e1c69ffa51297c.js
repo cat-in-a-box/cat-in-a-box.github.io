@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d0dca2b31421050e7f2dbd2f09031bb9",
+    "revision": "d29c3875bb7a116e789c7c265abfa22f",
     "url": "/webpage/index.html"
   },
   {
-    "revision": "e0a34dc1a8f03a5d6371",
-    "url": "/webpage/static/css/main.f2eb8a67.chunk.css"
+    "revision": "244576927e86339e2231",
+    "url": "/webpage/static/css/main.982aed17.chunk.css"
   },
   {
     "revision": "6d88a427ba042841f515",
     "url": "/webpage/static/js/2.e45d1cc4.chunk.js"
   },
   {
-    "revision": "e0a34dc1a8f03a5d6371",
-    "url": "/webpage/static/js/main.c11afc81.chunk.js"
+    "revision": "244576927e86339e2231",
+    "url": "/webpage/static/js/main.73a3db9d.chunk.js"
   },
   {
     "revision": "417a4714b912a3d1fd0c",
@@ -22,5 +22,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "6e98443661f786e8450ba55f5b124b7d",
     "url": "/webpage/static/media/Background.6e984436.jpg"
+  },
+  {
+    "revision": "be88b4fc2cd2e8fd167c9fdd1a4e4a3e",
+    "url": "/webpage/static/media/font.be88b4fc.woff2"
   }
 ]);
