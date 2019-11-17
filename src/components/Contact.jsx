@@ -11,6 +11,6 @@ const Contact = () => {
             </div>
         </ScrollableAnchor>
     )
-}
+};
 
 export default Contact;
