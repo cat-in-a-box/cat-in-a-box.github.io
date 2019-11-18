@@ -6,8 +6,8 @@ const Contact = () => {
         <ScrollableAnchor id={'section4'}>
             <div className="Contact">
                 <h1>Contact me</h1>
-                <p>You can reach me me any time.</p>
-                <p>Just send a mail to -(at)gmail.com.</p>
+                <p>You can reach me any time.</p>
+                <p>Just send a mail to timoshuk.alexander(at)gmail.com.</p>
             </div>
         </ScrollableAnchor>
     )
