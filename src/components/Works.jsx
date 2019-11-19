@@ -31,12 +31,12 @@ const Works = () => {
                             <h4>Check these beautiful pictures of cats, dogs and other creatures</h4>
                         </div>
                     </a>
-                    <a href="https://google.com" className="Card">
+                    <a href="https://cat-in-a-box.github.io/snake-game/" className="Card">
                         <img src={"chicken.png"} alt="ChickenIcon" width="180px"/>
                         <img src={"chicken2.png"} alt="ChickenIcon2" width="180px"/>
                         <div className="CardContainer">
-                            <h3><b>Petushok</b></h3>
-                            <h4>Ko ko ko Roxik ti gde? Prihodi bistrei!</h4>
+                            <h3><b>Snake!!!</b></h3>
+                            <h4>Super Zmeika!!!</h4>
                         </div>
                     </a>
                 </div>
