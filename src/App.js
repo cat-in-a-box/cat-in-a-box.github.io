@@ -13,7 +13,6 @@ import About from "./components/About.jsx";
 import Works from "./components/Works.jsx";
 import Footer from "./components/Footer.jsx";
 import Contact from "./components/Contact.jsx";
-
 //import ScrollButton from "./components/ScrollButton.jsx";
 
 function App() {
@@ -23,7 +22,7 @@ function App() {
                 <title>Alexander Timoshuk</title>
                 <meta charSet="utf-8"/>
                 <link rel="preload" href="App.css" as="style"/>
-                {/*прелоад стилей, шрифтов, вот это всё*/}
+                /*прелоад стилей, шрифтов, вот это всё*/
             </Helmet>
             <Header/>
             <Face/>
