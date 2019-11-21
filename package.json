@@ -35,5 +35,13 @@
   },
   "devDependencies": {
     "gh-pages": "^2.1.1"
+  },
+  "guppy": {
+    "id": "1229fed0-0b76-11ea-9232-155000059c75",
+    "name": "webpage",
+    "type": "create-react-app",
+    "color": "#cc004a",
+    "icon": null,
+    "createdAt": 1574241232702
   }
 }
