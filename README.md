@@ -1,4 +1,4 @@
-# Personal web page
+# Personal Web Page
 Just a personal webpage built with React, CSS and some JavaScript.
  
  
