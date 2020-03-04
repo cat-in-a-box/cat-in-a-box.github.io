@@ -15,7 +15,7 @@ const Works = () => {
                                 correctly</h4>
                         </div>
                     </a>
-                    <a href="https://cat-in-a-box.github.io/gallery-react/calculator" className="Card">
+                    <a href="https://cat-in-a-box.github.io/calculator" className="Card">
                         <img src={"calculator.png"} alt="CaloriesIcon"/>
                         <img src={"calculator2.png"} alt="CaloriesIcon2"/>
                         <div className="CardContainer">
