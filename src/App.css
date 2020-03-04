@@ -206,15 +206,15 @@
 .Card {
     box-shadow: rgb(211, 211, 211) 2px 2px 30px;
     font-family: "Cormorant Garamond", serif;
-    margin: 30px;
+    margin: 1em;
     position: relative;
     text-align: center;
     transition-delay: 0s;
     transition-duration: 0.2s;
     transition-property: all;
     transition-timing-function: ease;
-    width: 250px;
-    height: 320px;
+    width: 15em;
+    height: 20em;
     border-radius: 0.5em;
     display: block;
     text-decoration: none;
