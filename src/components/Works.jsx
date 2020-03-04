@@ -20,7 +20,7 @@ const Works = () => {
                         <img src={"calculator2.png"} alt="CaloriesIcon2"/>
                         <div className="CardContainer">
                             <h3><b>Calories Counter</b></h3>
-                            <h4>My attempts to live healthier life and count the energy that goes inside.</h4>
+                            <h4>Just a simple calculator to do your math</h4>
                         </div>
                     </a>
                     <a href="https://cat-in-a-box.github.io/gallery-react/" className="Card">
