@@ -1,5 +1,5 @@
 import React from "react";
-import ScrollableAnchor from 'react-scrollable-anchor';
+import ScrollableAnchor from 'react-scrollable-anchor'; // якоря для движения по странице
 
 const Works = () => {
     return [
@@ -11,15 +11,14 @@ const Works = () => {
                         <img src={"mouse2.png"} alt="MouseIcon2"/>
                         <div className="CardContainer">
                             <h3><b>Mousewheel Checker</b></h3>
-                            <h4>My broken computer mouse made me develop it - the app to check if the wheel is moving
-                                correctly</h4>
+                            <h4>The app to check your mouse wheel</h4>
                         </div>
                     </a>
                     <a href="https://cat-in-a-box.github.io/calculator" className="Card">
                         <img src={"calculator.png"} alt="CaloriesIcon"/>
                         <img src={"calculator2.png"} alt="CaloriesIcon2"/>
                         <div className="CardContainer">
-                            <h3><b>Calories Counter</b></h3>
+                            <h3><b>Calculator</b></h3>
                             <h4>Just a simple calculator to do your math</h4>
                         </div>
                     </a>
@@ -28,7 +27,7 @@ const Works = () => {
                         <img src={"paw2.png"} alt="PawIcon2" width="150px"/>
                         <div className="CardContainer">
                             <h3><b>Animal Gallery</b></h3>
-                            <h4>Check these beautiful pictures of cats, dogs and other creatures</h4>
+                            <h4>Check these beautiful pictures of animals</h4>
                         </div>
                     </a>
                     <a href="https://cat-in-a-box.github.io/snake-game/" className="Card">
@@ -36,7 +35,7 @@ const Works = () => {
                         <img src={"chicken2.png"} alt="ChickenIcon2" width="180px"/>
                         <div className="CardContainer">
                             <h3><b>Snake!!!</b></h3>
-                            <h4>Super Zmeika!!!</h4>
+                            <h4>Super Zmeika!!! Just move it and eat food</h4>
                         </div>
                     </a>
                 </div>
