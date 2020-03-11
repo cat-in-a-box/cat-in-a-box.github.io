@@ -3,8 +3,8 @@ import "./App.css";
 
 // Установил и импортировал Helmet, с помощью которого изменил page title.
 // Насколько я понял, это самый простой способ менять его (как и атрибуты страницы) на реакте.
-// А еще подгружает скрипты. Нормально.
-// Поставил еще React-Scrollable-Anchor для красивых якорей и плавного перемещения
+// А еще подгружает скрипты если что вдруг. Нормально.
+// Поставил еще React-Scrollable-Anchor для плавного перемещения по якорям
 
 import {Helmet} from "react-helmet";
 import Header from './components/Header.jsx';
@@ -22,14 +22,14 @@ function App() {
                 <title>Alexander Timoshuk</title>
                 <meta charSet="utf-8"/>
                 <link rel="preload" href="App.css" as="style"/>
-                /*прелоад стилей, шрифтов, вот это всё*/
+                {/*прелоад стилей, шрифтов, вот это всё. Чёт вроде не работает*/}
             </Helmet>
             <Header/>
             <Face/>
             <About/>
             <Works/>
-            <Footer/>
             <Contact/>
+            <Footer/>
         </div>
     );
 }
