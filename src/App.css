@@ -16,289 +16,1584 @@
 }
 
 
-/****Navigation bar****/
-.navbar {
-    position: absolute;
-    left: 50%;
-    top: 5%;
-    transform: translate(-50%, -50%);
-}
+@media screen and (max-width: 320px) {
 
-.navbarButton1 {
-    display: inline-block;
-    margin: 1em;
-}
-
-.navbarButton2 {
-    display: inline-block;
-    margin: 1em;
-}
-
-.navbarButton3 {
-    display: inline-block;
-    margin: 1em;
-}
-
-.navbarButton4 {
-    display: inline-block;
-    margin: 1em;
-}
-
-.navbar a {
-    display: inline-block;
-    letter-spacing: 1px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 1.3em;
-}
-
-.navbar a:hover {
-    font-weight: bold;
-}
-
-
-/****Face****/
-.Face {
-    position: absolute;
-    left: 50%;
-    top: 45%;
-    transform: translate(-50%, -50%);
-}
-
-.Face h1 {
-    text-align: center;
-    font-size: 3em;
-}
-
-.Face h2 {
-    margin-top: 0.2em;
-    text-align: center;
-    font-size: 3em;
-}
-
-/*Анимация реакт иконки*/
-.reactIcon {
-    text-align: center;
-    font-size: 42px;
-    animation-name: spin;
-    animation-duration: 18000ms;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    background: transparent;
-}
-
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
+    .Header {
+        /*position: absolute;*/
+        /*left: 50%;*/
+        /*top: 5%;*/
+        /*transform: translate(-50%, -50%);*/
+        text-align: center;
     }
-    to {
-        transform: rotate(360deg);
+
+    .HeaderButton1 {
+        display: inline-block;
+        margin: 1em;
+    }
+
+    .HeaderButton2 {
+        display: inline-block;
+        margin: 1em;
+    }
+
+    .HeaderButton3 {
+        display: inline-block;
+        margin: 1em;
+    }
+
+    .HeaderButton4 {
+        display: inline-block;
+        margin: 1em;
+    }
+
+    .Header a {
+        letter-spacing: 1px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.3em;
+    }
+
+    .Header a:hover {
+        font-weight: bold;
+    }
+
+    .Face {
+        /*!*position: absolute;*!*/
+        /*left: 50%;*/
+        /*!*top: 45%;*!*/
+        /*transform: translate(-50%, -50%);*/
+        margin-top: 3em;
+        text-align: center;
+    }
+
+    .Face h1 {
+        font-size: 2.5em;
+    }
+
+    .Face h2 {
+        margin-top: 0.2em;
+        font-size: 1.8em;
+        font-weight: normal;
+
+    }
+
+    /*Анимация реакт иконки*/
+    .reactIcon {
+        margin-top: 1em;
+        animation-name: spin;
+        animation-duration: 18000ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        background: transparent;
+    }
+
+    @keyframes spin {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    /*.ScrollButton {*/
+    /*    position: absolute;*/
+    /*    text-align: center;*/
+    /*    top: 87%;*/
+    /*    left: 48.45%;*/
+    /*    z-index: 2;*/
+    /*    -webkit-animation: bounce 2s infinite 2s;*/
+    /*    animation: bounce 2s infinite 2s;*/
+    /*    -webkit-transition: all .2s ease-in;*/
+    /*    transition: all .2s ease-in;*/
+    /*    transform: scale(1);*/
+    /*}*/
+    /*.ScrollButton img:nth-child(2) {*/
+    /*    display: none;*/
+    /*}*/
+    /*.ScrollButton:hover img:nth-child(2) {*/
+    /*    display: inline;*/
+    /*}*/
+    /*.ScrollButton:hover img:nth-child(1) {*/
+    /*    display: none;*/
+    /*}*/
+    /*Неиспользуемая анимация иконки скролла*/
+    /*@keyframes bounce {*/
+    /*    0%,*/
+    /*    100%,*/
+    /*    20%,*/
+    /*    50%,*/
+    /*    80% {*/
+    /*        -webkit-transform: translateY(0);*/
+    /*        -ms-transform: translateY(0);*/
+    /*        transform: translateY(0);*/
+    /*    }*/
+    /*    40% {*/
+    /*        -webkit-transform: translateY(-10px);*/
+    /*        -ms-transform: translateY(-10px);*/
+    /*        transform: translateY(-10px);*/
+    /*    }*/
+    /*    60% {*/
+    /*        -webkit-transform: translateY(-5px);*/
+    /*        -ms-transform: translateY(-5px);*/
+    /*        transform: translateY(-5px);*/
+    /*    }*/
+    /*}*/
+    .About {
+        /*left: 50%;*/
+        margin: 2 auto;
+        text-align: center;
+    }
+
+    .About h1 {
+        text-align: center;
+        font-size: 2.5em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    .About p {
+        text-align: center;
+        font-size: 18px;
+        margin-right: 1em;
+        margin-left: 1em;
+        margin-top: 18px;
+        margin-bottom: 18px;
+    }
+
+    .Works {
+        /*border-style: solid;*/
+        /*left: 50%;*/
+        /*width: 50%;*/
+        margin-top: 6em;
+        margin-bottom: 5em;
+    }
+
+    .Works b {
+        background: white;
+    }
+
+    .Works h1 {
+        /*left: 50%;*/
+        /*transform: translate(-50%, -50%);*/
+        margin-bottom: 1em;
+        font-size: 2.5em;
+        text-align: center;
+    }
+
+    .WorksPlaceholder {
+        /*border-style: groove;*/
+        /*left: 50%;*/
+        /*top: 55%;*/
+        /*transform: translate(-50%, -50%);*/
+        /*display: flex;*/
+        /*flex-direction: row;*/
+        /*flex-wrap: wrap;*/
+        /*justify-content: space-around;*/
+        text-align: center;
+        margin: 0 auto;
+        width: 50%;
+    }
+
+    .Card {
+        box-shadow: rgb(211, 211, 211) 2px 2px 30px;
+        font-family: "Cormorant Garamond", serif;
+        margin: 0.5em;
+        margin-bottom: 2em;
+        /*position: relative;*/
+        width: fit-content;
+        text-align: center;
+        transition-delay: 0s;
+        transition-duration: 0.2s;
+        transition-property: all;
+        transition-timing-function: ease;
+        /*width: 20%;*/
+        /*height: 20%;*/
+        border-radius: 2em;
+        display: block;
+        text-decoration: none;
+        background: white;
+        border: 1px solid rgba(75, 71, 71, 0.349);
+        overflow: hidden;
+    }
+
+    .Card img {
+        margin: 1.5em;
+        width: 30%;
+        height: 30%;
+        background: white;
+    }
+
+    .Card img:nth-child(2) {
+        display: none;
+    }
+
+    .Card:hover img:nth-child(2) {
+        display: inline;
+    }
+
+    .Card:hover img:nth-child(1) {
+        display: none;
+    }
+
+    .Card h3 {
+        font-size: 1em;
+        background: white;
+    }
+
+    .Card h4 {
+        margin-top: 0.8em;
+        margin-bottom: 0.8em;
+        margin-right: 0.8em;
+        margin-left: 0.8em;
+        font-size: 0.9em;
+        font-weight: normal;
+        background: white;
+    }
+
+    .Card h4:hover {
+        margin-top: 0.8em;
+        background: white;
+    }
+
+    .Card:hover {
+        transform: scale(1.03);
+        background: white;
+    }
+
+    .CardContainer {
+        /*margin: 2px 16px;*/
+        background: white;
+        /*border-radius: inherit;*/
+        /*border: inherit;*/
+        /*box-shadow: inherit;*/
+    }
+
+    .Contact {
+        /*position: absolute;*/
+        /*top: 217%;*/
+        /*left: 50%;*/
+        text-align: center;
+        border: black;
+        /*transform: translate(-50%, -50%);*/
+    }
+
+    .Contact h1 {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .Contact p {
+        margin-top: 0.3em;
+        margin-bottom: 0.3em;
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .Contact h2 {
+        font-weight: bold;
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .Footer {
+        text-align: center;
+        border: black;
+    }
+
+    .Footer p {
+        margin-top: 5em;
+        margin-bottom: 1em;
+    }
+
+}
+
+
+
+
+
+@media screen and (min-width: 321px) and (max-width: 639px) {
+
+    .Header {
+        /*position: absolute;*/
+        /*left: 50%;*/
+        /*top: 5%;*/
+        /*transform: translate(-50%, -50%);*/
+        text-align: center;
+    }
+
+    .HeaderButton1 {
+        display: inline-block;
+        margin: 1em;
+    }
+
+    .HeaderButton2 {
+        display: inline-block;
+        margin: 1em;
+    }
+
+    .HeaderButton3 {
+        display: inline-block;
+        margin: 1em;
+    }
+
+    .HeaderButton4 {
+        display: inline-block;
+        margin: 1em;
+    }
+
+    .Header a {
+        letter-spacing: 1px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.3em;
+    }
+
+    .Header a:hover {
+        font-weight: bold;
+    }
+
+    .Face {
+        /*!*position: absolute;*!*/
+        /*left: 50%;*/
+        /*!*top: 45%;*!*/
+        /*transform: translate(-50%, -50%);*/
+        margin-top: 3em;
+        text-align: center;
+    }
+
+    .Face h1 {
+        font-size: 2.5em;
+    }
+
+    .Face h2 {
+        margin-top: 0.2em;
+        font-size: 1.8em;
+        font-weight: normal;
+
+    }
+
+    /*Анимация реакт иконки*/
+    .reactIcon {
+        margin-top: 1em;
+        animation-name: spin;
+        animation-duration: 18000ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        background: transparent;
+    }
+
+    @keyframes spin {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    /*.ScrollButton {*/
+    /*    position: absolute;*/
+    /*    text-align: center;*/
+    /*    top: 87%;*/
+    /*    left: 48.45%;*/
+    /*    z-index: 2;*/
+    /*    -webkit-animation: bounce 2s infinite 2s;*/
+    /*    animation: bounce 2s infinite 2s;*/
+    /*    -webkit-transition: all .2s ease-in;*/
+    /*    transition: all .2s ease-in;*/
+    /*    transform: scale(1);*/
+    /*}*/
+    /*.ScrollButton img:nth-child(2) {*/
+    /*    display: none;*/
+    /*}*/
+    /*.ScrollButton:hover img:nth-child(2) {*/
+    /*    display: inline;*/
+    /*}*/
+    /*.ScrollButton:hover img:nth-child(1) {*/
+    /*    display: none;*/
+    /*}*/
+    /*Неиспользуемая анимация иконки скролла*/
+    /*@keyframes bounce {*/
+    /*    0%,*/
+    /*    100%,*/
+    /*    20%,*/
+    /*    50%,*/
+    /*    80% {*/
+    /*        -webkit-transform: translateY(0);*/
+    /*        -ms-transform: translateY(0);*/
+    /*        transform: translateY(0);*/
+    /*    }*/
+    /*    40% {*/
+    /*        -webkit-transform: translateY(-10px);*/
+    /*        -ms-transform: translateY(-10px);*/
+    /*        transform: translateY(-10px);*/
+    /*    }*/
+    /*    60% {*/
+    /*        -webkit-transform: translateY(-5px);*/
+    /*        -ms-transform: translateY(-5px);*/
+    /*        transform: translateY(-5px);*/
+    /*    }*/
+    /*}*/
+    .About {
+        /*left: 50%;*/
+        margin: 2 auto;
+        text-align: center;
+    }
+
+    .About h1 {
+        text-align: center;
+        font-size: 2.5em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    .About p {
+        text-align: center;
+        font-size: 18px;
+        margin-right: 1em;
+        margin-left: 1em;
+        margin-top: 18px;
+        margin-bottom: 18px;
+    }
+
+    .Works {
+        /*border-style: solid;*/
+        /*left: 50%;*/
+        /*width: 50%;*/
+        margin-top: 6em;
+        margin-bottom: 5em;
+    }
+
+    .Works b {
+        background: white;
+    }
+
+    .Works h1 {
+        /*left: 50%;*/
+        /*transform: translate(-50%, -50%);*/
+        margin-bottom: 1em;
+        font-size: 2.5em;
+        text-align: center;
+    }
+
+    .WorksPlaceholder {
+        /*border-style: groove;*/
+        /*left: 50%;*/
+        /*top: 55%;*/
+        /*transform: translate(-50%, -50%);*/
+        /*display: flex;*/
+        /*flex-direction: row;*/
+        /*flex-wrap: wrap;*/
+        /*justify-content: space-around;*/
+        text-align: center;
+        margin: 0 auto;
+        width: 50%;
+    }
+
+    .Card {
+        box-shadow: rgb(211, 211, 211) 2px 2px 30px;
+        font-family: "Cormorant Garamond", serif;
+        margin: 0.5em;
+        margin-bottom: 2em;
+        /*position: relative;*/
+        width: fit-content;
+        text-align: center;
+        transition-delay: 0s;
+        transition-duration: 0.2s;
+        transition-property: all;
+        transition-timing-function: ease;
+        /*width: 20%;*/
+        /*height: 20%;*/
+        border-radius: 2em;
+        display: block;
+        text-decoration: none;
+        background: white;
+        border: 1px solid rgba(75, 71, 71, 0.349);
+        overflow: hidden;
+    }
+
+    .Card img {
+        margin: 1.5em;
+        width: 30%;
+        height: 30%;
+        background: white;
+    }
+
+    .Card img:nth-child(2) {
+        display: none;
+    }
+
+    .Card:hover img:nth-child(2) {
+        display: inline;
+    }
+
+    .Card:hover img:nth-child(1) {
+        display: none;
+    }
+
+    .Card h3 {
+        font-size: 1em;
+        background: white;
+    }
+
+    .Card h4 {
+        margin-top: 0.8em;
+        margin-bottom: 0.8em;
+        margin-right: 0.8em;
+        margin-left: 0.8em;
+        font-size: 0.9em;
+        font-weight: normal;
+        background: white;
+    }
+
+    .Card h4:hover {
+        margin-top: 0.8em;
+        background: white;
+    }
+
+    .Card:hover {
+        transform: scale(1.03);
+        background: white;
+    }
+
+    .CardContainer {
+        /*margin: 2px 16px;*/
+        background: white;
+        /*border-radius: inherit;*/
+        /*border: inherit;*/
+        /*box-shadow: inherit;*/
+    }
+
+    .Contact {
+        /*position: absolute;*/
+        /*top: 217%;*/
+        /*left: 50%;*/
+        text-align: center;
+        border: black;
+        /*transform: translate(-50%, -50%);*/
+    }
+
+    .Contact h1 {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .Contact p {
+        margin-top: 0.3em;
+        margin-bottom: 0.3em;
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .Contact h2 {
+        font-weight: bold;
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .Footer {
+        text-align: center;
+        border: black;
+    }
+
+    .Footer p {
+        margin-top: 5em;
+        margin-bottom: 1em;
+    }
+
+}
+
+
+
+
+@media screen and (min-width: 640px) and (max-width: 959px) {
+
+    .Header {
+        text-align: center;
+    }
+
+    .HeaderButton1 {
+        display: inline-block;
+        margin: 1em;
+    }
+
+    .HeaderButton2 {
+        display: inline-block;
+        margin: 1em;
+    }
+
+    .HeaderButton3 {
+        display: inline-block;
+        margin: 1em;
+    }
+
+    .HeaderButton4 {
+        display: inline-block;
+        margin: 1em;
+    }
+
+    .Header a {
+        display: inline-block;
+        letter-spacing: 1px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.3em;
+    }
+
+    .Header a:hover {
+        font-weight: bold;
+    }
+
+    .Face {
+        margin-top: 10%;
+        text-align: center;
+        margin-bottom: 10%;
+    }
+
+    .Face h1 {
+        text-align: center;
+        font-size: 3em;
+    }
+
+    .Face h2 {
+        margin-top: 0.2em;
+        text-align: center;
+        font-size: 3em;
+    }
+
+    /*Анимация реакт иконки*/
+    .reactIcon {
+        text-align: center;
+        margin: 0 auto;
+        animation-name: spin;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    @keyframes spin {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    /*.ScrollButton {*/
+    /*    position: absolute;*/
+    /*    text-align: center;*/
+    /*    top: 87%;*/
+    /*    left: 48.45%;*/
+    /*    z-index: 2;*/
+    /*    -webkit-animation: bounce 2s infinite 2s;*/
+    /*    animation: bounce 2s infinite 2s;*/
+    /*    -webkit-transition: all .2s ease-in;*/
+    /*    transition: all .2s ease-in;*/
+    /*    transform: scale(1);*/
+    /*}*/
+
+    /*.ScrollButton img:nth-child(2) {*/
+    /*    display: none;*/
+    /*}*/
+
+    /*.ScrollButton:hover img:nth-child(2) {*/
+    /*    display: inline;*/
+    /*}*/
+
+    /*.ScrollButton:hover img:nth-child(1) {*/
+    /*    display: none;*/
+    /*}*/
+    /*Неиспользуемая анимация иконки скролла*/
+    /*@keyframes bounce {*/
+    /*    0%,*/
+    /*    100%,*/
+    /*    20%,*/
+    /*    50%,*/
+    /*    80% {*/
+    /*        -webkit-transform: translateY(0);*/
+    /*        -ms-transform: translateY(0);*/
+    /*        transform: translateY(0);*/
+    /*    }*/
+    /*    40% {*/
+    /*        -webkit-transform: translateY(-10px);*/
+    /*        -ms-transform: translateY(-10px);*/
+    /*        transform: translateY(-10px);*/
+    /*    }*/
+    /*    60% {*/
+    /*        -webkit-transform: translateY(-5px);*/
+    /*        -ms-transform: translateY(-5px);*/
+    /*        transform: translateY(-5px);*/
+    /*    }*/
+    /*}*/
+
+    .About {
+        text-align: center;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .About h1 {
+        font-size: 2.5em;
+        margin-bottom: 1em;
+    }
+
+    .About p {
+        font-size: 1.1em;
+        margin-top: 18px;
+        margin-bottom: 18px;
+    }
+
+    .Works {
+        text-align: center;
+        /*width: 50em;*/
+        /*height: 50%;*/
+        margin-top: 6em;
+        margin-bottom: 5em;
+        height: 50em;
+    }
+
+    .Works b {
+        background: white;
+    }
+
+    .Works h1 {
+        text-align: center;
+        font-size: 2.5em;
+    }
+
+    .WorksPlaceholder {
+        margin-top: 3em;
+        text-align: center;
+        /*display: flex;*/
+        justify-content: center;
+    }
+
+    .Card {
+        box-shadow: rgb(211, 211, 211) 2px 2px 30px;
+        font-family: "Cormorant Garamond", serif;
+        margin: 2em;
+        text-align: center;
+        transition-delay: 0s;
+        transition-duration: 0.2s;
+        transition-property: all;
+        transition-timing-function: ease;
+        width: 14em;
+        height: 17em;
+        border-radius: 1em;
+        display: inline-block;
+        text-decoration: none;
+        background: white;
+        border: 1px solid rgba(75, 71, 71, 0.349);
+    }
+
+    .Card img {
+        margin: 1.5em;
+        width: 60%;
+        height: 42%;
+        background: white;
+    }
+
+    .Card img:nth-child(2) {
+        display: none;
+    }
+
+    .Card:hover img:nth-child(2) {
+        display: inline;
+    }
+
+    .Card:hover img:nth-child(1) {
+        display: none;
+    }
+
+    .Card h3 {
+        font-size: 1.2em;
+        background: white;
+    }
+
+    .Card h4 {
+        margin-top: 0.8em;
+        font-weight: normal;
+        background: white;
+    }
+
+    .Card h4:hover {
+        margin-top: 0.8em;
+        background: white;
+    }
+
+    .Card:hover {
+        transform: scale(1.03);
+        background: white;
+    }
+
+    .CardContainer {
+        margin: 2px 16px;
+        background: white;
+    }
+
+    .Contact {
+        text-align: center;
+        border: black;
+    }
+
+    .Contact h1 {
+        font-size: 2.5em;
+        text-align: center;
+    }
+
+    .Contact p {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .Footer {
+        margin-top: 7em;
+        text-align: center;
+        border: black;
+    }
+    .Footer p {
+        margin-bottom: 1em;
     }
 }
 
-.ScrollButton {
-    position: absolute;
-    text-align: center;
-    top: 87%;
-    left: 48.45%;
-    z-index: 2;
-    -webkit-animation: bounce 2s infinite 2s;
-    animation: bounce 2s infinite 2s;
-    -webkit-transition: all .2s ease-in;
-    transition: all .2s ease-in;
-    transform: scale(1);
-}
 
-.ScrollButton img:nth-child(2) {
-    display: none;
-}
 
-.ScrollButton:hover img:nth-child(2) {
-    display: inline;
-}
 
-.ScrollButton:hover img:nth-child(1) {
-    display: none;
-}
-
-/*Неиспользуемая анимация иконки скролла*/
-@keyframes bounce {
-    0%,
-    100%,
-    20%,
-    50%,
-    80% {
-        -webkit-transform: translateY(0);
-        -ms-transform: translateY(0);
-        transform: translateY(0);
+@media screen and (min-width: 960px) and (max-width: 1279px) {
+    .Header {
+        text-align: center;
     }
-    40% {
-        -webkit-transform: translateY(-10px);
-        -ms-transform: translateY(-10px);
-        transform: translateY(-10px);
+
+    .HeaderButton1 {
+        display: inline-block;
+        margin: 1em;
     }
-    60% {
-        -webkit-transform: translateY(-5px);
-        -ms-transform: translateY(-5px);
-        transform: translateY(-5px);
+
+    .HeaderButton2 {
+        display: inline-block;
+        margin: 1em;
+    }
+
+    .HeaderButton3 {
+        display: inline-block;
+        margin: 1em;
+    }
+
+    .HeaderButton4 {
+        display: inline-block;
+        margin: 1em;
+    }
+
+    .Header a {
+        display: inline-block;
+        letter-spacing: 1px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.3em;
+    }
+
+    .Header a:hover {
+        font-weight: bold;
+    }
+
+    .Face {
+        margin-top: 10%;
+        text-align: center;
+    }
+
+    .Face h1 {
+        text-align: center;
+        font-size: 3em;
+    }
+
+    .Face h2 {
+        margin-top: 0.2em;
+        text-align: center;
+        font-size: 3em;
+        font-weight: normal;
+    }
+
+    /*Анимация реакт иконки*/
+    .reactIcon {
+        text-align: center;
+        margin: 0 auto;
+        animation-name: spin;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    @keyframes spin {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    /*.ScrollButton {*/
+    /*    position: absolute;*/
+    /*    text-align: center;*/
+    /*    top: 87%;*/
+    /*    left: 48.45%;*/
+    /*    z-index: 2;*/
+    /*    -webkit-animation: bounce 2s infinite 2s;*/
+    /*    animation: bounce 2s infinite 2s;*/
+    /*    -webkit-transition: all .2s ease-in;*/
+    /*    transition: all .2s ease-in;*/
+    /*    transform: scale(1);*/
+    /*}*/
+    /*.ScrollButton img:nth-child(2) {*/
+    /*    display: none;*/
+    /*}*/
+    /*.ScrollButton:hover img:nth-child(2) {*/
+    /*    display: inline;*/
+    /*}*/
+    /*.ScrollButton:hover img:nth-child(1) {*/
+    /*    display: none;*/
+    /*}*/
+    /*Неиспользуемая анимация иконки скролла*/
+    /*@keyframes bounce {*/
+    /*    0%,*/
+    /*    100%,*/
+    /*    20%,*/
+    /*    50%,*/
+    /*    80% {*/
+    /*        -webkit-transform: translateY(0);*/
+    /*        -ms-transform: translateY(0);*/
+    /*        transform: translateY(0);*/
+    /*    }*/
+    /*    40% {*/
+    /*        -webkit-transform: translateY(-10px);*/
+    /*        -ms-transform: translateY(-10px);*/
+    /*        transform: translateY(-10px);*/
+    /*    }*/
+    /*    60% {*/
+    /*        -webkit-transform: translateY(-5px);*/
+    /*        -ms-transform: translateY(-5px);*/
+    /*        transform: translateY(-5px);*/
+    /*    }*/
+    /*}*/
+    .About {
+        text-align: center;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .About h1 {
+        margin-top: 6em;
+        font-size: 2.5em;
+        margin-bottom: 1em;
+    }
+
+    .About p {
+        font-size: 1.1em;
+        margin-top: 18px;
+        margin-bottom: 18px;
+    }
+
+    .Works {
+        text-align: center;
+        /*width: 50em;*/
+        /*height: 50%;*/
+        margin-top: 6em;
+        margin-bottom: 5em;
+    }
+
+    .Works b {
+        background: white;
+    }
+
+    .Works h1 {
+        text-align: center;
+        font-size: 2.5em;
+    }
+
+    .WorksPlaceholder {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .Card {
+        box-shadow: rgb(211, 211, 211) 2px 2px 30px;
+        font-family: "Cormorant Garamond", serif;
+        margin: 2em;
+        text-align: center;
+        transition-delay: 0s;
+        transition-duration: 0.2s;
+        transition-property: all;
+        transition-timing-function: ease;
+        width: 14em;
+        height: 17em;
+        border-radius: 0.5em;
+        display: block;
+        text-decoration: none;
+        background: white;
+        border: 1px solid rgba(75, 71, 71, 0.349);
+    }
+
+    .Card img {
+        margin: 1.5em;
+        width: 60%;
+        height: 42%;
+        background: white;
+    }
+
+    .Card img:nth-child(2) {
+        display: none;
+    }
+
+    .Card:hover img:nth-child(2) {
+        display: inline;
+    }
+
+    .Card:hover img:nth-child(1) {
+        display: none;
+    }
+
+    .Card h3 {
+        font-size: 1.2em;
+        background: white;
+    }
+
+    .Card h4 {
+        margin-top: 0.8em;
+        font-weight: normal;
+        background: white;
+    }
+
+    .Card h4:hover {
+        margin-top: 0.8em;
+        background: white;
+    }
+
+    .Card:hover {
+        transform: scale(1.03);
+        background: white;
+    }
+
+    .CardContainer {
+        margin: 2px 16px;
+        background: white;
+    }
+
+    .Contact {
+        text-align: center;
+        border: black;
+    }
+
+    .Contact h1 {
+        font-size: 2.5em;
+        text-align: center;
+    }
+
+    .Contact p {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .Footer {
+        margin-top: 7em;
+        text-align: center;
+        border: black;
+    }
+
+    .Footer p {
+        margin-bottom: 1em;
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1599px) {
+    .Header {
+        text-align: center;
+    }
+
+    .HeaderButton1 {
+        display: inline-block;
+        margin: 1em;
+    }
+
+    .HeaderButton2 {
+        display: inline-block;
+        margin: 1em;
+    }
+
+    .HeaderButton3 {
+        display: inline-block;
+        margin: 1em;
+    }
+
+    .HeaderButton4 {
+        display: inline-block;
+        margin: 1em;
+    }
+
+    .Header a {
+        display: inline-block;
+        letter-spacing: 1px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.3em;
+    }
+
+    .Header a:hover {
+        font-weight: bold;
+    }
+
+    .Face {
+        margin-top: 10%;
+        text-align: center;
+    }
+
+    .Face h1 {
+        text-align: center;
+        font-size: 3em;
+    }
+
+    .Face h2 {
+        margin-top: 0.2em;
+        text-align: center;
+        font-size: 3em;
+    }
+
+    /*Анимация реакт иконки*/
+    .reactIcon {
+        text-align: center;
+        margin: 0 auto;
+        animation-name: spin;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    @keyframes spin {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    /*.ScrollButton {*/
+    /*    position: absolute;*/
+    /*    text-align: center;*/
+    /*    top: 87%;*/
+    /*    left: 48.45%;*/
+    /*    z-index: 2;*/
+    /*    -webkit-animation: bounce 2s infinite 2s;*/
+    /*    animation: bounce 2s infinite 2s;*/
+    /*    -webkit-transition: all .2s ease-in;*/
+    /*    transition: all .2s ease-in;*/
+    /*    transform: scale(1);*/
+    /*}*/
+    /*.ScrollButton img:nth-child(2) {*/
+    /*    display: none;*/
+    /*}*/
+    /*.ScrollButton:hover img:nth-child(2) {*/
+    /*    display: inline;*/
+    /*}*/
+    /*.ScrollButton:hover img:nth-child(1) {*/
+    /*    display: none;*/
+    /*}*/
+    /*Неиспользуемая анимация иконки скролла*/
+    /*@keyframes bounce {*/
+    /*    0%,*/
+    /*    100%,*/
+    /*    20%,*/
+    /*    50%,*/
+    /*    80% {*/
+    /*        -webkit-transform: translateY(0);*/
+    /*        -ms-transform: translateY(0);*/
+    /*        transform: translateY(0);*/
+    /*    }*/
+    /*    40% {*/
+    /*        -webkit-transform: translateY(-10px);*/
+    /*        -ms-transform: translateY(-10px);*/
+    /*        transform: translateY(-10px);*/
+    /*    }*/
+    /*    60% {*/
+    /*        -webkit-transform: translateY(-5px);*/
+    /*        -ms-transform: translateY(-5px);*/
+    /*        transform: translateY(-5px);*/
+    /*    }*/
+    /*}*/
+    .About {
+        text-align: center;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .About h1 {
+        margin-top: 6em;
+        font-size: 2.5em;
+        margin-bottom: 1em;
+    }
+
+    .About p {
+        font-size: 1.1em;
+        margin-top: 18px;
+        margin-bottom: 18px;
+    }
+
+    .Works {
+        text-align: center;
+        /*width: 50em;*/
+        /*height: 50%;*/
+        margin-top: 6em;
+        margin-bottom: 5em;
+    }
+
+    .Works b {
+        background: white;
+    }
+
+    .Works h1 {
+        text-align: center;
+        font-size: 2.5em;
+    }
+
+    .WorksPlaceholder {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .Card {
+        box-shadow: rgb(211, 211, 211) 2px 2px 30px;
+        font-family: "Cormorant Garamond", serif;
+        margin: 2em;
+        text-align: center;
+        transition-delay: 0s;
+        transition-duration: 0.2s;
+        transition-property: all;
+        transition-timing-function: ease;
+        width: 14em;
+        height: 17em;
+        border-radius: 0.5em;
+        display: block;
+        text-decoration: none;
+        background: white;
+        border: 1px solid rgba(75, 71, 71, 0.349);
+    }
+
+    .Card img {
+        margin: 1.5em;
+        width: 60%;
+        height: 42%;
+        background: white;
+    }
+
+    .Card img:nth-child(2) {
+        display: none;
+    }
+
+    .Card:hover img:nth-child(2) {
+        display: inline;
+    }
+
+    .Card:hover img:nth-child(1) {
+        display: none;
+    }
+
+    .Card h3 {
+        font-size: 1.2em;
+        background: white;
+    }
+
+    .Card h4 {
+        margin-top: 0.8em;
+        font-weight: normal;
+        background: white;
+    }
+
+    .Card h4:hover {
+        margin-top: 0.8em;
+        background: white;
+    }
+
+    .Card:hover {
+        transform: scale(1.03);
+        background: white;
+    }
+
+    .CardContainer {
+        margin: 2px 16px;
+        background: white;
+    }
+
+    .Contact {
+        text-align: center;
+        border: black;
+    }
+
+    .Contact h1 {
+        font-size: 2.5em;
+        text-align: center;
+    }
+
+    .Contact p {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .Footer {
+        margin-top: 7em;
+        text-align: center;
+        border: black;
+    }
+
+    .Footer p {
+        margin-bottom: 1em;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+
+    .Header {
+        text-align: center;
+    }
+
+    .HeaderButton1 {
+        display: inline-block;
+        margin: 1em;
+    }
+
+    .HeaderButton2 {
+        display: inline-block;
+        margin: 1em;
+    }
+
+    .HeaderButton3 {
+        display: inline-block;
+        margin: 1em;
+    }
+
+    .HeaderButton4 {
+        display: inline-block;
+        margin: 1em;
+    }
+
+    .Header a {
+        display: inline-block;
+        letter-spacing: 1px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.3em;
+    }
+
+    .Header a:hover {
+        font-weight: bold;
+    }
+
+    .Face {
+        margin-top: 10%;
+        text-align: center;
+    }
+
+    .Face h1 {
+        text-align: center;
+        font-size: 3em;
+    }
+
+    .Face h2 {
+        margin-top: 0.2em;
+        text-align: center;
+        font-size: 2.2em;
+        font-weight: normal;
+    }
+
+    /*Анимация реакт иконки*/
+    .reactIcon {
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 1.5em;
+        animation-name: spin;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    @keyframes spin {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    /*.ScrollButton {*/
+    /*    position: absolute;*/
+    /*    text-align: center;*/
+    /*    top: 87%;*/
+    /*    left: 48.45%;*/
+    /*    z-index: 2;*/
+    /*    -webkit-animation: bounce 2s infinite 2s;*/
+    /*    animation: bounce 2s infinite 2s;*/
+    /*    -webkit-transition: all .2s ease-in;*/
+    /*    transition: all .2s ease-in;*/
+    /*    transform: scale(1);*/
+    /*}*/
+    /*.ScrollButton img:nth-child(2) {*/
+    /*    display: none;*/
+    /*}*/
+    /*.ScrollButton:hover img:nth-child(2) {*/
+    /*    display: inline;*/
+    /*}*/
+    /*.ScrollButton:hover img:nth-child(1) {*/
+    /*    display: none;*/
+    /*}*/
+    /*Неиспользуемая анимация иконки скролла*/
+    /*@keyframes bounce {*/
+    /*    0%,*/
+    /*    100%,*/
+    /*    20%,*/
+    /*    50%,*/
+    /*    80% {*/
+    /*        -webkit-transform: translateY(0);*/
+    /*        -ms-transform: translateY(0);*/
+    /*        transform: translateY(0);*/
+    /*    }*/
+    /*    40% {*/
+    /*        -webkit-transform: translateY(-10px);*/
+    /*        -ms-transform: translateY(-10px);*/
+    /*        transform: translateY(-10px);*/
+    /*    }*/
+    /*    60% {*/
+    /*        -webkit-transform: translateY(-5px);*/
+    /*        -ms-transform: translateY(-5px);*/
+    /*        transform: translateY(-5px);*/
+    /*    }*/
+    /*}*/
+    .About {
+        text-align: center;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .About h1 {
+        margin-top: 6em;
+        font-size: 2.5em;
+        margin-bottom: 1em;
+    }
+
+    .About p {
+        font-size: 1.1em;
+        margin-top: 18px;
+        margin-bottom: 18px;
+    }
+
+    .Works {
+        text-align: center;
+        /*width: 50em;*/
+        /*height: 50%;*/
+        margin-top: 6em;
+        margin-bottom: 5em;
+    }
+
+    .Works b {
+        background: white;
+    }
+
+    .Works h1 {
+        text-align: center;
+        font-size: 2.5em;
+    }
+
+    .WorksPlaceholder {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .Card {
+        box-shadow: rgb(211, 211, 211) 2px 2px 30px;
+        font-family: "Cormorant Garamond", serif;
+        margin: 2em;
+        text-align: center;
+        transition-delay: 0s;
+        transition-duration: 0.2s;
+        transition-property: all;
+        transition-timing-function: ease;
+        width: 14em;
+        height: 17em;
+        border-radius: 0.5em;
+        display: block;
+        text-decoration: none;
+        background: white;
+        border: 1px solid rgba(75, 71, 71, 0.349);
+    }
+
+    .Card img {
+        margin: 1.5em;
+        width: 60%;
+        height: 42%;
+        background: white;
+    }
+
+    .Card img:nth-child(2) {
+        display: none;
+    }
+
+    .Card:hover img:nth-child(2) {
+        display: inline;
+    }
+
+    .Card:hover img:nth-child(1) {
+        display: none;
+    }
+
+    .Card h3 {
+        font-size: 1.2em;
+        background: white;
+    }
+
+    .Card h4 {
+        margin-top: 0.8em;
+        font-weight: normal;
+        background: white;
+    }
+
+    .Card h4:hover {
+        margin-top: 0.8em;
+        background: white;
+    }
+
+    .Card:hover {
+        transform: scale(1.03);
+        background: white;
+    }
+
+    .CardContainer {
+        margin: 2px 16px;
+        background: white;
+    }
+
+    .Contact {
+        text-align: center;
+        border: black;
+    }
+
+    .Contact h1 {
+        font-size: 2.5em;
+        text-align: center;
+    }
+
+    .Contact p {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .Footer {
+        margin-top: 7em;
+        text-align: center;
+        border: black;
+    }
+
+    .Footer p {
+        margin-bottom: 1em;
     }
 }
 
 
-/****About****/
-.About {
-    position: absolute;
-    left: 50%;
-    top: 95%;
-    transform: translate(-50%, -50%);
-}
-
-.About h1 {
-    text-align: center;
-    margin-top: 6em;
-    font-size: 2.5em;
-    margin-bottom: 1em;
-}
-
-.About p {
-    text-align: center;
-    font-size: 18px;
-    margin-top: 18px;
-    margin-bottom: 18px;
-}
-
-
-/****Works****/
-.Works {
-    position: absolute;
-    left: 50%;
-    top: 165%;
-    width: 50em;
-    height: 50%;
-    margin-top: 6em;
-    margin-bottom: 5em;
-    transform: translate(-50%, -50%);
-}
-
-.Works b {
-    background: white;
-}
-
-.Works h1 {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 2.5em;
-}
-
-.WorksPlaceholder {
-    position: absolute;
-    left: 50%;
-    top: 55%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 85em;
-}
-
-.Card {
-    box-shadow: rgb(211, 211, 211) 2px 2px 30px;
-    font-family: "Cormorant Garamond", serif;
-    margin: 1em;
-    position: relative;
-    text-align: center;
-    transition-delay: 0s;
-    transition-duration: 0.2s;
-    transition-property: all;
-    transition-timing-function: ease;
-    width: 15em;
-    height: 20em;
-    border-radius: 0.5em;
-    display: block;
-    text-decoration: none;
-    background: white;
-    border: 1px solid rgba(75, 71, 71, 0.349);
-}
-
-.Card img {
-    margin: 1.5em;
-    width: 60%;
-    height: 42%;
-    background: white;
-}
-
-.Card img:nth-child(2) {
-    display: none;
-}
-
-.Card:hover img:nth-child(2) {
-    display: inline;
-}
-
-.Card:hover img:nth-child(1) {
-    display: none;
-}
-
-.Card h3 {
-    font-size: 1.2em;
-    background: white;
-}
-
-.Card h4 {
-    margin-top: 0.8em;
-    font-weight: normal;
-    background: white;
-}
-
-.Card h4:hover {
-    margin-top: 0.8em;
-    background: white;
-}
-
-.Card:hover {
-    transform: scale(1.03);
-    background: white;
-}
-
-.CardContainer {
-    margin: 2px 16px;
-    background: white;
-}
-
-
-/***Contact***/
-.Contact {
-    position: absolute;
-    top: 217%;
-    left: 50%;
-    text-align: center;
-    border: black;
-    transform: translate(-50%, -50%);
-}
-
-.Contact h1 {
-    font-size: 2.5em;
-    text-align: center;
-}
-
-.Contact p {
-    font-size: 1.5em;
-    text-align: center;
-}
-
-
-/***Footer***/
-.Footer {
-    position: absolute;
-    left: 50%;
-    top: 240%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    border: black;
-}
-
-.Footer p {
-    margin-bottom: 1em;
-}
