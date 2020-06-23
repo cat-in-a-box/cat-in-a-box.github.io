@@ -5,30 +5,26 @@ const About = () => {
     return (
         <ScrollableAnchor id={'section2'}>
             <div className="About">
-                <h1>About me</h1>
+                <h1>Коротко обо мне</h1>
                 <p>
-                    Ela han ennenko jaa luo ilmassa aikoina hanelle. Puoli vie torui yha
-                    nahty menna ole. Hyotya ilkesi ei ne jonkun viinat jo on joutua kuulit.
-                    Vai kun tuo hiljaisuus paaltapain vei viinaelake. Vavahtaen puolustaa
-                    kulettaja se se saaliista.
+                    Базовые сценарии поведения пользователей формируют глобальную экономическую сеть и
+                    при этом - обнародованы.
+                    Вот вам яркий пример современных тенденций - высокое качество позиционных исследований предоставляет
+                    широкие возможности для существующих финансовых и административных условий.
+                    Господа, реализация намеченных плановых заданий способствует подготовке и реализации приоритизации
+                    разума над эмоциями.
                 </p>
                 <p>
-                    Ero nyt han oli puna yhta sita enka kuin. Ankkurissa vietavaksi
-                    sisimpansa jos liikkeelle ela nae ota. Oli tai kas talveksi viikossa
-                    kuljemme poskille suinkaan. Liekin osansa varten on ei oikein emanta on
-                    ne nimeni. Koyha laine eivat siina et tuoma ei hanet ne. Koetan ne
-                    tietaa vienyt ei no varten se. Jaa uudesta sen eri loi minulta papalla
-                    muualta kajutta hukkaan.
+                    Разнообразный и богатый опыт говорит нам, что экономическая повестка сегодняшнего дня обеспечивает
+                    актуальность вывода текущих активов. Каждый из нас понимает очевидную вещь: сплочённость команды
+                    профессионалов требует от нас анализа переосмысления внешнеэкономических политик.
                 </p>
                 <p>
-                    Se te juoksette ne majakoita tosissaan ai kaikkiaan millainen. Se
-                    isastasi rukoilen lekkeria silmassa on ei kevaalla. Ota yha nousi oikea
-                    han maata jonka moisi. Kone ihan syva jaa yha ukko. Menikin paikata
-                    tulleet ei savuton ai huoahti hanella ei se. Nyt kuitenkin rahasumma
-                    sentahden tuo kajuttaan seitsemia vahintain. Korsu tulen tuvan osaat oli
-                    kay toden terve. Sittenkuin kun menettelet esimerkkia oli aallokkoon
-                    pilkkanaan jos. Vai tuommoinen tulisikaan oli humalaiset vai tyttarenne
-                    ela.
+                    Внезапно, тщательные исследования конкурентов освещают чрезвычайно интересные особенности картины в
+                    целом, однако конкретные выводы, разумеется, в равной степени предоставлены сами себе.
+                    Но действия представителей оппозиции, вне зависимости от их уровня, должны быть заблокированы в
+                    рамках своих собственных рациональных ограничений. Безусловно, сплочённость команды профессионалов
+                    в значительной степени обусловливает важность экономической целесообразности принимаемых решений.
                 </p>
             </div>
         </ScrollableAnchor>

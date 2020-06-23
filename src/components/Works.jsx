@@ -4,7 +4,7 @@ import ScrollableAnchor from 'react-scrollable-anchor'; // якоря для д�
 const Works = () => {
     return [
         <ScrollableAnchor id={'section3'}>
-            <div className="Works"><h1>My Works</h1>
+            <div className="Works"><h1>Мои работы</h1>
                 <div className="WorksPlaceholder">
                     <a href="https://cat-in-a-box.github.io/mousewheel_checker/" className="Card">
                         <img src={"pics/mouse.png"} alt="MouseIcon"/>
