@@ -1,7 +1,4 @@
-@font-face {
-    font-family: "Josefin Sans";
-    src: url("components/files/font.woff2");
-}
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap');
 
 /*CSS в Реакте не хочет грузить бэкграунд из public, ругается на это.
 Поэтому добавил в src/components, оттуда грузит нормально*/
@@ -9,7 +6,8 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Jost', serif;
+    font-weight: normal;
     background-image: url(components/files/Background.jpg);
     background-repeat: repeat;
     color: rgb(66, 66, 66);
@@ -30,22 +28,11 @@ a {
     text-align: center;
     outline: none;
     user-select: none;
+    padding: 0.7em;
 }
-.HeaderButton1 {
+.HeaderButton {
     display: inline-block;
-    margin: 1em;
-}
-.HeaderButton2 {
-    display: inline-block;
-    margin: 1em;
-}
-.HeaderButton3 {
-    display: inline-block;
-    margin: 1em;
-}
-.HeaderButton4 {
-    display: inline-block;
-    margin: 1em;
+    width: 10em;
 }
 .Header a {
     letter-spacing: 1px;
@@ -54,13 +41,30 @@ a {
     font-size: 1.3em;
 }
 .Header a:hover {
-    font-weight: bold;
+    font-weight: bolder;
 }
 @media screen and (max-width:320px) {
+    .Header {
+        margin: auto;
+    }
 }
 @media screen and (min-width:321px) and (max-width:639px) {
+    .Header {
+        margin: auto;
+        width: 70%;
+    }
+    .HeaderButton {
+        margin-top: 0.3em;
+    }
+    .Header a {
+        font-size: 1.1em;
+    }
 }
 @media screen and (min-width:640px) and (max-width:959px) {
+    .Header {
+        margin: auto;
+        width: 100%;
+    }
 }
 @media screen and (min-width:960px) and (max-width:1279px) {
 }
@@ -97,19 +101,32 @@ a {
 }
 @media screen and (max-width:320px) {
     .Face {
-        margin-top: 3em;
+        margin: 3em 2em 0 2em;
     }
     .Face h1 {
         font-size: 2.5em;
     }
     .Face h2 {
         margin-top: 0.2em;
-        font-size: 1.8em;
+        font-size: 1.2em;
     }
 }
 @media screen and (min-width:321px) and (max-width:639px) {
     .Face {
-        margin-top: 3em;
+        margin: 2em 1.5em 0 1.5em;
+        /*border-style: groove;*/
+    }
+    .Face h1 {
+        font-size: 2.5em;
+    }
+    .Face h2 {
+        margin: 1em 0 0 0.7em;
+        font-size: 1.5em;
+    }
+}
+@media screen and (min-width:640px) and (max-width:959px) {
+    .Face {
+        margin: 3em 2em 0 2em;
     }
     .Face h1 {
         font-size: 2.5em;
@@ -117,19 +134,6 @@ a {
     .Face h2 {
         margin-top: 0.2em;
         font-size: 1.8em;
-    }
-}
-@media screen and (min-width:640px) and (max-width:959px) {
-    .Face {
-        margin-top: 10%;
-        margin-bottom: 10%;
-    }
-    .Face h1 {
-        font-size: 3em;
-    }
-    .Face h2 {
-        margin-top: 0.2em;
-        font-size: 3em;
     }
 }
 @media screen and (min-width:960px) and (max-width:1279px) {
@@ -140,8 +144,8 @@ a {
         font-size: 3em;
     }
     .Face h2 {
-        margin-top: 0.2em;
-        font-size: 3em;
+        margin-top: 0.5em;
+        font-size: 1.6em;
     }
 }
 @media screen and (min-width:1280px) and (max-width:1599px) {
@@ -153,7 +157,7 @@ a {
     }
     .Face h2 {
         margin-top: 0.2em;
-        font-size: 3em;
+        font-size: 1.8em;
     }
 }
 @media screen and (min-width:1600px) {
@@ -161,11 +165,11 @@ a {
         margin-top: 10%;
     }
     .Face h1 {
-        font-size: 3em;
+        font-size: 2.5em;
     }
     .Face h2 {
         margin-top: 0.2em;
-        font-size: 2.2em;
+        font-size: 1.8em;
     }
 }
 
@@ -182,47 +186,43 @@ a {
 }
 @media screen and (max-width:320px) {
     .About {
-        margin: 1em auto;
+        margin: 1em 1em 1em 1em;
     }
-
     .About h1 {
         font-size: 2.5em;
-        margin-top: 1em;
-        margin-bottom: 1em;
     }
 
     .About p {
         font-size: 18px;
         margin: 18px 1em;
+        text-align: justify;
     }
 }
 @media screen and (min-width:321px) and (max-width:639px) {
     .About {
-        margin: 1em auto;
+        margin: 1em 1em 1em 1em;
     }
     .About h1 {
         font-size: 2.5em;
-        margin-top: 1em;
-        margin-bottom: 1em;
     }
     .About p {
         font-size: 18px;
         margin: 18px 1em;
+        text-align: justify;
     }
 }
 @media screen and (min-width:640px) and (max-width:959px) {
     .About {
-        width: 70%;
-        margin: 0 auto;
+        margin: 1em 2em 1em 3em;
     }
     .About h1 {
         font-size: 2.5em;
-        margin-bottom: 1em;
     }
     .About p {
         font-size: 1.1em;
         margin-top: 18px;
         margin-bottom: 18px;
+        text-align: justify;
     }
 }
 @media screen and (min-width:960px) and (max-width:1279px) {
@@ -231,7 +231,7 @@ a {
         margin: 0 auto;
     }
     .About h1 {
-        margin-top: 6em;
+        margin-top: 2em;
         font-size: 2.5em;
         margin-bottom: 1em;
     }
@@ -239,6 +239,7 @@ a {
         font-size: 1.1em;
         margin-top: 18px;
         margin-bottom: 18px;
+        text-align: justify;
     }
 }
 @media screen and (min-width:1280px) and (max-width:1599px) {
@@ -247,7 +248,7 @@ a {
         margin: 0 auto;
     }
     .About h1 {
-        margin-top: 6em;
+        margin-top: 4em;
         font-size: 2.5em;
         margin-bottom: 1em;
     }
@@ -255,6 +256,7 @@ a {
         font-size: 1.1em;
         margin-top: 18px;
         margin-bottom: 18px;
+        text-align: justify;
     }
 }
 @media screen and (min-width:1600px) {
@@ -271,6 +273,7 @@ a {
         font-size: 1.1em;
         margin-top: 18px;
         margin-bottom: 18px;
+        text-align: justify;
     }
 }
 
@@ -281,6 +284,7 @@ a {
 }
 .Works b {
     background: white;
+    font-weight: 500;
 }
 .Works h1 {
     text-align: center;
@@ -305,30 +309,29 @@ a {
 }
 @media screen and (min-width:321px) and (max-width:639px) {
     .Works {
-        margin-top: 6em;
-        margin-bottom: 5em;
+        margin-top: 4em;
+        margin-bottom: 3em;
     }
     .Works h1 {
-        margin-bottom: 1em;
+        margin: 0 0 1em 0em;
         font-size: 2.5em;
     }
     .WorksPlaceholder {
-        margin: 0 auto;
-        width: 50%;
+        display: inline-block;
     }
 }
 @media screen and (min-width:640px) and (max-width:959px) {
     .Works {
         margin-top: 6em;
         margin-bottom: 5em;
-        height: 50em;
     }
     .Works h1 {
         font-size: 2.5em;
     }
     .WorksPlaceholder {
-        margin-top: 3em;
-        justify-content: center;
+        display: block;
+        width: 40em;
+        margin: auto;
     }
 }
 @media screen and (min-width:960px) and (max-width:1279px) {
@@ -340,6 +343,8 @@ a {
         font-size: 2.5em;
     }
     .WorksPlaceholder {
+        margin-left: 2em;
+        margin-right: 2em;
         display: flex;
         justify-content: center;
     }
@@ -353,6 +358,7 @@ a {
         font-size: 2.5em;
     }
     .WorksPlaceholder {
+        margin-top: 2em;
         display: flex;
         justify-content: center;
     }
@@ -420,14 +426,14 @@ a {
 .Card:focus img:nth-child(1) {
     display: none;
 }
-.Card:focus {
-    transform: scale(0.85);
-    transition-duration: 0.1s;
-}
-.Card:active {
-    transform: scale(0.85);
-    transition-duration: 0.1s;
-}
+/*.Card:focus {*/
+/*    transform: scale(0.85);*/
+/*    transition-duration: 0.1s;*/
+/*}*/
+/*.Card:active {*/
+/*    transform: scale(0.85);*/
+/*    transition-duration: 0.1s;*/
+/*}*/
 @media screen and (max-width:320px) {
     *{
         -ms-touch-action: manipulation;
@@ -439,20 +445,6 @@ a {
     .Card img:nth-child(1) {
         display: none;
     }
-    .Card:focus {
-        transform: scale(0.85);
-        transition-duration: 0.1s;
-    }
-    .Card:active {
-        transform: scale(0.85);
-        transition-duration: 0.1s;
-    }
-    .Card:focus img:nth-child(2) {
-        display: inline;
-    }
-    .Card:focus img:nth-child(1) {
-        display: none;
-    }
 
 }
 @media screen and (min-width:321px) and (max-width:639px) {
@@ -461,23 +453,10 @@ a {
         touch-action: manipulation;
     }
     .Card {
-        margin: 0.5em 0.5em 2em;
+        margin: 1em 0.5em 3em;
+        width: 15em;
     }
     .Card img:nth-child(1) {
-        display: none;
-    }
-    .Card:focus {
-        transform: scale(0.85);
-        transition-duration: 0.1s;
-    }
-    .Card:active {
-        transform: scale(0.85);
-        transition-duration: 0.1s;
-    }
-    .Card:focus img:nth-child(2) {
-        display: inline;
-    }
-    .Card:focus img:nth-child(1) {
         display: none;
     }
 
@@ -488,7 +467,10 @@ a {
         touch-action: manipulation;
     }
     .Card {
-        margin: 0.5em 0.5em 2em;
+        margin: 3em 2em 1em;
+        width: 14em;
+        height: 15em;
+        display: inline-block;
     }
     .Card img:nth-child(1) {
         display: none;
@@ -514,7 +496,8 @@ a {
         touch-action: manipulation;
     }
     .Card {
-        margin: 0.5em 0.5em 2em;
+        margin: 3em 1em 2em;
+        width: 12em;
     }
     .Card img:nth-child(1) {
         display: none;
@@ -613,13 +596,14 @@ a {
 }
 .Contact h1 {
     text-align: center;
+    margin-bottom: 0.5em;
 }
 .Contact p {
     text-align: center;
 }
 .Contact h2 {
-    font-weight: bold;
     text-align: center;
+    font-weight: 500;
 }
 @media screen and (max-width:320px) {
     .Contact h1 {
@@ -652,7 +636,13 @@ a {
         font-size: 2.5em;
     }
     .Contact p {
+        margin-top: 0.3em;
+        margin-bottom: 0.3em;
+        margin-left: auto;
         font-size: 1.5em;
+    }
+    .Contact h2 {
+        font-size: 1.2em;
     }
 }
 @media screen and (min-width:960px) and (max-width:1279px) {
@@ -704,6 +694,7 @@ a {
     }
     .Footer p {
         margin-bottom: 1em;
+        font-size: 1.1em;
     }
 }
 @media screen and (min-width:960px) and (max-width:1279px) {
@@ -712,6 +703,7 @@ a {
     }
     .Footer p {
         margin-bottom: 1em;
+        font-size: 1.1em;
     }
 }
 @media screen and (min-width:1280px) and (max-width:1599px) {
@@ -720,6 +712,7 @@ a {
     }
     .Footer p {
         margin-bottom: 1em;
+        font-size: 1.1em;
     }
 }
 @media screen and (min-width:1600px) {
@@ -728,5 +721,6 @@ a {
     }
     .Footer p {
         margin-bottom: 1em;
+        font-size: 1.1em;
     }
 }
