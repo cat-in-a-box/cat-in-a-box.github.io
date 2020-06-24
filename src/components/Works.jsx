@@ -6,7 +6,7 @@ const Works = () => {
         <ScrollableAnchor id={'section3'}>
             <div className="Works"><h1>Мои работы</h1>
                 <div className="WorksPlaceholder">
-                    <a href="https://cat-in-a-box.github.io/mousewheel_checker/" className="Card">
+                    <a href="https://cat-in-a-box.github.io/mousewheel-checker/" className="Card">
                         <img src={"pics/mouse.png"} alt="MouseIcon"/>
                         <img src={"pics/mouse2.png"} alt="MouseIcon2"/>
                         <div className="CardContainer">
