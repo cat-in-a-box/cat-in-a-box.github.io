@@ -11,7 +11,7 @@ const Works = () => {
                         <img src={"pics/mouse2.png"} alt="MouseIcon2"/>
                         <div className="CardContainer">
                             <h3><b>Mousewheel Check</b></h3>
-                            <h4>Страничка для проверки колеса мыши</h4>
+                            <h4>Диагностика колеса мышки (часто ломается)</h4>
                         </div>
                     </a>
                     <a href="https://cat-in-a-box.github.io/calculator" className="Card">
@@ -38,7 +38,7 @@ const Works = () => {
                         <div className="CardContainer">
                             <h3><b>Snake</b></h3>
                             <h4>Двигай змею по полю</h4>
-                            <h4>Ешь квадратные ягодки</h4>
+                            <h4>Ешь квадратные колбаски</h4>
                         </div>
                     </a>
                 </div>
