@@ -415,6 +415,8 @@ a {
     font-weight: normal;
     background: white;
     margin: 0.8em;
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 0.9em;
 }
 .Card img:nth-child(1) {
@@ -441,6 +443,7 @@ a {
     }
     .Card {
         margin: 0.5em 0.5em 2em;
+        padding-bottom: 1em;
     }
     .Card img:nth-child(1) {
         display: none;
@@ -455,6 +458,7 @@ a {
     .Card {
         margin: 1em 0.5em 3em;
         width: 15em;
+        padding-bottom: 1em;
     }
     .Card img:nth-child(1) {
         display: none;
@@ -469,7 +473,7 @@ a {
     .Card {
         margin: 3em 2em 1em;
         width: 14em;
-        height: 15em;
+        height: 14em;
         display: inline-block;
     }
     .Card img:nth-child(1) {
@@ -498,6 +502,7 @@ a {
     .Card {
         margin: 3em 1em 2em;
         width: 12em;
+        height: 12em;
     }
     .Card img:nth-child(1) {
         display: none;
@@ -521,7 +526,7 @@ a {
     .Card {
         margin: 2em;
         width: 14em;
-        height: 17em;
+        height: 16em;
         border-radius: 2em;
     }
     .CardContainer {
@@ -543,9 +548,10 @@ a {
     }
     .Card h3 {
         font-size: 1.2em;
+        margin-bottom: 0.3em;
     }
     .Card h4 {
-        margin-top: 0.8em;
+        /*margin-top: 0.1em;*/
     }
     .Card:hover {
         transform: scale(1.03);
@@ -555,7 +561,7 @@ a {
     .Card {
         margin: 2em;
         width: 14em;
-        height: 17em;
+        height: 16em;
         border-radius: 2em;
     }
     .CardContainer {
@@ -577,9 +583,10 @@ a {
     }
     .Card h3 {
         font-size: 1.2em;
+        margin-bottom: 0.3em;
     }
     .Card h4 {
-        margin-top: 0.8em;
+        /*margin-top: 0.8em;*/
     }
     .Card:hover {
         transform: scale(1.03);
@@ -591,7 +598,6 @@ a {
 /** CONTACT **/
 /** CONTACT **/
 .Contact {
-    text-align: center;
     border: black;
 }
 .Contact h1 {
@@ -708,7 +714,7 @@ a {
 }
 @media screen and (min-width:1280px) and (max-width:1599px) {
     .Footer {
-        margin-top: 7em;
+        margin-top: 6em;
     }
     .Footer p {
         margin-bottom: 1em;
