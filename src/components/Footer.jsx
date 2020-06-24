@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
     return (
         <div className="Footer">
-            <p>Developed in 2019</p>
+            <p>Developed with React - Hosted on GitHub</p>
         </div>
     )
 };
