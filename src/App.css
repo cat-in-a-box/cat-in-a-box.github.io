@@ -572,7 +572,7 @@ a {
     .Card {
         margin: 2em;
         width: 14em;
-        height: 16em;
+        height: 17em;
         border-radius: 2em;
     }
     .CardContainer {
@@ -610,7 +610,7 @@ a {
 /** TECHNOLOGIES **/
 .Technologies {
     width: 20em;
-    font-size: 1.5em;
+    font-size: 1.4em;
     margin: 2em auto 2em;
 }
 .TechnologiesIconPlaceHolder {
@@ -634,7 +634,7 @@ a {
     transform: scale(1.1);
 }
 .Popup {
-    font-size: 0.8em;
+    font-size: 0.75em;
     position: absolute;
     width: 7em;
     transform: translateX(-2.45em);
