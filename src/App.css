@@ -634,18 +634,16 @@ a {
     transform: scale(1.1);
 }
 .Popup {
-    font-size: 0.75em;
+    font-size: 0.76em;
     position: absolute;
     width: 7em;
     transform: translateX(-2.45em);
     display: none;
-    border-style: solid;
-    border-color: rgb(116, 116, 116);
     border-radius: 2em;
-    border-width: 0.1em;
     padding: 0.3em;
     box-shadow: rgb(211, 211, 211) 1px 1px 1px;
-    background: rgba(255, 255, 255, 0.7);
+    background: rgb(255, 255, 255);
+    border: 0.1em solid rgba(75, 71, 71, 0.42);
 }
 
 @media screen and (max-width:320px) {
