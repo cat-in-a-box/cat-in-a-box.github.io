@@ -439,14 +439,14 @@ a {
 .Card:focus img:nth-child(1) {
     display: none;
 }
-/*.Card:focus {*/
-/*    transform: scale(0.85);*/
-/*    transition-duration: 0.1s;*/
-/*}*/
-/*.Card:active {*/
-/*    transform: scale(0.85);*/
-/*    transition-duration: 0.1s;*/
-/*}*/
+.Card:focus {
+    /*transform: scale(0.85);*/
+    /*transition-duration: 0.1s;*/
+}
+.Card:active {
+    /*transform: scale(0.85);*/
+    /*transition-duration: 0.1s;*/
+}
 @media screen and (max-width:320px) {
     *{
         -ms-touch-action: manipulation;
@@ -605,6 +605,137 @@ a {
 
 }
 
+
+/** TECHNOLOGIES **/
+/** TECHNOLOGIES **/
+.Technologies {
+    width: 20em;
+    font-size: 1.5em;
+    margin: 2em auto 2em;
+}
+.TechnologiesIconPlaceHolder {
+    margin-top: 1em;
+    width: 20em;
+}
+.TechnologiesIcon {
+    transition-delay: 0s;
+    transition-duration: 0.2s;
+    transition-property: all;
+    transition-timing-function: ease;
+    width: 2em;
+    display: inline-block;
+    margin: 0 1.5em 0 1.5em;
+    text-align: center;
+}
+.TechnologiesIcon:hover .Popup{
+    display: block;
+}
+.TechnologiesIcon:hover{
+    transform: scale(1.1);
+}
+.Popup {
+    font-size: 0.8em;
+    position: absolute;
+    width: 7em;
+    transform: translateX(-2.45em);
+    display: none;
+    border-style: solid;
+    border-color: rgb(116, 116, 116);
+    border-radius: 2em;
+    border-width: 0.1em;
+    padding: 0.3em;
+    box-shadow: rgb(211, 211, 211) 1px 1px 1px;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+@media screen and (max-width:320px) {
+    .Technologies {
+        font-size: 1.5em;
+        margin: auto;
+        width: 70%;
+    }
+    .TechnologiesIconPlaceHolder {
+        margin: 1em auto;
+        width: 5em;
+    }
+    .TechnologiesIcon {
+        margin: 0;
+        transform: scale(0.75);
+    }
+}
+@media screen and (min-width:321px) and (max-width:639px) {
+    .Technologies {
+        font-size: 1.5em;
+        margin: auto;
+        width: 90%;
+    }
+
+    .TechnologiesIconPlaceHolder {
+        margin: 1em auto;
+        width: 80%;
+    }
+
+    .TechnologiesIcon {
+        margin: 0 0.3em 0 0.3em;
+    }
+
+    .TechnologiesIcon:hover {
+        transform: none;
+    }
+
+    .TechnologiesIcon:focus {
+        transform: none;
+    }
+
+    .TechnologiesIcon:active {
+        transform: none;
+    }
+
+    .TechnologiesIcon:hover .Popup {
+        display: none;
+    }
+}
+@media screen and (min-width:640px) and (max-width:959px) {
+    .Technologies {
+        font-size: 1.5em;
+        margin: auto;
+        width: 90%;
+    }
+
+    .TechnologiesIconPlaceHolder {
+        margin: 1.5em auto;
+        width: 22em;
+    }
+
+    .TechnologiesIcon {
+        margin: 0 1.5em 0 1.5em;
+    }
+
+    .TechnologiesIcon:hover {
+        transform: none;
+    }
+
+    .TechnologiesIcon:focus {
+        transform: none;
+    }
+
+    .TechnologiesIcon:active {
+        transform: none;
+    }
+
+    .TechnologiesIcon:hover .Popup {
+        display: none;
+    }
+}
+@media screen and (min-width:960px) and (max-width:1279px) {
+
+}
+@media screen and (min-width:1280px) and (max-width:1599px) {
+
+}
+@media screen and (min-width:1600px) {
+
+}
 
 /** CONTACT **/
 /** CONTACT **/

@@ -5,6 +5,26 @@ const Works = () => {
     return [
         <ScrollableAnchor id={'section3'}>
             <div className="Works"><h1>Мои работы</h1>
+                <div className="Technologies">
+                    <div className="TechnologiesIconPlaceHolder">
+                        <div className="TechnologiesIcon">
+                            <img src={"pics/code.png"} alt="React" width="50px"/>
+                            <div className="Popup">HTML и CSS</div>
+                        </div>
+                        <div className="TechnologiesIcon">
+                            <img src={"pics/javascript.png"} alt="React" width="50px"/>
+                            <div className="Popup">JavaScript</div>
+                        </div>
+                        <div className="TechnologiesIcon">
+                            <img src={"pics/react.png"} alt="React" width="50px"/>
+                            <div className="Popup">React</div>
+                        </div>
+                        <div className="TechnologiesIcon">
+                            <img src={"pics/responsive.png"} alt="React" width="50px"/>
+                            <div className="Popup">Адаптивность</div>
+                        </div>
+                    </div>
+                </div>
                 <div className="WorksPlaceholder">
                     <a href="https://cat-in-a-box.github.io/mousewheel-checker/" className="Card">
                         <img src={"pics/mouse.png"} alt="MouseIcon"/>
