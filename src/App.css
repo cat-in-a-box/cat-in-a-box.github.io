@@ -41,7 +41,7 @@ a {
     font-size: 1.3em;
 }
 .Header a:hover {
-    font-weight: bolder;
+    font-weight: 500;
 }
 @media screen and (max-width:320px) {
     .Header {
