@@ -2,31 +2,11 @@ import React from "react";
 import ScrollableAnchor from 'react-scrollable-anchor'; // якоря для движения по странице
 
 const Works = () => {
-    return [
+    return (
         <ScrollableAnchor id={'section3'}>
-            <div className="Works"><h1>Мои работы</h1>
-                <div className="Technologies">
-                    <div className="TechnologiesIconPlaceHolder">
-                        <div className="TechnologiesIcon">
-                            <img src={"pics/code.png"} alt="React" width="50px"/>
-                            <div className="Popup">HTML и CSS</div>
-                        </div>
-                        <div className="TechnologiesIcon">
-                            <img src={"pics/javascript.png"} alt="React" width="50px"/>
-                            <div className="Popup">JavaScript</div>
-                        </div>
-                        <div className="TechnologiesIcon">
-                            <img src={"pics/react.png"} alt="React" width="50px"/>
-                            <div className="Popup">React</div>
-                        </div>
-                        <div className="TechnologiesIcon">
-                            <img src={"pics/responsive.png"} alt="React" width="50px"/>
-                            <div className="Popup">Адаптивность</div>
-                        </div>
-                    </div>
-                </div>
+            <div className="Works"><h1>Небольшие поделки</h1>
                 <div className="WorksPlaceholder">
-                    <a href="https://cat-in-a-box.github.io/mousewheel-checker/" className="Card">
+                    <a href="https://cat-in-a-box.github.io/mousewheel-checker/"  target="_blank" rel="noopener noreferrer" className="Card">
                         <img src={"pics/mouse.png"} alt="MouseIcon"/>
                         <img src={"pics/mouse2.png"} alt="MouseIcon2"/>
                         <div className="CardContainer">
@@ -34,7 +14,7 @@ const Works = () => {
                             <h4>Диагностика колеса мышки (часто ломается)</h4>
                         </div>
                     </a>
-                    <a href="https://cat-in-a-box.github.io/calculator" className="Card">
+                    <a href="https://cat-in-a-box.github.io/calculator" target="_blank" rel="noopener noreferrer" className="Card">
                         <img src={"pics/calculator.png"} alt="CaloriesIcon"/>
                         <img src={"pics/calculator2.png"} alt="CaloriesIcon2"/>
                         <div className="CardContainer">
@@ -43,7 +23,7 @@ const Works = () => {
                             <h4>Считай цифры</h4>
                         </div>
                     </a>
-                    <a href="https://cat-in-a-box.github.io/gallery-react/" className="Card">
+                    <a href="https://cat-in-a-box.github.io/gallery-react/" target="_blank" rel="noopener noreferrer" className="Card">
                         <img src={"pics/paw.png"} alt="PawIcon" width="150px"/>
                         <img src={"pics/paw2.png"} alt="PawIcon2" width="150px"/>
                         <div className="CardContainer">
@@ -52,7 +32,7 @@ const Works = () => {
                             <h4>Все любят котов</h4>
                         </div>
                     </a>
-                    <a href="https://cat-in-a-box.github.io/snake-game/" className="Card">
+                    <a href="https://cat-in-a-box.github.io/snake-game/" target="_blank" rel="noopener noreferrer" className="Card">
                         <img src={"pics/snake.png"} alt="ChickenIcon" width="180px"/>
                         <img src={"pics/snake2.png"} alt="ChickenIcon2" width="180px"/>
                         <div className="CardContainer">
@@ -64,7 +44,7 @@ const Works = () => {
                 </div>
             </div>
         </ScrollableAnchor>
-    ];
+    );
 };
 
 export default Works;

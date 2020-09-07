@@ -10,6 +10,8 @@ import "./App.css";
 import Header from './components/Header.jsx';
 import Face from "./components/Face.jsx";
 import About from "./components/About.jsx";
+import Technologies from "./components/Technologies.jsx";
+import Projects from "./components/Projects.jsx";
 import Works from "./components/Works.jsx";
 import Footer from "./components/Footer.jsx";
 import Contact from "./components/Contact.jsx";
@@ -21,6 +23,8 @@ function App() {
             <Header/>
             <Face/>
             <About/>
+            <Technologies/>
+            <Projects/>
             <Works/>
             <Contact/>
             <Footer/>
