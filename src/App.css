@@ -324,7 +324,7 @@ a {
         margin-bottom: 3em;
     }
     .Works h1 {
-        margin: 0 0 1em 0em;
+        margin: 0 0 1em 0;
         font-size: 2.5em;
     }
     .WorksPlaceholder {
@@ -388,6 +388,358 @@ a {
     }
 }
 
+/** TECHNOLOGIES **/
+/** TECHNOLOGIES **/
+.Technologies {
+    width: 40em;
+    margin: 6em auto 2em;
+    text-align: center;
+}
+.Technologies h1 {
+    font-size: 2.5em;
+}
+.TechnologiesIconPlaceHolder {
+    margin: 3em auto;
+    text-align: center;
+    width: 40em;
+}
+.TechnologiesIcon {
+    align-content: center;
+    transform: scale(1.3);
+    transition-delay: 0s;
+    transition-duration: 0.15s;
+    transition-property: all;
+    transition-timing-function: ease;
+    display: inline-block;
+    margin: 0 2em 0 2em;
+}
+.TechnologiesIcon:hover .Popup{
+    display: block;
+}
+.TechnologiesIcon:hover{
+    transform: scale(1.45);
+}
+.Popup {
+    font-size: 0.9em;
+    position: absolute;
+    width: 7em;
+    margin: 0 auto;
+    transform: translateX(-2.05em);
+    display: none;
+    border-radius: 2em;
+    padding: 0.3em;
+    box-shadow: rgb(211, 211, 211) 1px 1px 1px;
+    background: rgb(255, 255, 255);
+    border: 0.1em solid rgba(75, 71, 71, 0.42);
+}
+
+@media screen and (max-width:320px) {
+    .Technologies {
+        font-size: 1.5em;
+        margin: auto;
+        width: 70%;
+    }
+    .TechnologiesIconPlaceHolder {
+        margin: 1em auto;
+        width: 5em;
+    }
+    .TechnologiesIcon {
+        margin: 0;
+        transform: scale(0.75);
+    }
+}
+@media screen and (min-width:321px) and (max-width:639px) {
+    .Technologies {
+        margin: auto;
+        width: 90%;
+    }
+
+    .TechnologiesIconPlaceHolder {
+        margin: 1em auto;
+        width: 90%;
+    }
+
+    .TechnologiesIcon {
+        margin: 0 1.5em 0 1.5em;
+    }
+
+    .TechnologiesIcon:hover {
+        transform: none;
+    }
+
+    .TechnologiesIcon:focus {
+        transform: none;
+    }
+
+    .TechnologiesIcon:active {
+        transform: none;
+    }
+
+    .TechnologiesIcon:hover .Popup {
+        display: none;
+    }
+}
+@media screen and (min-width:640px) and (max-width:959px) {
+    .Technologies {
+        font-size: 1.5em;
+        margin: auto;
+        width: 90%;
+    }
+
+    .TechnologiesIconPlaceHolder {
+        margin: 1.5em auto;
+        width: 22em;
+    }
+
+    .TechnologiesIcon {
+        margin: 0 1.5em 0 1.5em;
+    }
+
+    .TechnologiesIcon:hover {
+        transform: none;
+    }
+
+    .TechnologiesIcon:focus {
+        transform: none;
+    }
+
+    .TechnologiesIcon:active {
+        transform: none;
+    }
+
+    .TechnologiesIcon:hover .Popup {
+        display: none;
+    }
+}
+@media screen and (min-width:960px) and (max-width:1279px) {
+
+}
+@media screen and (min-width:1280px) and (max-width:1599px) {
+
+}
+@media screen and (min-width:1600px) {
+
+}
+
+/** ProjectsCard **/
+/** ProjectsCard **/
+.ProjectsCard {
+    box-shadow: rgb(211, 211, 211) 2px 2px 30px;
+    font-family: "Cormorant Garamond", serif;
+    width: fit-content;
+    text-align: center;
+    transition-delay: 0s;
+    transition-duration: 0.1s;
+    transition-property: all;
+    transition-timing-function: ease;
+    border-radius: 2em;
+    display: block;
+    text-decoration: none;
+    background: white;
+    border: 1px solid rgba(75, 71, 71, 0.349);
+    overflow: hidden;
+    outline: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+.ProjectsCardContainer {
+    background: white;
+}
+.ProjectsCard img {
+    margin: 1.5em;
+
+    background: white;
+}
+.ProjectsCard h3 {
+    font-size: 1.1em;
+    background: white;
+}
+.ProjectsCard h4 {
+    font-weight: normal;
+    background: white;
+    font-size: 1em;
+}
+.ProjectsCard img:nth-child(1) {
+    display: inline;
+}
+.ProjectsCard:focus img:nth-child(2) {
+    display: inline;
+}
+.ProjectsCard:focus img:nth-child(1) {
+    display: none;
+}
+.ProjectsCard:focus {
+    /*transform: scale(0.85);*/
+    /*transition-duration: 0.1s;*/
+}
+.ProjectsCard:active {
+    /*transform: scale(0.85);*/
+    /*transition-duration: 0.1s;*/
+}
+
+@media screen and (max-width:320px) {
+    *{
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+    }
+    .ProjectsCard {
+        margin: 0.5em 0.5em 2em;
+        padding-bottom: 1em;
+    }
+    .ProjectsCard img:nth-child(1) {
+        display: none;
+    }
+
+}
+@media screen and (min-width:321px) and (max-width:639px) {
+    *{
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+    }
+    .ProjectsCard {
+        margin: 1em 0.5em 3em;
+        width: 15em;
+        height: 12em;
+        padding-bottom: 1em;
+    }
+    .ProjectsCard img {
+        margin: 1.5em;
+        width: 60%;
+    }
+    .ProjectsCard img:nth-child(1) {
+        display: none;
+    }
+
+}
+@media screen and (min-width:640px) and (max-width:959px) {
+    *{
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+    }
+    .ProjectsCard {
+        margin: 3em 2em 1em;
+        width: 18em;
+        height: 13em;
+        display: inline-block;
+    }
+    .ProjectsCard img {
+        margin: 1.5em;
+        width: 70%;
+    }
+    .ProjectsCard img:nth-child(1) {
+        display: none;
+    }
+    .ProjectsCard:focus {
+        transform: scale(0.85);
+        transition-duration: 0.1s;
+    }
+    .ProjectsCard:active {
+        transform: scale(0.85);
+        transition-duration: 0.1s;
+    }
+    .ProjectsCard:focus img:nth-child(2) {
+        display: inline;
+    }
+    .ProjectsCard:focus img:nth-child(1) {
+        display: none;
+    }
+}
+@media screen and (min-width:960px) and (max-width:1279px) {
+    *{
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+    }
+    .ProjectsCard {
+        margin: 3em 1em 2em;
+        width: 18em;
+        height: 13em;
+    }
+    .ProjectsCard img {
+        margin: 1.5em;
+        width: 70%;
+    }
+    .ProjectsCard img:nth-child(1) {
+        display: none;
+    }
+    .ProjectsCard:focus {
+        transform: scale(0.85);
+        transition-duration: 0.1s;
+    }
+    .ProjectsCard:active {
+        transform: scale(0.85);
+        transition-duration: 0.1s;
+    }
+    .ProjectsCard:focus img:nth-child(2) {
+        display: inline;
+    }
+    .ProjectsCard:focus img:nth-child(1) {
+        display: none;
+    }
+}
+@media screen and (min-width:1280px) and (max-width:1599px) {
+    .ProjectsCard {
+        margin: 2em;
+        width: 24em;
+        height: 15em;
+        border-radius: 2em;
+    }
+    .ProjectsCardContainer {
+        margin: 2px 16px;
+    }
+    .ProjectsCard img {
+        margin: 1.5em;
+        width: 60%;
+    }
+    .ProjectsCard img:nth-child(2) {
+        display: none;
+    }
+    .ProjectsCard:hover img:nth-child(2) {
+        display: inline;
+    }
+    .ProjectsCard:hover img:nth-child(1) {
+        display: none;
+    }
+    .ProjectsCard h3 {
+        font-size: 1.2em;
+        margin-bottom: 0.3em;
+    }
+    .ProjectsCard h4 {
+        /*margin-top: 0.1em;*/
+    }
+    .ProjectsCard:hover {
+        transform: scale(1.03);
+    }
+}
+@media screen and (min-width:1600px) {
+
+    .ProjectsCard {
+        margin: 2em;
+        width: 26em;
+        height: 13em;
+        border-radius: 2em;
+    }
+    .ProjectsCardContainer {
+        margin: 2px 16px;
+    }
+    .ProjectsCard img {
+        margin-top: 5%;
+        width: 12em;
+    }
+    .ProjectsCard:hover {
+        transform: scale(1.03);
+    }
+    .ProjectsCard img:nth-child(2) {
+        display: none;
+    }
+    .ProjectsCard:hover img:nth-child(2) {
+        display: inline;
+    }
+    .ProjectsCard:hover img:nth-child(1) {
+        display: none;
+    }
+
+}
+
 /** CARD **/
 /** CARD **/
 .Card {
@@ -396,7 +748,7 @@ a {
     width: fit-content;
     text-align: center;
     transition-delay: 0s;
-    transition-duration: 0.2s;
+    transition-duration: 0.1s;
     transition-property: all;
     transition-timing-function: ease;
     border-radius: 2em;
@@ -606,134 +958,7 @@ a {
 }
 
 
-/** TECHNOLOGIES **/
-/** TECHNOLOGIES **/
-.Technologies {
-    width: 20em;
-    font-size: 1.4em;
-    margin: 2em auto 2em;
-}
-.TechnologiesIconPlaceHolder {
-    margin-top: 1em;
-    width: 20em;
-}
-.TechnologiesIcon {
-    transition-delay: 0s;
-    transition-duration: 0.2s;
-    transition-property: all;
-    transition-timing-function: ease;
-    width: 2em;
-    display: inline-block;
-    margin: 0 1.5em 0 1.5em;
-    text-align: center;
-}
-.TechnologiesIcon:hover .Popup{
-    display: block;
-}
-.TechnologiesIcon:hover{
-    transform: scale(1.1);
-}
-.Popup {
-    font-size: 0.76em;
-    position: absolute;
-    width: 7em;
-    transform: translateX(-2.45em);
-    display: none;
-    border-radius: 2em;
-    padding: 0.3em;
-    box-shadow: rgb(211, 211, 211) 1px 1px 1px;
-    background: rgb(255, 255, 255);
-    border: 0.1em solid rgba(75, 71, 71, 0.42);
-}
 
-@media screen and (max-width:320px) {
-    .Technologies {
-        font-size: 1.5em;
-        margin: auto;
-        width: 70%;
-    }
-    .TechnologiesIconPlaceHolder {
-        margin: 1em auto;
-        width: 5em;
-    }
-    .TechnologiesIcon {
-        margin: 0;
-        transform: scale(0.75);
-    }
-}
-@media screen and (min-width:321px) and (max-width:639px) {
-    .Technologies {
-        font-size: 1.5em;
-        margin: auto;
-        width: 90%;
-    }
-
-    .TechnologiesIconPlaceHolder {
-        margin: 1em auto;
-        width: 80%;
-    }
-
-    .TechnologiesIcon {
-        margin: 0 0.3em 0 0.3em;
-    }
-
-    .TechnologiesIcon:hover {
-        transform: none;
-    }
-
-    .TechnologiesIcon:focus {
-        transform: none;
-    }
-
-    .TechnologiesIcon:active {
-        transform: none;
-    }
-
-    .TechnologiesIcon:hover .Popup {
-        display: none;
-    }
-}
-@media screen and (min-width:640px) and (max-width:959px) {
-    .Technologies {
-        font-size: 1.5em;
-        margin: auto;
-        width: 90%;
-    }
-
-    .TechnologiesIconPlaceHolder {
-        margin: 1.5em auto;
-        width: 22em;
-    }
-
-    .TechnologiesIcon {
-        margin: 0 1.5em 0 1.5em;
-    }
-
-    .TechnologiesIcon:hover {
-        transform: none;
-    }
-
-    .TechnologiesIcon:focus {
-        transform: none;
-    }
-
-    .TechnologiesIcon:active {
-        transform: none;
-    }
-
-    .TechnologiesIcon:hover .Popup {
-        display: none;
-    }
-}
-@media screen and (min-width:960px) and (max-width:1279px) {
-
-}
-@media screen and (min-width:1280px) and (max-width:1599px) {
-
-}
-@media screen and (min-width:1600px) {
-
-}
 
 /** CONTACT **/
 /** CONTACT **/
