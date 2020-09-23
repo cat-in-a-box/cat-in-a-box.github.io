@@ -1,26 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap');
 
-/*CSS в Реакте не хочет грузить бэкграунд из public, ругается на это.
-Поэтому добавил в src/components, оттуда грузит нормально*/
-
 * {
     margin: 0;
     padding: 0;
     font-family: 'Jost', serif;
     font-weight: normal;
-    background-image: url(components/files/Background.jpg);
+    background-image: url(components/home/files/Background.jpg);
     background-repeat: repeat;
     color: rgb(66, 66, 66);
 }
 
-input,
-textarea,
-button,
-select,
-a {
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
+input, textarea, button, select, a {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);  /* Убрать подсвечивание ссылок */
 }
-
 
 /** HEADER **/
 /** HEADER **/
@@ -34,24 +26,38 @@ a {
     display: inline-block;
     width: 10em;
 }
+.HeaderButton {
+    display: inline-block;
+}
 .Header a {
     letter-spacing: 1px;
     text-align: center;
     text-decoration: none;
     font-size: 1.3em;
+    overflow: visible;
 }
-.Header a:hover {
-    font-weight: 500;
+.HeaderButton a {
+    padding-bottom: 5px;
+    display: inline-block;
+    background: linear-gradient(#565656, #565656) no-repeat center bottom;
+    background-size: 0 2px;
+    transition: all 0.15s;
 }
-@media screen and (max-width:320px) {
-    .Header {
-        margin: auto;
-    }
-    .Header a:hover {
-        font-weight: normal;
-    }
+.HeaderButton a:hover {
+    background-size: 100% 2px;
 }
-@media screen and (min-width:321px) and (max-width:639px) {
+.HeaderBackButton a {
+    padding-bottom: 5px;
+    display: inline-block;
+    background: linear-gradient(#565656, #565656) no-repeat center bottom;
+    background-size: 0 2px;
+    transition: all 0.1s;
+}
+.HeaderBackButton a:hover {
+    background-size: 100% 2px;
+}
+
+@media screen and (max-width:639px) {
     .Header {
         margin: 0.3em auto;
         width: 80%;
@@ -86,6 +92,10 @@ a {
 @media screen and (min-width:1600px) {
 }
 
+/** *** *** *** *** **/
+/**    homepage     **/
+/** *** *** *** *** **/
+
 /** FACE **/
 /** FACE **/
 .Face {
@@ -112,19 +122,7 @@ a {
         transform: rotate(360deg);
     }
 }
-@media screen and (max-width:320px) {
-    .Face {
-        margin: 3em 2em 0 2em;
-    }
-    .Face h1 {
-        font-size: 2.5em;
-    }
-    .Face h2 {
-        margin-top: 0.2em;
-        font-size: 1.2em;
-    }
-}
-@media screen and (min-width:321px) and (max-width:639px) {
+@media screen and (max-width:639px) {
     .Face {
         margin: 2em 1.5em 0 1.5em;
         /*border-style: groove;*/
@@ -197,21 +195,7 @@ a {
 .About p {
     text-align: center;
 }
-@media screen and (max-width:320px) {
-    .About {
-        margin: 1em 1em 1em 1em;
-    }
-    .About h1 {
-        font-size: 2.5em;
-    }
-
-    .About p {
-        font-size: 18px;
-        margin: 18px 1em;
-        text-align: justify;
-    }
-}
-@media screen and (min-width:321px) and (max-width:639px) {
+@media screen and (max-width:639px) {
     .About {
         margin: 1em 1em 1em 1em;
     }
@@ -304,21 +288,7 @@ a {
 .WorksPlaceholder {
     text-align: center;
 }
-@media screen and (max-width:320px) {
-    .Works {
-        margin-top: 6em;
-        margin-bottom: 5em;
-    }
-    .Works h1 {
-        margin-bottom: 1em;
-        font-size: 2.5em;
-    }
-    .WorksPlaceholder {
-        margin: 0 auto;
-        width: 50%;
-    }
-}
-@media screen and (min-width:321px) and (max-width:639px) {
+@media screen and (max-width:639px) {
     .Works {
         margin-top: 4em;
         margin-bottom: 3em;
@@ -433,22 +403,7 @@ a {
     border: 0.1em solid rgba(75, 71, 71, 0.42);
 }
 
-@media screen and (max-width:320px) {
-    .Technologies {
-        font-size: 1.5em;
-        margin: auto;
-        width: 70%;
-    }
-    .TechnologiesIconPlaceHolder {
-        margin: 1em auto;
-        width: 5em;
-    }
-    .TechnologiesIcon {
-        margin: 0;
-        transform: scale(0.75);
-    }
-}
-@media screen and (min-width:321px) and (max-width:639px) {
+@media screen and (max-width:639px) {
     .Technologies {
         margin: auto;
         width: 90%;
@@ -577,21 +532,7 @@ a {
     /*transition-duration: 0.1s;*/
 }
 
-@media screen and (max-width:320px) {
-    *{
-        -ms-touch-action: manipulation;
-        touch-action: manipulation;
-    }
-    .ProjectsCard {
-        margin: 0.5em 0.5em 2em;
-        padding-bottom: 1em;
-    }
-    .ProjectsCard img:nth-child(1) {
-        display: none;
-    }
-
-}
-@media screen and (min-width:321px) and (max-width:639px) {
+@media screen and (max-width:639px) {
     *{
         -ms-touch-action: manipulation;
         touch-action: manipulation;
@@ -777,9 +718,7 @@ a {
 .Card h4 {
     font-weight: normal;
     background: white;
-    margin: 0.8em;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0 0.8em;
     font-size: 0.9em;
 }
 .Card img:nth-child(1) {
@@ -799,21 +738,7 @@ a {
     /*transform: scale(0.85);*/
     /*transition-duration: 0.1s;*/
 }
-@media screen and (max-width:320px) {
-    *{
-        -ms-touch-action: manipulation;
-        touch-action: manipulation;
-    }
-    .Card {
-        margin: 0.5em 0.5em 2em;
-        padding-bottom: 1em;
-    }
-    .Card img:nth-child(1) {
-        display: none;
-    }
-
-}
-@media screen and (min-width:321px) and (max-width:639px) {
+@media screen and (max-width:639px) {
     *{
         -ms-touch-action: manipulation;
         touch-action: manipulation;
@@ -957,9 +882,6 @@ a {
 
 }
 
-
-
-
 /** CONTACT **/
 /** CONTACT **/
 .Contact {
@@ -976,20 +898,7 @@ a {
     text-align: center;
     font-weight: 500;
 }
-@media screen and (max-width:320px) {
-    .Contact h1 {
-        font-size: 2em;
-    }
-    .Contact p {
-        margin-top: 0.3em;
-        margin-bottom: 0.3em;
-        font-size: 1.2em;
-    }
-    .Contact h2 {
-        font-size: 1.2em;
-    }
-}
-@media screen and (min-width:321px) and (max-width:639px) {
+@media screen and (max-width:639px) {
     .Contact h1 {
         font-size: 2em;
     }
@@ -1047,13 +956,7 @@ a {
     text-align: center;
     border: black;
 }
-@media screen and (max-width:320px) {
-    .Footer p {
-        margin-top: 5em;
-        margin-bottom: 1em;
-    }
-}
-@media screen and (min-width:321px) and (max-width:639px) {
+@media screen and (max-width:639px) {
     .Footer p {
         margin-top: 5em;
         margin-bottom: 1em;
@@ -1095,4 +998,819 @@ a {
         margin-bottom: 1em;
         font-size: 0.9em;
     }
+}
+
+
+
+/** *** *** *** *** **/
+/**   calculator    **/
+/** *** *** *** *** **/
+
+/** CALCULATOR **/
+/** CALCULATOR **/
+.Calculator {
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 0.3em;
+    border-style: solid;
+    border-radius: 3em;
+    background: rgba(21, 90, 125, 0.11) !important;
+}
+@media screen and (max-width:320px) {
+    .Calculator {
+        transform: scale(0.8);
+        width: 80%;
+        /*height: 75%;*/
+        margin: 0 auto 0;
+    }
+}
+@media screen and (min-width:321px) and (max-width:639px) {
+    .Calculator {
+        width: 18em;
+        height: 75%;
+        margin: 2.5em auto 0;
+    }
+}
+@media screen and (min-width:640px) and (max-width:959px) {
+    .Calculator {
+        width: 45%;
+        margin: 20% auto 0;
+    }
+}
+@media screen and (min-width:960px) and (max-width:1279px) {
+    .Calculator {
+        transform: scale(0.85);
+        width: 20em;
+        margin: 1em auto 0;
+    }
+}
+@media screen and (min-width:1280px) and (max-width:1599px) {
+    .Calculator {
+        width: 20em;
+        margin: 5% auto 0;
+    }
+}
+@media screen and (min-width:1600px) {
+    .Calculator {
+        width: 20%;
+        margin: 6em auto 0;
+    }
+}
+
+/** DISPLAY VALUE **/
+/** DISPLAY VALUE **/
+.displayValue {
+    border-style: solid;
+    border-radius: 0.6em;
+    border-width: medium;
+    font-size: 3em;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    max-width: 75%;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+    overflow: hidden;
+}
+@media screen and (max-width:320px) {
+    .displayValue {
+    }
+}
+@media screen and (min-width:321px) and (max-width:639px) {
+    .displayValue {
+    }
+}
+@media screen and (min-width:640px) and (max-width:959px) {
+    .displayValue {
+    }
+}
+@media screen and (min-width:960px) and (max-width:1279px) {
+    .displayValue {
+    }
+}
+@media screen and (min-width:1280px) and (max-width:1599px) {
+    .displayValue {
+    }
+}
+@media screen and (min-width:1600px) {
+    .displayValue {
+    }
+}
+
+/** BUTTONS **/
+/** BUTTONS **/
+.Button {
+    font-size: 1.5em;
+    border-radius: 1em;
+    border-style: solid;
+    border-color: rgb(66, 66, 66);
+    outline: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+.ButtonHidden {
+    font-size: 1.5em;
+    border-radius: 1em;
+    background: rgba(0, 0, 0, 0.05);
+    border-style: solid;
+    border-color: rgb(66, 66, 66);
+    opacity: 0;
+}
+.ButtonOperator {
+    font-size: 1.5em;
+    border-radius: 1em;
+    background: rgba(255, 100, 0, 0.16);
+    border-style: solid;
+    border-color: rgb(66, 66, 66);
+    font-weight: bolder;
+    outline: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+.ButtonOperator:active {
+    transform: scale(0.92);
+}
+.Button:active {
+    transform: scale(0.92);
+}
+.Button:focus {
+    outline: none;
+}
+@media screen and (max-width:320px) {
+    .Button {
+        width: 22%;
+        height: 1.7em;
+        margin: 0.4em;
+    }
+    .ButtonHidden {
+        width: 22%;
+        height: 1.7em;
+        margin: 0.4em;
+    }
+    .ButtonOperator {
+        width: 22%;
+        height: 1.7em;
+        margin: 0.4em;
+    }
+}
+@media screen and (min-width:321px) and (max-width:639px) {
+    .Button {
+        width: 22%;
+        height: 1.8em;
+        margin: 0.4em;
+    }
+    .ButtonHidden {
+        width: 22%;
+        height: 1.8em;
+        margin: 0.4em;
+    }
+    .ButtonOperator {
+        width: 22%;
+        height: 1.8em;
+        margin: 0.4em;
+    }
+}
+@media screen and (min-width:640px) and (max-width:959px) {
+    .Button {
+        width: 22%;
+        height: 50px;
+        margin: 0.4em;
+    }
+    .ButtonHidden {
+        width: 22%;
+        height: 50px;
+        margin: 0.4em;
+    }
+    .ButtonOperator {
+        width: 22%;
+        height: 50px;
+        margin: 0.4em;
+    }
+}
+@media screen and (min-width:960px) and (max-width:1279px) {
+    .Button {
+        width: 22%;
+        height: 50px;
+        margin: 0.4em;
+    }
+    .ButtonHidden {
+        width: 22%;
+        height: 50px;
+        margin: 0.4em;
+    }
+    .ButtonOperator {
+        width: 22%;
+        height: 50px;
+        margin: 0.4em;
+    }
+}
+@media screen and (min-width:1280px) and (max-width:1599px) {
+    .Button {
+        width: 22%;
+        height: 50px;
+        margin: 0.4em;
+    }
+    .ButtonHidden {
+        width: 22%;
+        height: 50px;
+        margin: 0.4em;
+    }
+    .ButtonOperator {
+        width: 22%;
+        height: 50px;
+        margin: 0.4em;
+    }
+}
+@media screen and (min-width:1600px) {
+    .Button {
+        width: 22%;
+        height: 50px;
+        margin: 0.4em;
+    }
+    .ButtonHidden {
+        width: 22%;
+        height: 50px;
+        margin: 0.4em;
+    }
+    .ButtonOperator {
+        width: 22%;
+        height: 50px;
+        margin: 0.4em;
+    }
+}
+
+/** DEBUG **/
+/** DEBUG **/
+.Debug {
+    /*opacity: 0;*/
+    display: none;
+}
+@media screen and (max-width:320px) {
+    .Debug {
+    }
+}
+@media screen and (min-width:321px) and (max-width:639px) {
+    .Debug {
+    }
+}
+@media screen and (min-width:640px) and (max-width:959px) {
+    .Debug {
+    }
+}
+@media screen and (min-width:960px) and (max-width:1279px) {
+    .Debug {
+    }
+}
+@media screen and (min-width:1280px) and (max-width:1599px) {
+    .Debug {
+    }
+}
+@media screen and (min-width:1600px) {
+    .Debug {
+    }
+}
+
+
+
+/** *** *** *** *** **/
+/**     gallery     **/
+/** *** *** *** *** **/
+
+/** ROW-CONTAINER **/
+/** ROW-CONTAINER **/
+.row-container {
+    text-align: center;
+    display: inline-block;
+}
+@media screen and (max-width:320px) {
+    .row-container {
+        margin-top: 2em;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+}
+@media screen and (min-width:321px) and (max-width:639px) {
+    .row-container {
+        margin-top: 1em;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+}
+@media screen and (min-width:640px) and (max-width:959px) {
+    .row-container {
+        margin-top: 5em;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        display: block;
+    }
+}
+@media screen and (min-width:960px) and (max-width:1279px) {
+    .row-container {
+        margin-top: 5em;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        display: block;
+    }
+}
+@media screen and (min-width:1280px) and (max-width:1599px) {
+    .row-container {
+        margin-top: 5em;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        display: block;
+    }
+}
+@media screen and (min-width:1600px) {
+    .row-container {
+        margin-top: 5em;
+        margin-left: 15em;
+        margin-right: 15em;
+    }
+}
+
+/** THUMBNAILS **/
+/** THUMBNAILS **/
+.thumbnail {
+    border: 1px solid rgba(121, 121, 121, 0.39);
+    border-radius: 1.5em;
+}
+.thumbnail:hover {
+    transform: scale(1.02);
+}
+.thumbnail:active {
+    transform: scale(0.98);
+}
+@media screen and (max-width:320px) {
+    .thumbnail {
+        width: 12em;
+        margin: 1em;
+    }
+}
+@media screen and (min-width:321px) and (max-width:639px) {
+    .thumbnail {
+        width: 12em;
+        margin: 1em;
+    }
+}
+@media screen and (min-width:640px) and (max-width:959px) {
+    .thumbnail {
+        width: 12em;
+        margin: 1em;
+    }
+}
+@media screen and (min-width:960px) and (max-width:1279px) {
+    .thumbnail {
+        width: 20%;
+        margin: 1em;
+    }
+}
+@media screen and (min-width:1280px) and (max-width:1599px) {
+    .thumbnail {
+        width: 20%;
+        margin: 1em;
+    }
+}
+@media screen and (min-width:1600px) {
+    .thumbnail {
+        width: 20%;
+        margin: 1em;
+    }
+}
+
+/** VIEW-CONTAINER AND VIEW-IMAGE **/
+/** VIEW-CONTAINER AND VIEW-IMAGE **/
+.viewContainer {
+    text-decoration: none;
+    border-radius: 2em;
+}
+.viewImage {
+    box-shadow: rgba(92, 92, 92, 1) 1px 1px 3px;
+    text-decoration: none;
+    border-radius: 1.5em;
+    transition-delay: 0s;
+    transition-duration: 0.15s;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+.viewImage:active {
+    transform: scale(0.98);
+    font-size: 1.2em;
+    text-align: center;
+}
+@media screen and (max-width:320px) {
+    .viewContainer {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        margin: 0 auto;
+    }
+    .viewImage {
+        height: 100%;
+        width: 100%;
+    }
+}
+@media screen and (min-width:321px) and (max-width:639px) {
+    .viewContainer {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .viewImage {
+        height: 100%;
+        width: 100%;
+        border-radius: 1.5em;
+    }
+}
+@media screen and (min-width:640px) and (max-width:959px) {
+    .viewContainer {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        margin: 0 auto;
+    }
+    .viewImage {
+        height: 100%;
+        width: 100%;
+    }
+}
+@media screen and (min-width:960px) and (max-width:1279px) {
+    .viewContainer {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 60%;
+        margin: 0 auto;
+    }
+    .viewImage {
+        height: 100%;
+        width: 100%;
+    }
+}
+@media screen and (min-width:1280px) and (max-width:1599px) {
+    .viewContainer {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 60%;
+        margin: 0 auto;
+    }
+    .viewImage {
+        height: 100%;
+        width: 100%;
+    }
+
+}
+@media screen and (min-width:1600px) {
+    .viewContainer {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 60%;
+        margin: 0 auto;
+    }
+    .viewImage {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+/** TEXT **/
+/** TEXT **/
+.Text {
+    font-size: 1em;
+    left: 50%;
+    bottom: 0;
+    text-align: center;
+    margin-top: 1%;
+}
+@media screen and (max-width:320px) {
+    .Text {
+    }
+}
+@media screen and (min-width:321px) and (max-width:639px) {
+    .Text {
+    }
+}
+@media screen and (min-width:640px) and (max-width:959px) {
+    .Text {
+    }
+}
+@media screen and (min-width:960px) and (max-width:1279px) {
+    .Text {
+    }
+}
+@media screen and (min-width:1280px) and (max-width:1599px) {
+    .Text {
+    }
+}
+@media screen and (min-width:1600px) {
+    .Text {
+    }
+}
+
+
+
+/** *** *** *** *** **/
+/**  wheelchecker   **/
+/** *** *** *** *** **/
+
+/** DESCRIPTION **/
+/** DESCRIPTION **/
+.Description {
+    text-align: center;
+    text-decoration-line: none;
+    font-size: 1.2em;
+    margin-top: 2em;
+    color: rgba(0, 0, 0, 0.66)
+}
+@media screen and (max-width:320px) {
+
+}
+@media screen and (min-width:321px) and (max-width:639px) {
+
+}
+@media screen and (min-width:640px) and (max-width:959px) {
+
+}
+@media screen and (min-width:960px) and (max-width:1279px) {
+}
+@media screen and (min-width:1280px) and (max-width:1599px) {
+
+}
+@media screen and (min-width:1600px) {
+
+}
+
+
+/** WHEELCHECKAREA **/
+/** WHEELCHECKAREA **/
+.WheelCheckArea {
+    /*border-style: dotted;*/
+    /*overflow: hidden;*/
+}
+@media screen and (max-width:320px) {
+    .WheelCheckArea {
+        margin: 5em;
+        height: 45em;
+    }
+}
+@media screen and (min-width:321px) and (max-width:639px) {
+    .WheelCheckArea {
+        margin: 5em;
+        height: 15em;
+    }
+}
+@media screen and (min-width:640px) and (max-width:959px) {
+    .WheelCheckArea {
+        margin: 5em 10em 0 10em;
+        height: 20em;
+    }
+}
+@media screen and (min-width:960px) and (max-width:1279px) {
+    .WheelCheckArea {
+        margin: 5em 10em 0 10em;
+        height: 20em;
+    }
+}
+@media screen and (min-width:1280px) and (max-width:1599px) {
+    .WheelCheckArea {
+        margin: 5em 10em 0 10em;
+        height: 20em;
+    }
+}
+@media screen and (min-width:1600px) {
+    .WheelCheckArea {
+        margin: auto;
+        width: 60%;
+        height: 45em;
+    }
+}
+
+/** WHEEL **/
+/** WHEEL **/
+#Wheel {
+    padding-top: 8em;
+    content: url("components/mousewheel-checker/files/mouse.png");
+    /*border-style: solid;*/
+    position: relative;
+    float:right;
+    animation: moving 10s infinite;
+    background: transparent;
+    /*иногда появляется какой-то непонятный бордер вокруг прозрачной png. Строки снизу это фиксят*/
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
+    zoom: 1;
+}
+@keyframes moving
+{
+    0% {left: 0; transform: rotateY(0deg)}
+    18% {left:-40%;transform: rotateY(0deg) scale(0.7)}
+    32% {left:-60%;transform: rotateY(0deg) scale(0.8)}
+    45.5% {left:-80%;transform: rotateY(0deg)}
+    46% {left:-80%;transform: rotateY(180deg) scale(0.95)}
+    55% {left:-60%;transform: rotateY(180deg) scale(0.7)}
+    65% {left:-40%;transform: rotateY(180deg) scale(0.85)}
+    74.6% {left:-15%;transform: rotateY(180deg) scale(0.7)}
+    75% {left:-15%;transform: rotateY(180deg) scale(0.7)}
+    87% {left:-5%;transform: rotateY(180deg) scale(0.9)}
+    99.7%{left:0; transform: rotateY(180deg) scale(1)}
+    100%{left:0; transform: rotateY(0deg) scale(1)}
+}
+@media screen and (max-width:320px) {
+    #Wheel {
+        width: 20em;
+        margin: 0;
+    }
+}
+@media screen and (min-width:321px) and (max-width:639px) {
+    #Wheel {
+        width: 10em;
+        margin: 0;
+    }
+}
+@media screen and (min-width:640px) and (max-width:959px) {
+    #Wheel {
+        width: 10em;
+        margin: 0;
+    }
+}
+@media screen and (min-width:960px) and (max-width:1279px) {
+    #Wheel {
+        width: 10em;
+        margin: 0;
+    }
+}
+@media screen and (min-width:1280px) and (max-width:1599px) {
+    #Wheel {
+        width: 10em;
+        margin: 0 3em 0 3em;
+    }
+}
+@media screen and (min-width:1600px) {
+    #Wheel {
+        width: 20em;
+    }
+}
+
+/** WHEEL MOVEMENTS **/
+/** WHEEL MOVEMENTS **/
+#Wheel.Up {
+    content: url("components/mousewheel-checker/files/mouseUp.png");
+    /*transform: scale(1.05);*/
+    filter: none;
+}
+#Wheel.Down {
+    content: url("components/mousewheel-checker/files/mouseDown.png");
+    /*transform: rotateY(180deg);*/
+    filter: none;
+}
+
+/** PICS PRELOAD **/
+/** PICS PRELOAD **/
+.WheelPreload1 {
+    content: url("/components/mousewheel-checker/files/mouseUp.png");
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.WheelPreload2 {
+    content: url("/components/mousewheel-checker/files/mouseDown.png");
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+
+
+/** *** *** *** *** **/
+/**     snake       **/
+/** *** *** *** *** **/
+
+/** GAME CANVAS **/
+/** GAME CANVAS **/
+.GameCanvas {
+    margin-top: 2em;
+    text-align: center;
+    font-size: 2em;
+}
+@media screen and (max-width:320px) {
+}
+@media screen and (min-width:321px) and (max-width:639px) {
+}
+@media screen and (min-width:640px) and (max-width:959px) {
+}
+@media screen and (min-width:960px) and (max-width:1279px) {
+}
+@media screen and (min-width:1280px) and (max-width:1599px) {
+}
+@media screen and (min-width:1600px) {
+}
+
+
+.GameField {
+}
+@media screen and (max-width:320px) {
+}
+@media screen and (min-width:321px) and (max-width:639px) {
+    .GameField {
+        width: 420px;
+        height: 360px;
+    }
+}
+@media screen and (min-width:640px) and (max-width:959px) {
+    .GameField {
+        width: 510px;
+        height: 360px;
+    }
+}
+@media screen and (min-width:960px) and (max-width:1279px) {
+    .GameField {
+        width: 720px;
+        height: 360px;
+    }
+}
+@media screen and (min-width:1280px) and (max-width:1599px) {
+    .GameField {
+        width: 720px;
+        height: 360px;
+    }
+}
+@media screen and (min-width:1600px) {
+    .GameField {
+        width: 810px;
+        height: 510px;
+    }
+}
+
+/** SCORE **/
+/** SCORE **/
+.score {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+}
+.scoreUndertext {
+    text-align: center;
+    font-weight: normal;
+    font-size: 0.6em;
+    padding-bottom: 1em;
+}
+@media screen and (max-width:320px) {
+}
+@media screen and (min-width:321px) and (max-width:639px) {
+}
+@media screen and (min-width:640px) and (max-width:959px) {
+}
+@media screen and (min-width:960px) and (max-width:1279px) {
+}
+@media screen and (min-width:1280px) and (max-width:1599px) {
+}
+@media screen and (min-width:1600px) {
+}
+
+/** RestartButton **/
+/** RestartButton **/
+.RestartButton {
+    display: block;
+    border: 2px solid rgba(0, 0, 0, 0.44);
+    border-radius: 2em;
+    padding: 0.6em;
+    text-decoration: none;
+    max-width: fit-content;
+    margin: 2em auto 0 auto;
+}
+.RestartButton:hover{
+    background: rgba(249, 210, 157, 0.16);
+    transform: scale(1.05);
+    transition: 0.1s;
+}
+@media screen and (max-width:320px) {
+}
+@media screen and (min-width:321px) and (max-width:639px) {
+}
+@media screen and (min-width:640px) and (max-width:959px) {
+}
+@media screen and (min-width:960px) and (max-width:1279px) {
+}
+@media screen and (min-width:1280px) and (max-width:1599px) {
+}
+@media screen and (min-width:1600px) {
 }
