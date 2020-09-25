@@ -201,7 +201,7 @@ export default class GameProcess extends React.Component {
                 dx = 30;
                 dy = 0;
             }
-            if (pressedKey === downArrowKey&& !movingUp) {
+            if (pressedKey === downArrowKey && !movingUp) {
                 dx = 0;
                 dy = 30;
             }

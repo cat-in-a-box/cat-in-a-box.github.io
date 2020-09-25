@@ -6,7 +6,8 @@ const Face = () => {
             <h1>Привет!</h1>
             <h1>Меня зовут Александр Тимощук</h1>
             <h2>Начинающий Front End разработчик</h2>
-            <img className="reactIcon" src={require('./files/pics/react-icon.png')} alt="React Icon" height="64" width="64"/>
+            <img className="reactIcon" src={require('./files/pics/react-icon.png')} alt="React Icon" height="64"
+                 width="64"/>
         </div>
     )
 };
