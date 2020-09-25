@@ -1,20 +1,24 @@
 import React from "react";
-import "./App.css";
-import routes from "./routes";
-import {Route, Switch, BrowserRouter} from "react-router-dom";
+import {Route, BrowserRouter} from "react-router-dom";
+import "./App.scss";
+
+import Home from './components/home/Home.jsx';
+import Gallery from './components/gallery/gallery';
+import Snake from './components/snake/Snake';
+import Calculator from './components/calculator/Calculator';
+import MousewheelChecker from './components/mousewheelChecker/mousewheelChecker';
+
 
 function App() {
     return (
         <div className="App">
-            <React.Fragment>
-                <BrowserRouter>
-                    <Switch>
-                        {routes.map((route, idx) => (
-                            <Route path={route.path} component={route.component} key={idx}/>
-                        ))}
-                    </Switch>
+                <BrowserRouter basename="/webpage">
+                    <Route exact path="/" component={Home} />
+                    <Route path="/mousewheelchecker" component={MousewheelChecker} />
+                    <Route path="/gallery" component={Gallery} />
+                    <Route path="/snake" component={Snake} />
+                    <Route path="/calculator" component={Calculator} />
                 </BrowserRouter>
-            </React.Fragment>
         </div>
     );
 }
