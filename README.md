@@ -1,5 +1,5 @@
 # Personal Web Page
-Just a personal web page built with <b>React</b>, pure <b>CSS</b>, some <b>JavaScript</b> 
+Just a personal web page built with <b>React</b>, <b>SCSS</b>, <b>JavaScript</b> 
 and little bit of love.
  
 Provides information about me and my coding skills by showcasing few small projects:
