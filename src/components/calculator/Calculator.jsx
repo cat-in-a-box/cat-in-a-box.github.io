@@ -2,7 +2,8 @@ import React from "react";
 import HeaderGoBack from "../HeaderGoBack.jsx";
 import CalculatorComponent from "./Components/CalculatorComponent.jsx";
 
-function Calculator() {
+const Calculator = () => {
+
     return (
         <div className="App">
             <HeaderGoBack/>
