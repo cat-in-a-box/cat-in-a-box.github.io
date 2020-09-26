@@ -605,7 +605,7 @@ input, textarea, button, select, a {
     display: none;
   }
 }
-@media screen and (min-width: 1280px) and (max-width: 1599px) {
+@media screen and (min-width: 1280px)  {
   .Card {
     margin: 2em;
     width: 14em;
@@ -644,50 +644,6 @@ input, textarea, button, select, a {
   }
   .Card h4 {
     /*margin-top: 0.1em;*/
-  }
-  .Card:hover {
-    transform: scale(1.03);
-  }
-}
-@media screen and (min-width: 1600px) {
-  .Card {
-    margin: 2em;
-    width: 14em;
-    height: 17em;
-    border-radius: 2em;
-  }
-  .Card2 {
-    width: 28em;
-    height: 13em;
-  }
-  .CardText {
-    margin: 2px 16px;
-  }
-  .Card img {
-    margin: 1.5em;
-    width: 60%;
-    height: 42%;
-  }
-  .Card2 img {
-    margin: 1.5em;
-    width: 40%;
-    height: 42%;
-  }
-  .Card img:nth-child(2) {
-    display: none;
-  }
-  .Card:hover img:nth-child(2) {
-    display: inline;
-  }
-  .Card:hover img:nth-child(1) {
-    display: none;
-  }
-  .Card h3 {
-    font-size: 1.2em;
-    margin-bottom: 0.3em;
-  }
-  .Card h4 {
-    /*margin-top: 0.8em;*/
   }
   .Card:hover {
     transform: scale(1.03);
