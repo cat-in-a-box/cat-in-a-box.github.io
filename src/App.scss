@@ -567,31 +567,9 @@ input, textarea, button, select, a {
     outline: none;
     user-select: none;
     -webkit-tap-highlight-color: transparent;
-    @include for-phone-only {
-        width: 22%;
-        height: 1.8em;
-        margin: 0.4em;
-    }
-    @include for-tablet-portrait-up {
-        width: 22%;
-        height: 50px;
-        margin: 0.4em;
-    }
-    @include for-tablet-landscape-up {
-        width: 22%;
-        height: 50px;
-        margin: 0.4em;
-    }
-    @include for-desktop-up {
-        width: 22%;
-        height: 50px;
-        margin: 0.4em;
-    }
-    @include for-big-desktop-up {
-        width: 22%;
-        height: 50px;
-        margin: 0.4em;
-    }
+    width: 22%;
+    height: 50px;
+    margin: 0.4em;
 }
 .ButtonHidden {
     font-size: 1.5em;
@@ -600,31 +578,9 @@ input, textarea, button, select, a {
     border-style: solid;
     border-color: rgb(66, 66, 66);
     opacity: 0;
-    @include for-phone-only {
-        width: 22%;
-        height: 1.8em;
-        margin: 0.4em;
-    }
-    @include for-tablet-portrait-up {
-        width: 22%;
-        height: 50px;
-        margin: 0.4em;
-    }
-    @include for-tablet-landscape-up {
-        width: 22%;
-        height: 50px;
-        margin: 0.4em;
-    }
-    @include for-desktop-up {
-        width: 22%;
-        height: 50px;
-        margin: 0.4em;
-    }
-    @include for-big-desktop-up {
-        width: 22%;
-        height: 50px;
-        margin: 0.4em;
-    }
+    width: 22%;
+    height: 50px;
+    margin: 0.4em;
 }
 .ButtonOperator {
     font-size: 1.5em;
@@ -636,31 +592,9 @@ input, textarea, button, select, a {
     outline: none;
     user-select: none;
     -webkit-tap-highlight-color: transparent;
-    @include for-phone-only {
-        width: 22%;
-        height: 1.8em;
-        margin: 0.4em;
-    }
-    @include for-tablet-portrait-up {
-        width: 22%;
-        height: 50px;
-        margin: 0.4em;
-    }
-    @include for-tablet-landscape-up {
-        width: 22%;
-        height: 50px;
-        margin: 0.4em;
-    }
-    @include for-desktop-up {
-        width: 22%;
-        height: 50px;
-        margin: 0.4em;
-    }
-    @include for-big-desktop-up {
-        width: 22%;
-        height: 50px;
-        margin: 0.4em;
-    }
+    width: 22%;
+    height: 50px;
+    margin: 0.4em;
 }
 .ButtonOperator:active {
     transform: scale(0.92);
