@@ -8,11 +8,12 @@
     background-image: url(components/home/files/Background.jpg);
     background-repeat: repeat;
     color: rgb(66, 66, 66);
+    text-decoration: none;
 
     -ms-touch-action: manipulation;
     touch-action: manipulation;
 
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* Убрать подсвечивание ссылок */
+    -webkit-tap-highlight-color: transparent; /* Убрать подсвечивание ссылок */
 
 }
 
@@ -64,34 +65,25 @@
 }
 .Header a {
     letter-spacing: 1px;
-    text-decoration: none;
     font-size: 1.3em;
+    padding-bottom: 5px;
+    background: linear-gradient(#565656, #565656) no-repeat center bottom;
+    background-size: 0 2px;
+    transition: all 0.15s;
     @include for-phone-only {
         font-size: 1.1em;
     }
 
 }
-.HeaderButton a {
-    padding-bottom: 5px;
-    background: linear-gradient(#565656, #565656) no-repeat center bottom;
-    background-size: 0 2px;
-    transition: all 0.15s;
-}
-.HeaderButton a:hover {
+.Header a:hover {
     background-size: 100% 2px;
     @include for-phone-only {
         font-weight: normal;
     }
 }
-.HeaderBackButton a {
-    padding-bottom: 5px;
-    display: inline-block;
-    background: linear-gradient(#565656, #565656) no-repeat center bottom;
-    background-size: 0 2px;
-    transition: all 0.1s;
-}
-.HeaderBackButton a:hover {
-    background-size: 100% 2px;
+.HeaderBackButton {
+    @extend .HeaderButton;
+    width: 22em;
 }
 
 /*******************************************************************/
@@ -120,7 +112,6 @@
     }
 }
 .reactIcon {
-    text-align: center;
     margin: 2em auto 0 auto;
     animation-name: spin;
     animation-duration: 20s;
@@ -146,6 +137,8 @@
 /******   about   ******/
 .About {
     text-align: center;
+    margin: 8em auto 8em auto;
+
     @include for-phone-only {
         margin: 1em 1em 1em 1em;
     }
@@ -166,7 +159,7 @@
     }
 }
 .About h1 {
-    text-align: center;
+    margin-bottom: 5%;
     @include for-phone-only {
         font-size: 2.5em;
     }
@@ -185,10 +178,8 @@
         font-size: 2.5em;
         margin-bottom: 1em;
     }
-    margin-bottom: 5%;
 }
 .About p {
-    text-align: center;
     @include for-phone-only {
         font-size: 18px;
         margin: 18px 1em;
@@ -216,54 +207,19 @@
     }
 }
 
-/******   works   ******/
-.Works {
+/******   skills  ******/
+.Skills {
     text-align: center;
-    margin: 6em auto 5em auto;
+    margin: 8em auto 8em auto;
 }
-.Works b {
-    background: white;
-    font-weight: 500;
-    text-align: center;
-}
-.Works h1 {
-    text-align: center;
+.Skills h1 {
     font-size: 2.5em;
 }
-.WorksPlaceholder {
-    text-align: center;
-    margin: 0 auto 0 auto;
-    justify-content: center;
-
-    @include for-tablet-landscape-up {
-        display: flex;
-        margin-top: 2em;
-    }
-    @include for-desktop-up {
-        display: flex;
-        margin-top: 2em;
-    }
-    @include for-big-desktop-up {
-        display: flex;
-        margin-top: 2em;
-    }
-
-}
-
-/******   technologies  ******/
-.Technologies {
-    text-align: center;
-    margin: 6em auto 2em auto;
-}
-.Technologies h1 {
-    font-size: 2.5em;
-}
-.TechnologiesIconPlaceHolder {
+.SkillsIconPlaceHolder {
     margin: 3em auto 0 auto;
-    text-align: center;
     width: 90%;
 }
-.TechnologiesIcon {
+.SkillsIcon {
     position: relative;
     transform: scale(1.3);
     transition-delay: 0s;
@@ -279,7 +235,7 @@
         width: 20%;
     }
 }
-.TechnologiesIcon img {
+.SkillsIcon img {
     position: relative;
     display: inline-flex;
     justify-self: center;
@@ -289,16 +245,13 @@
     background: rgba(0, 0, 0, 0.005);
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004); //
 }
-.TechnologiesIcon:hover .Popup {
+.SkillsIcon:hover .Popup {
     visibility: visible;
     @include for-phone-only {
-        visibility: visible;
-    }
-    @include for-phone-only {
-        display: none
+        display: none;
     }
 }
-.TechnologiesIcon:hover {
+.SkillsIcon:hover {
     transform: scale(1.45);
     @include for-phone-only {
         transform: scale(1);
@@ -309,6 +262,7 @@
     width: 120px; // важно учитывать вот это дело, когда центруешь
 
     text-align: center;
+    font-size: 0.85em;
     position: absolute;
     z-index: 1;
     top: 100%;
@@ -323,27 +277,48 @@
     border: 0.1em solid rgba(75, 71, 71, 0.42);
 }
 
+/******   works   ******/
+.Works {
+    text-align: center;
+    margin: 8em auto 8em auto;
+}
+.Works b {
+    background: white;
+    font-weight: 500;
+}
+.Works h1 {
+    font-size: 2.5em;
+}
+.WorksPlaceholder {
+    margin: 0 auto 0 auto;
+    justify-content: center;
+    @include for-tablet-landscape-up {
+        display: flex;
+        margin-top: 2em;
+    }
+    @include for-desktop-up {
+        display: flex;
+        margin-top: 2em;
+    }
+    @include for-big-desktop-up {
+        display: flex;
+        margin-top: 2em;
+    }
+
+}
+
 /******   cards   ******/
 .Card {
-    box-shadow: rgb(211, 211, 211) 2px 2px 30px;
-    font-family: "Cormorant Garamond", serif;
     text-align: center;
-    transition-delay: 0s;
-    transition-duration: 0.1s;
-    transition-property: all;
-    transition-timing-function: ease;
-    border-radius: 2em;
-    text-decoration: none;
     background: white;
+    border-radius: 2em;
     border: 1px solid rgba(75, 71, 71, 0.349);
+    box-shadow: rgb(211, 211, 211) 2px 2px 30px;
     overflow: hidden;
     outline: none;
     user-select: none;
-    -webkit-tap-highlight-color: transparent;
     display: inline-block;
-
     margin: 1em 0.5em 3em;
-
     width: 12em;
     height: 12em;
     @include for-phone-only {
@@ -351,6 +326,7 @@
         padding-bottom: 1em;
     }
     @include for-desktop-up {
+        padding-top: 1em;
         margin: 2em;
         width: 14em;
         height: 16em;
@@ -359,9 +335,27 @@
 
 }
 .Card:hover {
+    transition-delay: 0s;
+    transition-duration: 0.15s;
+    transition-property: all;
+    transition-timing-function: ease;
     @include for-desktop-up {
-        transform: scale(1.03)
+        transform: scale(1.03);
     }
+}
+.Card:hover img:nth-child(2) {
+    @include for-desktop-up {
+        display: inline;
+    }
+}
+.Card:hover img:nth-child(1) {
+    @include for-desktop-up {
+        display: none;
+    }
+}
+.Card:focus {
+    transform: scale(0.85);
+    transition-duration: 0.1s;
 }
 .Card:focus img:nth-child(2) {
     display: none;
@@ -388,24 +382,6 @@
         display: none;
     }
 }
-.Card:hover img:nth-child(2) {
-    @include for-desktop-up {
-        display: inline;
-    }
-}
-.Card:hover img:nth-child(1) {
-    @include for-desktop-up {
-        display: none;
-    }
-}
-.Card:focus {
-    transform: scale(0.85);
-    transition-duration: 0.1s;
-}
-.Card:active {
-    transform: scale(0.85);
-    transition-duration: 0.1s;
-}
 .ProjectCard {
     @extend .Card;
     @include for-desktop-up {
@@ -413,40 +389,18 @@
         height: 13em;
     }
 }
-.Card img {
-    margin: 1.5em;
-    width: 30%;
-    height: 30%;
-    background: white;
-    @include for-desktop-up {
-        width: 42%;
-        height: 32%;
-    }
-}
 .ProjectCard img {
-    margin: 1.5em;
-    width: 30%;
-    height: 30%;
+    margin: 1em;
     background: white;
     @include for-desktop-up {
-        margin: 1.5em;
-        width: 40%;
-        height: 42%;
+        margin: 1em;
+        transform: scale(1.2);
     }
 }
-.CardText {
+.Card img {
+    margin: 2em;
+    width: 35%;
     background: white;
-    @include for-desktop-up {
-        margin: 2px 16px;
-    }
-}
-.Card h3 {
-    background: white;
-    font-size: 1.2em;
-}
-.Card h4 {
-    background: white;
-    font-size: 0.9em;
 }
 .Card img:nth-child(1) {
     display: inline;
@@ -473,32 +427,41 @@
         display: inline;
     }
 }
+.CardText {
+    background: white;
+}
+.Card h3 {
+    background: white;
+}
+.Card h4 {
+    background: white;
+    font-size: 0.9em;
+}
+
 
 /******   contact   ******/
 .Contact {
-    border: black;
+    text-align: center;
+    margin: 8em auto 8em auto;
 }
 .Contact h1 {
     font-size: 2.5em;
-    text-align: center;
     margin-bottom: 0.5em;
 }
 .Contact p {
-    text-align: center;
     margin-top: 0.3em;
     margin-bottom: 0.3em;
     font-size: 1.2em;
 }
 .Contact h2 {
-    text-align: center;
     font-weight: 500;
     font-size: 1.2em;
 }
 
 /******   footer   ******/
 .Footer {
+    margin: 12em auto 0 auto;
     text-align: center;
-    border: black;
 }
 .Footer p {
     margin-top: 5em;
