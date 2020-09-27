@@ -23,12 +23,12 @@
         @content;
     }
 }
-@mixin for-tablet-portrait-up {
+@mixin for-tablets-portrait-landscape {
     @media (min-width: 600px) and (max-width: 1199px) {
         @content;
     }
 }
-@mixin for-tablet-landscape-up {
+@mixin for-tablets-landscape-only {
     @media (min-width: 900px) and (max-width: 1199px) {
         @content;
     }
@@ -51,8 +51,8 @@
     user-select: none;
     padding: 0.7em;
     @include for-phone-only {
-        margin: 0.3em auto;
-        width: 80%;
+        margin: 0.3em auto 0 auto;
+        //width: 80%;
     }
 }
 .HeaderButton {
@@ -84,6 +84,9 @@
 .HeaderBackButton {
     @extend .HeaderButton;
     width: 22em;
+    @include for-phone-only {
+        width: 12em;
+    }
 }
 
 /*******************************************************************/
@@ -142,10 +145,10 @@
     @include for-phone-only {
         margin: 1em 1em 1em 1em;
     }
-    @include for-tablet-portrait-up {
+    @include for-tablets-portrait-landscape {
         margin: 1em 2em 1em 3em;
     }
-    @include for-tablet-landscape-up {
+    @include for-tablets-landscape-only {
         width: 70%;
         margin: 0 auto;
     }
@@ -163,7 +166,7 @@
     @include for-phone-only {
         font-size: 2.5em;
     }
-    @include for-tablet-landscape-up {
+    @include for-tablets-landscape-only {
         margin-top: 2em;
         font-size: 2.5em;
         margin-bottom: 1em;
@@ -185,11 +188,11 @@
         margin: 18px 1em;
         text-align: justify;
     }
-    @include for-tablet-portrait-up {
+    @include for-tablets-portrait-landscape {
         margin: 1em;
         text-align: justify;
     }
-    @include for-tablet-landscape-up {
+    @include for-tablets-landscape-only {
         font-size: 1.1em;
         margin-top: 18px;
         margin-bottom: 18px;
@@ -288,11 +291,12 @@
 }
 .Works h1 {
     font-size: 2.5em;
+    margin-bottom: 0.4em;
 }
 .WorksPlaceholder {
     margin: 0 auto 0 auto;
     justify-content: center;
-    @include for-tablet-landscape-up {
+    @include for-tablets-landscape-only {
         display: flex;
         margin-top: 2em;
     }
@@ -325,6 +329,11 @@
         width: 12em;
         padding-bottom: 1em;
     }
+    @include for-tablets-portrait-landscape {
+        width: 12em;
+        padding-bottom: 2em;
+    }
+
     @include for-desktop-up {
         padding-top: 1em;
         margin: 2em;
@@ -333,6 +342,11 @@
         border-radius: 2em;
     }
 
+}
+.Card img {
+    margin: 2em;
+    width: 35%;
+    background: white;
 }
 .Card:hover {
     transition-delay: 0s;
@@ -354,7 +368,7 @@
     }
 }
 .Card:focus {
-    transform: scale(0.85);
+    transform: scale(0.97);
     transition-duration: 0.1s;
 }
 .Card:focus img:nth-child(2) {
@@ -362,10 +376,10 @@
     @include for-phone-only {
         display: inline;
     }
-    @include for-tablet-portrait-up {
+    @include for-tablets-portrait-landscape {
         display: inline;
     }
-    @include for-tablet-landscape-up {
+    @include for-tablets-landscape-only {
         display: inline;
     }
 
@@ -375,15 +389,20 @@
     @include for-phone-only {
         display: none;
     }
-    @include for-tablet-portrait-up {
+    @include for-tablets-portrait-landscape {
         display: none;
     }
-    @include for-tablet-landscape-up {
+    @include for-tablets-landscape-only {
         display: none;
     }
 }
 .ProjectCard {
     @extend .Card;
+    @include for-tablets-portrait-landscape {
+        padding: 0.7em;
+        width: 12em;
+        padding-bottom: 2em;
+    }
     @include for-desktop-up {
         width: 28em;
         height: 13em;
@@ -392,25 +411,22 @@
 .ProjectCard img {
     margin: 1em;
     background: white;
+    @include for-tablets-portrait-landscape {
+        margin: 2em 2em 3em 2em;
+        width: 55%;
+    }
     @include for-desktop-up {
-        margin: 1em;
+        margin-top: 2em;
         transform: scale(1.2);
     }
 }
-.Card img {
-    margin: 2em;
-    width: 35%;
-    background: white;
-}
+
 .Card img:nth-child(1) {
     display: inline;
     @include for-phone-only {
         display: none;
     }
-    @include for-tablet-portrait-up {
-        display: none;
-    }
-    @include for-tablet-landscape-up {
+    @include for-tablets-portrait-landscape {
         display: none;
     }
 
@@ -420,10 +436,7 @@
     @include for-phone-only {
         display: inline;
     }
-    @include for-tablet-portrait-up {
-        display: inline;
-    }
-    @include for-tablet-landscape-up {
+    @include for-tablets-portrait-landscape {
         display: inline;
     }
 }
@@ -486,12 +499,12 @@
         height: 75%;
         margin: 2.5em auto 0;
     }
-    @include for-tablet-portrait-up {
+    @include for-tablets-portrait-landscape {
         transform: scale(0.85);
         width: 20em;
         margin: 1em auto 0;
     }
-    @include for-tablet-landscape-up {
+    @include for-tablets-landscape-only {
         transform: scale(0.85);
         width: 20em;
         margin: 1em auto 0;
@@ -581,38 +594,10 @@
 /******   row-container   ******/
 .row-container {
     text-align: center;
-    display: inline-block;
-    @include for-phone-only {
-        margin-top: 1em;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-    }
-    @include for-tablet-portrait-up {
-        margin-top: 5em;
-        margin-left: auto;
-        margin-right: auto;
-        width: 90%;
-        display: block;
-    }
-    @include for-tablet-landscape-up {
-        margin-top: 5em;
-        margin-left: auto;
-        margin-right: auto;
-        width: 90%;
-        display: block;
-    }
+    display: block;
+    margin: 5em auto 0 auto;
     @include for-desktop-up {
-        margin-top: 5em;
-        margin-left: auto;
-        margin-right: auto;
         width: 90%;
-        display: block;
-    }
-    @include for-big-desktop-up {
-        margin-top: 5em;
-        margin-left: 15em;
-        margin-right: 15em;
     }
 }
 
@@ -620,25 +605,10 @@
 .thumbnail {
     border: 1px solid rgba(121, 121, 121, 0.39);
     border-radius: 1.5em;
-    @include for-phone-only {
-        width: 12em;
-        margin: 1em;
-    }
-    @include for-tablet-portrait-up {
-        width: 12em;
-        margin: 1em;
-    }
-    @include for-tablet-landscape-up {
-        width: 20%;
-        margin: 1em;
-    }
+    margin: 1em;
+    width: 12em;
     @include for-desktop-up {
         width: 20%;
-        margin: 1em;
-    }
-    @include for-big-desktop-up {
-        width: 20%;
-        margin: 1em;
     }
 }
 .thumbnail:hover {
@@ -656,20 +626,17 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    margin: 0 auto;
+    margin: 0 auto 0 auto;
     @include for-phone-only {
         width: 90%;
     }
-    @include for-tablet-portrait-up {
+    @include for-tablets-portrait-landscape {
         width: 80%;
     }
-    @include for-tablet-landscape-up {
+    @include for-tablets-landscape-only {
         width: 60%;
     }
     @include for-desktop-up {
-        width: 60%;
-    }
-    @include for-big-desktop-up {
         width: 60%;
     }
 }
@@ -685,18 +652,14 @@
     width: 100%;
 }
 .viewImage:active {
-    transform: scale(0.98);
-    font-size: 1.2em;
-    text-align: center;
+    transform: scale(0.95);
 }
 
 /******   text   ******/
 .Text {
     font-size: 1em;
-    left: 50%;
-    bottom: 0;
+    margin: 1% auto 0 auto;
     text-align: center;
-    margin-top: 1%;
 }
 
 /*******************************************************************/
@@ -719,11 +682,11 @@
         margin: 5em;
         height: 15em;
     }
-    @include for-tablet-portrait-up {
+    @include for-tablets-portrait-landscape {
         margin: 5em 10em 0 10em;
         height: 20em;
     }
-    @include for-tablet-landscape-up {
+    @include for-tablets-landscape-only {
         margin: 5em 10em 0 10em;
         height: 20em;
     }
@@ -754,11 +717,11 @@
         width: 10em;
         margin: 0;
     }
-    @include for-tablet-portrait-up {
+    @include for-tablets-portrait-landscape {
         width: 10em;
         margin: 0;
     }
-    @include for-tablet-landscape-up {
+    @include for-tablets-landscape-only {
         width: 10em;
         margin: 0;
     }
@@ -862,11 +825,11 @@
         width: 420px;
         height: 360px;
     }
-    @include for-tablet-portrait-up {
+    @include for-tablets-portrait-landscape {
         width: 510px;
         height: 360px;
     }
-    @include for-tablet-landscape-up {
+    @include for-tablets-landscape-only {
         width: 720px;
         height: 360px;
     }
