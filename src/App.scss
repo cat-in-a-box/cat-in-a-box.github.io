@@ -11,10 +11,9 @@
 
     -ms-touch-action: manipulation;
     touch-action: manipulation;
-}
 
-input, textarea, button, select, a {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* Убрать подсвечивание ссылок */
+
 }
 
 /*** *** creating sass mixins for various devices *** ***/
@@ -612,9 +611,9 @@ input, textarea, button, select, a {
     display: none;
 }
 
-/** *** *** *** *** **/
-/**     GALLERY     **/
-/** *** *** *** *** **/
+/*******************************************************************/
+/***                  ***     GALLERY   ***                     ***/
+/*****************************************************************/
 
 /******   row-container   ******/
 .row-container {
