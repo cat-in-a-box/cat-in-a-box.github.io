@@ -4,7 +4,7 @@ import Header from '../Header';
 import Footer from '../Footer.jsx';
 import Face from './Face.jsx';
 import About from './About.jsx';
-import Technologies from './Technologies.jsx';
+import Skills from './Skills.jsx';
 import Projects from './Projects.jsx';
 import Works from './Works.jsx';
 import Contact from './Contact.jsx';
@@ -16,7 +16,7 @@ const Home = () => {
             <Header/>
             <Face/>
             <About/>
-            <Technologies/>
+            <Skills/>
             <Projects/>
             <Works/>
             <Contact/>
