@@ -50,7 +50,7 @@ input, textarea, button, select, a {
     outline: none;
     user-select: none;
     padding: 0.7em;
-    @include for-phone-only  {
+    @include for-phone-only {
         margin: 0.3em auto;
         width: 80%;
     }
@@ -123,15 +123,17 @@ input, textarea, button, select, a {
 .reactIcon {
     text-align: center;
     margin: 2em auto 0 auto;
-    background: rgba(0, 0, 0, 0.005);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
     animation-name: spin;
     animation-duration: 20s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+    // Ниже код - чтобы бекграунд на не пустом фоне не крутился вместе с png файлом, где есть прозрачность
+    text-rendering: optimizeLegibility;
+    background: rgba(0, 0, 0, 0.005);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+    -webkit-font-smoothing: antialiased; // на всякий случай тоже
+    -moz-osx-font-smoothing: grayscale; // на всякий случай тоже
+
 }
 @keyframes spin {
     from {
@@ -264,7 +266,6 @@ input, textarea, button, select, a {
 }
 .TechnologiesIcon {
     position: relative;
-
     transform: scale(1.3);
     transition-delay: 0s;
     transition-duration: 0.15s;
@@ -284,7 +285,10 @@ input, textarea, button, select, a {
     display: inline-flex;
     justify-self: center;
     margin: 0 auto 0 auto;
+    // Код ниже -  чтобы бекграунд не захватывался при движении png файла
+    text-rendering: optimizeLegibility;
     background: rgba(0, 0, 0, 0.005);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004); //
 }
 .TechnologiesIcon:hover .Popup {
     visibility: visible;
@@ -292,7 +296,7 @@ input, textarea, button, select, a {
         visibility: visible;
     }
     @include for-phone-only {
-        display:none
+        display: none
     }
 }
 .TechnologiesIcon:hover {
