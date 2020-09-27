@@ -6,7 +6,7 @@ const Projects = () => {
         <ScrollableAnchor id={'section3'}>
             <div className="Works"><h1>Мои проекты</h1>
                 <div className="WorksPlaceholder">
-                    <a href="https://profdela.ru" target="_blank" rel="noopener noreferrer" className="Card2">
+                    <a href="https://profdela.ru" target="_blank" rel="noopener noreferrer" className="ProjectCard">
                         <img src={require('./files/pics/profdela.png')} alt="ProfdelaIcon"/>
                         <img src={require('./files/pics/profdela2.png')} alt="ProfdelaIcon2"/>
                         <div className="CardText">
