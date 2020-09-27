@@ -11,7 +11,7 @@ import MousewheelChecker from './components/mousewheelChecker/mousewheelChecker'
 function App() {
     return (
         <div className="App">
-            <BrowserRouter basename="/webpage">
+            <BrowserRouter basename="/">
                 <Route exact path="/" component={Home}/>
                 <Route path="/mousewheelchecker" component={MousewheelChecker}/>
                 <Route path="/gallery" component={Gallery}/>

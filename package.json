@@ -1,6 +1,6 @@
 {
-  "name": "webpage",
-  "homepage": "https://cat-in-a-box.github.io/webpage",
+  "name": "cat-in-a-box.github.io",
+  "homepage": "https://cat-in-a-box.github.io/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -40,7 +40,7 @@
   },
   "guppy": {
     "id": "1229fed0-0b76-11ea-9232-155000059c75",
-    "name": "webpage",
+    "name": "cat-in-a-box.github.io",
     "type": "create-react-app",
     "color": "#cc004a",
     "icon": null,
