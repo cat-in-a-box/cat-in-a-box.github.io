@@ -224,14 +224,13 @@
 }
 .SkillsIcon {
     position: relative;
-    transform: scale(1.3);
     transition-delay: 0s;
     transition-duration: 0.15s;
     transition-property: all;
     transition-timing-function: ease;
     display: inline-flex;
-    margin: 0.5em auto 0 auto;
-    width: 7em;
+    margin: 0.75em 2em 0 2em;
+    width: 4em;
     background: rgba(0, 0, 0, 0.005);
     @include for-phone-only {
         transform: scale(1);
@@ -243,6 +242,7 @@
     display: inline-flex;
     justify-self: center;
     margin: 0 auto 0 auto;
+    width: 4em;
     // Код ниже -  чтобы бекграунд не захватывался при движении png файла
     text-rendering: optimizeLegibility;
     background: rgba(0, 0, 0, 0.005);
@@ -255,7 +255,8 @@
     }
 }
 .SkillsIcon:hover {
-    transform: scale(1.45);
+    transform: scale(1.12);
+    transition: 0.15s;
     @include for-phone-only {
         transform: scale(1);
     }
@@ -263,12 +264,13 @@
 .Popup {
     visibility: hidden;
     width: 120px; // важно учитывать вот это дело, когда центруешь
+    transform: scale(1.3);
 
     text-align: center;
     font-size: 0.85em;
     position: absolute;
     z-index: 1;
-    top: 100%;
+    top: 110%;
     left: 50%;
 
     margin-left: -62px; //половина от значения width
@@ -419,7 +421,6 @@
         transform: scale(1.2);
     }
 }
-
 .Card img:nth-child(1) {
     display: inline;
     @include for-phone-only {
