@@ -399,9 +399,8 @@
 .ProjectCard {
     @extend .Card;
     @include for-tablets-portrait-landscape {
-        padding: 0.7em;
+        padding: 0.7em 0 2em 0;
         width: 12em;
-        padding-bottom: 2em;
     }
     @include for-desktop-up {
         width: 28em;
@@ -450,7 +449,6 @@
     background: white;
     font-size: 0.9em;
 }
-
 
 /******   contact   ******/
 .Contact {
