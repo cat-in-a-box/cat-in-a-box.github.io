@@ -84,6 +84,7 @@
 .HeaderBackButton {
     @extend .HeaderButton;
     width: 22em;
+    margin-top: 0.8em;
     @include for-phone-only {
         width: 12em;
     }
