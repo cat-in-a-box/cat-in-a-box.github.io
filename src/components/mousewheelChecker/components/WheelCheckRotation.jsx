@@ -14,13 +14,13 @@ class WheelCheckRotation extends React.Component {
                 window.clearTimeout(mouseDownCooldown);
                 mouseDownCooldown = window.setTimeout(function () {
                     document.getElementById('Wheel').classList.remove('Down')
-                }, 350);
+                }, 550);
             } else if (a.deltaY < 0) {
                 document.getElementById('Wheel').classList.add('Up');
                 window.clearTimeout(mouseUpCooldown);
                 mouseUpCooldown = window.setTimeout(function () {
                     document.getElementById('Wheel').classList.remove('Up')
-                }, 350);
+                }, 550);
             }
 
         });
