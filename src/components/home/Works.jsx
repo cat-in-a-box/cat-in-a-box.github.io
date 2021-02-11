@@ -10,7 +10,7 @@ const Works = () => {
                     <div className="CardText">
                         <h3><b>Mousewheel Check</b></h3>
                         <h4>Диагностика колеса мышки</h4>
-                        <h4>(часто ломается)</h4>
+                        <h4>Все мы иногда ломаемся</h4>
                     </div>
                 </a>
                 <a href={"calculator/"} rel="noopener noreferrer" className="Card">
@@ -19,7 +19,7 @@ const Works = () => {
                     <div className="CardText">
                         <h3><b>Calculator</b></h3>
                         <h4>Нажимай кнопки</h4>
-                        <h4>Считай цифры</h4>
+                        <h4>Считай цифры как в школе</h4>
                     </div>
                 </a>
                 <a href={"gallery/"} rel="noopener noreferrer" className="Card">
@@ -27,8 +27,8 @@ const Works = () => {
                     <img src={require('./files/pics/paw2.png')} alt="PawIcon2" width="150px"/>
                     <div className="CardText">
                         <h3><b>Gallery</b></h3>
-                        <h4>Кто не любит котов?</h4>
-                        <h4>Все любят котов</h4>
+                        <h4>Галарея с котами</h4>
+                        <h4>Что может быть не так?</h4>
                     </div>
                 </a>
                 <a href={"snake/"} rel="noopener noreferrer" className="Card">
