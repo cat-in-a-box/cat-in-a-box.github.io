@@ -20,6 +20,14 @@ const Skills = () => {
                     <img src={require('./files/pics/responsive.png')} alt="Адаптивность" width="50px"/>
                     <div className="Popup">Адаптивность</div>
                 </div>
+                <div className="SkillsIcon">
+                    <img src={require('./files/pics/sass.png')} alt="Препроцессоры" width="50px"/>
+                    <div className="Popup">Sass, SCSS, Less</div>
+                </div>
+                <div className="SkillsIcon">
+                    <img src={require('./files/pics/bootstrap.png')} alt="Bootstrap" width="50px"/>
+                    <div className="Popup">Bootstrap</div>
+                </div>
             </div>
         </div>
     );

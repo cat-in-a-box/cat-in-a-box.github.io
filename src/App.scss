@@ -97,12 +97,13 @@
 
 /******   face   ******/
 .Face {
-    margin-top: 10%;
+    margin: 0;
     @include for-phone-only {
         margin: 2em 1.5em 0 1.5em;
     }
 }
 .Face h1 {
+    margin: 1em 0 0 0;
     font-weight: 600;
     font-size: 2.5em;
 }
@@ -112,18 +113,12 @@
         margin: 1em 0 0 0.7em;
     }
 }
-.reactIcon {
-    margin: 2em auto 0 auto;
-    animation-name: spin;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    // Ниже код - чтобы бекграунд на не пустом фоне не крутился вместе с png файлом, где есть прозрачность
-    text-rendering: optimizeLegibility;
-    background: rgba(0, 0, 0, 0.005);
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
-    -webkit-font-smoothing: antialiased; // на всякий случай тоже
-    -moz-osx-font-smoothing: grayscale; // на всякий случай тоже
+.faceimg {
+    margin: 8em auto 0 auto;
+    width: 200px;
+    //transform: scale(0.45);
+    border: solid 3px #4c4c4c;
+    border-radius: 50em;
 
 }
 @keyframes spin {
@@ -137,7 +132,7 @@
 
 /******   about   ******/
 .About {
-    margin: 8em auto 8em auto;
+    margin: 4em auto 8em auto;
     @include for-phone-only {
         margin: 1em 1em 1em 1em;
     }
@@ -152,7 +147,7 @@
 .About h1 {
     font-weight: 500;
     font-size: 2.5em;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
     margin-top: 3em;
 }
 .About p {
@@ -433,8 +428,8 @@
     margin: 12em auto 0 auto;
 }
 .Footer p {
-    margin-top: 5em;
-    margin-bottom: 1em;
+    margin-top: 0;
+    margin-bottom: 0.6em;
     font-size: 0.9em;
 }
 
