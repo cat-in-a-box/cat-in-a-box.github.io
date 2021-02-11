@@ -4,12 +4,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "node-sass": "^4.14.1",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
-    "react-scrollable-anchor": "^0.6.1"
+    "react-scrollable-anchor": "^0.6.1",
+    "sass": "^1.32.7"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -17,8 +17,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "sass-watch-compile": "node-sass --watch src -o src"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
