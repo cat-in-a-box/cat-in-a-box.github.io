@@ -16,7 +16,7 @@ function RestartButton(event) {
 
     //Собственно самам кнопка
     return (
-        <a className="RestartButton" href="./">Перезапуск (Пробел)</a>
+        <a className="RestartButton" href="https://cat-in-a-box.github.io/snake">Перезапуск (Пробел)</a>
     )
 }
 
