@@ -11,7 +11,7 @@ const Projects = () => {
                         <img src={require('./files/pics/profdela2.png')} alt="ProfdelaIcon2"/>
                         <div className="CardText">
                             <h3><b>Профдела</b></h3>
-                            <h4>Сайт для продажи товаров</h4>
+                            <h4>Интернет-магазин</h4>
                         </div>
                     </a>
                 </div>

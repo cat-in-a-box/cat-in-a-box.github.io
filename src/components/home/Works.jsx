@@ -2,7 +2,7 @@ import React from "react";
 
 const Works = () => {
     return (
-        <div className="Works"><h1>Небольшие поделки</h1>
+        <div className="Works"><h1>Небольшие приложения</h1>
             <div className="WorksPlaceholder">
                 <a href={"mousewheelchecker/"} rel="noopener noreferrer" className="Card">
                     <img src={require('./files/pics/mouse.png')} alt="MouseIcon"/>
@@ -10,7 +10,7 @@ const Works = () => {
                     <div className="CardText">
                         <h3><b>Mousewheel Check</b></h3>
                         <h4>Диагностика колеса мышки</h4>
-                        <h4>Все мы иногда ломаемся</h4>
+                        <h4>Когда оно ломается</h4>
                     </div>
                 </a>
                 <a href={"calculator/"} rel="noopener noreferrer" className="Card">
@@ -27,8 +27,8 @@ const Works = () => {
                     <img src={require('./files/pics/paw2.png')} alt="PawIcon2" width="150px"/>
                     <div className="CardText">
                         <h3><b>Gallery</b></h3>
-                        <h4>Галарея с котами</h4>
-                        <h4>Что может быть не так?</h4>
+                        <h4>Галерея с котами</h4>
+                        <h4>Ведь все любят котов</h4>
                     </div>
                 </a>
                 <a href={"snake/"} rel="noopener noreferrer" className="Card">
