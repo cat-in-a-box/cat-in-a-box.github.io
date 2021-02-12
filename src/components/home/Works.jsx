@@ -4,7 +4,7 @@ const Works = () => {
     return (
         <div className="Works"><h1>Небольшие приложения</h1>
             <div className="WorksPlaceholder">
-                <a href={"/mousewheelchecker/"} className="Card">
+                <a href={"/mousewheelchecker"} className="Card">
                     <img src={require('./files/pics/mouse.png')} alt="MouseIcon"/>
                     <img src={require('./files/pics/mouse2.png')} alt="MouseIcon2"/>
                     <div className="CardText">
