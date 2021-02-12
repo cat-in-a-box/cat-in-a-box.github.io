@@ -3,10 +3,10 @@ import {Route, BrowserRouter} from "react-router-dom";
 import "./App.scss";
 
 import Home from './components/home/Home.jsx';
-import Gallery from './components/gallery/gallery';
-import Snake from './components/snake/Snake';
-import Calculator from './components/calculator/Calculator';
-import MousewheelChecker from './components/mousewheelChecker/mousewheelChecker';
+import Gallery from './components/gallery/Gallery.jsx';
+import Snake from './components/snake/Snake.jsx';
+import Calculator from './components/calculator/Calculator.jsx';
+import MousewheelChecker from './components/mousewheelChecker/MousewheelChecker.jsx';
 
 function App() {
     return (
