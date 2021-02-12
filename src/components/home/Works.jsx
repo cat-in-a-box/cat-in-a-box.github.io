@@ -4,7 +4,7 @@ const Works = () => {
     return (
         <div className="Works"><h1>Небольшие приложения</h1>
             <div className="WorksPlaceholder">
-                <a href={"mousewheelchecker/"} rel="noopener noreferrer" className="Card">
+                <a href={"/mousewheelchecker/"} className="Card">
                     <img src={require('./files/pics/mouse.png')} alt="MouseIcon"/>
                     <img src={require('./files/pics/mouse2.png')} alt="MouseIcon2"/>
                     <div className="CardText">
@@ -13,7 +13,7 @@ const Works = () => {
                         <h4>Когда оно ломается</h4>
                     </div>
                 </a>
-                <a href={"calculator/"} rel="noopener noreferrer" className="Card">
+                <a href={"/calculator"} rel="noopener noreferrer" className="Card">
                     <img src={require('./files/pics/calculator.png')} alt="CaloriesIcon"/>
                     <img src={require('./files/pics/calculator2.png')} alt="CaloriesIcon2"/>
                     <div className="CardText">
@@ -22,7 +22,7 @@ const Works = () => {
                         <h4>Считай цифры как в школе</h4>
                     </div>
                 </a>
-                <a href={"gallery/"} rel="noopener noreferrer" className="Card">
+                <a href={"/gallery"} rel="noopener noreferrer" className="Card">
                     <img src={require('./files/pics/paw.png')} alt="PawIcon" width="150px"/>
                     <img src={require('./files/pics/paw2.png')} alt="PawIcon2" width="150px"/>
                     <div className="CardText">
@@ -31,7 +31,7 @@ const Works = () => {
                         <h4>Ведь все любят котов</h4>
                     </div>
                 </a>
-                <a href={"snake/"} rel="noopener noreferrer" className="Card">
+                <a href={"/snake"} rel="noopener noreferrer" className="Card">
                     <img src={require('./files/pics/snake.png')} alt="ChickenIcon" width="180px"/>
                     <img src={require('./files/pics/snake2.png')} alt="ChickenIcon2" width="180px"/>
                     <div className="CardText">
