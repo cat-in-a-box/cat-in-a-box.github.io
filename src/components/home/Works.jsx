@@ -10,7 +10,7 @@ const Works = () => {
                     <div className="CardText">
                         <h3><b>Mousewheel Check</b></h3>
                         <h4>Диагностика колеса мышки</h4>
-                        <h4>Когда оно ломается</h4>
+                        <h4>Если вдруг ломается</h4>
                     </div>
                 </a>
                 <a href={"/calculator"} rel="noopener noreferrer" className="Card">
@@ -19,7 +19,7 @@ const Works = () => {
                     <div className="CardText">
                         <h3><b>Calculator</b></h3>
                         <h4>Нажимай кнопки</h4>
-                        <h4>Считай цифры как в школе</h4>
+                        <h4>Будто снова в школе</h4>
                     </div>
                 </a>
                 <a href={"/gallery"} rel="noopener noreferrer" className="Card">
