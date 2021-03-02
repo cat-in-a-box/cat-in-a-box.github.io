@@ -1,6 +1,6 @@
 {
   "name": "cat-in-a-box.github.io",
-  "homepage": "https://cat-in-a-box.github.io/",
+  "homepage": "https://cat-in-a-box.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

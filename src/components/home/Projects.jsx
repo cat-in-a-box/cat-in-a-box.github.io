@@ -14,6 +14,14 @@ const Projects = () => {
                             <h4>Интернет - магазин</h4>
                         </div>
                     </a>
+                    <a href="https://rick-morty-for-nethouse.netlify.app/" target="_blank" rel="noopener noreferrer" className="ProjectCard">
+                        <img src={require('./files/pics/rick-morty.png')} alt="Rick-MortyIcon"/>
+                        <img src={require('./files/pics/rick-morty2.png')} alt="Rick-MortyIcon2"/>
+                        <div className="CardText">
+                            <h3><b>Персонажи Rick and Morty</b></h3>
+                            <h4>Работа с внешним API через Axios</h4>
+                        </div>
+                    </a>
                 </div>
             </div>
         </ScrollableAnchor>
