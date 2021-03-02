@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.731b9790.chunk.css",
-    "main.js": "/static/js/main.5c71ac4e.chunk.js",
-    "main.js.map": "/static/js/main.5c71ac4e.chunk.js.map",
+    "main.js": "/static/js/main.009051ad.chunk.js",
+    "main.js.map": "/static/js/main.009051ad.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d219ea07.js",
     "runtime-main.js.map": "/static/js/runtime-main.d219ea07.js.map",
-    "static/js/2.8e952224.chunk.js": "/static/js/2.8e952224.chunk.js",
-    "static/js/2.8e952224.chunk.js.map": "/static/js/2.8e952224.chunk.js.map",
+    "static/js/2.b842ca9e.chunk.js": "/static/js/2.b842ca9e.chunk.js",
+    "static/js/2.b842ca9e.chunk.js.map": "/static/js/2.b842ca9e.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.daa32dc2479d980a7faa43da5cfbd141.js": "/precache-manifest.daa32dc2479d980a7faa43da5cfbd141.js",
+    "precache-manifest.b847fd54feed4a4d3d68e857e4231d53.js": "/precache-manifest.b847fd54feed4a4d3d68e857e4231d53.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.731b9790.chunk.css.map": "/static/css/main.731b9790.chunk.css.map",
-    "static/js/2.8e952224.chunk.js.LICENSE.txt": "/static/js/2.8e952224.chunk.js.LICENSE.txt",
+    "static/js/2.b842ca9e.chunk.js.LICENSE.txt": "/static/js/2.b842ca9e.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/static/media/mouseUp.51dd4a9f.png",
     "static/media/bootstrap.png": "/static/media/bootstrap.0491a315.png",
     "static/media/calculator2.png": "/static/media/calculator2.67787c56.png",
@@ -40,14 +40,16 @@
     "static/media/profdela2.png": "/static/media/profdela2.9c932e8d.png",
     "static/media/react.png": "/static/media/react.7b1889c9.png",
     "static/media/responsive.png": "/static/media/responsive.57d3e086.png",
+    "static/media/rick-morty.png": "/static/media/rick-morty.16627c8c.png",
+    "static/media/rick-morty2.png": "/static/media/rick-morty2.7ca3e0c1.png",
     "static/media/sass.png": "/static/media/sass.e0b871b4.png",
     "static/media/snake.png": "/static/media/snake.bbf1876b.png",
     "static/media/snake2.png": "/static/media/snake2.370fce57.png"
   },
   "entrypoints": [
     "static/js/runtime-main.d219ea07.js",
-    "static/js/2.8e952224.chunk.js",
+    "static/js/2.b842ca9e.chunk.js",
     "static/css/main.731b9790.chunk.css",
-    "static/js/main.5c71ac4e.chunk.js"
+    "static/js/main.009051ad.chunk.js"
   ]
 }
