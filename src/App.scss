@@ -273,7 +273,7 @@
     user-select: none;
     display: inline-block;
     margin: 1em 0.5em 3em;
-    width: 12em;
+    width: 16em;
     height: 12em;
     @include for-phone-only {
         height: 8em;
@@ -354,7 +354,7 @@
     @extend .Card;
     @include for-tablets-portrait-landscape {
         padding: 0.7em 0 2em 0;
-        width: 12em;
+        width: 16em;
     }
     @include for-desktop-up {
         width: 28em;
@@ -366,7 +366,7 @@
     background: white;
     @include for-tablets-portrait-landscape {
         margin: 2em 2em 3em 2em;
-        width: 55%;
+        width: 60%;
     }
     @include for-desktop-up {
         margin-top: 2em;
