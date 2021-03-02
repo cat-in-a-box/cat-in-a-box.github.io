@@ -1,22 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-* {
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    font-family: 'Jost', serif;
-    font-weight: normal;
-    background-image: url(components/home/files/Background.jpg);
-    background-repeat: repeat;
-    color: rgb(66, 66, 66);
-    text-decoration: none;
-
-    -ms-touch-action: manipulation;
-    touch-action: manipulation;
-    -webkit-tap-highlight-color: transparent; /* Убрать подсвечивание ссылок */
-
-}
-
 /*** *** creating sass mixins for various devices *** ***/
 @mixin for-phone-only {
     @media (max-width: 599px) {
@@ -47,6 +30,29 @@
     @media (min-width: 1600px) {
         @content;
     }
+}
+
+* {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Jost', serif;
+    font-weight: normal;
+    background-image: url(components/home/files/Background.jpg);
+    background-repeat: repeat;
+    color: rgb(66, 66, 66);
+    text-decoration: none;
+
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent; /* Убрать подсвечивание ссылок */
+
+}
+h1 {
+    font-size: 2.5em;
+    font-weight: 500;
+    margin-top: 3em;
+    margin-bottom: 0.6em;
 }
 
 /******   header   ******/
@@ -105,7 +111,6 @@
 .Face h1 {
     margin: 1em 0 0 0;
     font-weight: 600;
-    font-size: 2.5em;
 }
 .Face h2 {
     font-size: 1.5em;
@@ -116,7 +121,6 @@
 .faceimg {
     margin: 8em auto 0 auto;
     width: 200px;
-    //transform: scale(0.45);
     border: solid 3px #4c4c4c;
     border-radius: 50em;
 
@@ -144,11 +148,7 @@
         margin: 0 auto;
     }
 }
-.About h1 {
-    font-weight: 500;
-    font-size: 2.5em;
-    margin-top: 3em;
-}
+
 .About p {
     font-size: 1.1em;
     margin: 1em;
@@ -161,12 +161,8 @@
 .Skills {
     margin: 8em auto 8em auto;
 }
-.Skills h1 {
-    font-weight: 500;
-    font-size: 2.5em;
-}
 .SkillsIconPlaceHolder {
-    margin: 3em auto 0 auto;
+    margin: auto;
     width: 90%;
 }
 .SkillsIcon {
@@ -236,9 +232,6 @@
     font-weight: 600;
 }
 .Works h1 {
-    font-weight: 500;
-    font-size: 2.5em;
-    margin-bottom: 0.4em;
     @include for-phone-only {
         width: 8em;
         margin: 0 auto 0 auto;
@@ -249,15 +242,12 @@
     justify-content: center;
     @include for-tablets-landscape-only {
         display: flex;
-        margin-top: 2em;
     }
     @include for-desktop-up {
         display: flex;
-        margin-top: 2em;
     }
     @include for-big-desktop-up {
         display: flex;
-        margin-top: 2em;
     }
 
 }
@@ -311,45 +301,6 @@
         transform: scale(1.03);
     }
 }
-.Card:hover img:nth-child(2) {
-    @include for-desktop-up {
-        display: inline;
-    }
-}
-.Card:hover img:nth-child(1) {
-    @include for-desktop-up {
-        display: none;
-    }
-}
-.Card:focus {
-    transform: scale(0.97);
-    transition-duration: 0.1s;
-}
-.Card:focus img:nth-child(2) {
-    display: none;
-    @include for-phone-only {
-        display: inline;
-    }
-    @include for-tablets-portrait-landscape {
-        display: inline;
-    }
-    @include for-tablets-landscape-only {
-        display: inline;
-    }
-
-}
-.Card:focus img:nth-child(1) {
-    display: inline;
-    @include for-phone-only {
-        display: none;
-    }
-    @include for-tablets-portrait-landscape {
-        display: none;
-    }
-    @include for-tablets-landscape-only {
-        display: none;
-    }
-}
 .ProjectCard {
     @extend .Card;
     @include for-tablets-portrait-landscape {
@@ -373,25 +324,7 @@
         transform: scale(1.2);
     }
 }
-.Card img:nth-child(1) {
-    display: inline;
-    @include for-phone-only {
-        display: none;
-    }
-    @include for-tablets-portrait-landscape {
-        display: none;
-    }
 
-}
-.Card img:nth-child(2) {
-    display: none;
-    @include for-phone-only {
-        display: inline;
-    }
-    @include for-tablets-portrait-landscape {
-        display: inline;
-    }
-}
 .CardText {
     background: white;
 }
@@ -407,18 +340,10 @@
 .Contact {
     margin: 8em auto 8em auto;
 }
-.Contact h1 {
-    font-weight: 500;
-    font-size: 2.5em;
-    margin-bottom: 0.5em;
-}
+
 .Contact p {
     margin-top: 0.3em;
     margin-bottom: 0.3em;
-    font-size: 1.2em;
-}
-.Contact h2 {
-    font-weight: 500;
     font-size: 1.2em;
 }
 
