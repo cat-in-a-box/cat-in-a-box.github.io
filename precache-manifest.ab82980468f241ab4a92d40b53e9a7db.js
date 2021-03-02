@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2e011ae19ed2365afe4c18b6a5f2f2a7",
+    "revision": "517fb383e3c13430ca5c3875bcff174d",
     "url": "/index.html"
   },
   {
-    "revision": "e267b9629ba5de54af26",
+    "revision": "4381f172013f48fb977f",
     "url": "/static/css/main.8d991f5a.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.31e4b560.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e267b9629ba5de54af26",
-    "url": "/static/js/main.d7692977.chunk.js"
+    "revision": "4381f172013f48fb977f",
+    "url": "/static/js/main.70f392c8.chunk.js"
   },
   {
     "revision": "21067e754cfe1a3f33f2",
@@ -32,8 +32,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/bootstrap.0491a315.png"
   },
   {
-    "revision": "67787c566222d0f56d24b218c7586a05",
-    "url": "/static/media/calculator.67787c56.png"
+    "revision": "27cc89949b98d3c56e03340be8762dff",
+    "url": "/static/media/calculator.27cc8994.png"
   },
   {
     "revision": "c016206e94e7f1c9d5d8b65aa13dcd34",
@@ -52,8 +52,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/javascript.45c28be7.png"
   },
   {
-    "revision": "6796c24fcf3231700dfe0d7544790e92",
-    "url": "/static/media/mouse.6796c24f.png"
+    "revision": "38820680c397c6f58b94e88054ef4868",
+    "url": "/static/media/mouse.38820680.png"
   },
   {
     "revision": "cc965aab4e03f08b2034de102a6c6813",
@@ -72,8 +72,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/next.fc2db8f3.png"
   },
   {
-    "revision": "606b7d7f147d30cf01826aa1440ab3ec",
-    "url": "/static/media/paw.606b7d7f.png"
+    "revision": "25a3e225ab152a2fc080ea925d666507",
+    "url": "/static/media/paw.25a3e225.png"
   },
   {
     "revision": "305e389c89809a6bab83dda88c373542",
@@ -144,7 +144,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/sass.e0b871b4.png"
   },
   {
-    "revision": "e13c2f50c95c63b6849c1f9e687fc774",
-    "url": "/static/media/snake.e13c2f50.png"
+    "revision": "7560bbb734d920cf2ab9c99c9a808e3c",
+    "url": "/static/media/snake.7560bbb7.png"
   }
 ]);
