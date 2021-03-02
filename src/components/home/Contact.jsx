@@ -7,7 +7,7 @@ const Contact = () => {
             <div className="Contact">
                 <h1>Свяжитесь со мной!</h1>
                 <p>Просто напишите письмо на</p>
-                <h2>timoshuk.alexander@gmail.com</h2>
+                <p style={{fontWeight: '500'}}>timoshuk.alexander@gmail.com</p>
             </div>
         </ScrollableAnchor>
     )
