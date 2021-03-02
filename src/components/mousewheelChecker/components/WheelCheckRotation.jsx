@@ -1,8 +1,15 @@
 import React from 'react';
+import mouseUp from '../files/mouseUp.png'
+import mouseDown from '../files/mouseDown.png'
 
 class WheelCheckRotation extends React.Component {
 
     componentDidMount() {
+        // Preload для картинок
+        let imagePreloadArray = [mouseUp, mouseDown]
+        imagePreloadArray.forEach((image) => {
+            new Image().src = image
+        });
 
         let mouseArea = document.querySelector('.WheelCheckArea');
         let mouseUpCooldown;
