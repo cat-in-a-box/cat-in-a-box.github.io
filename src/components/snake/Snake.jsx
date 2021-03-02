@@ -7,7 +7,7 @@ import RestartButton from "./components/RestartButton.jsx";
 const Snake = () => {
 
     return (
-        <div className="App">
+        <div className={"App"}>
             <HeaderGoBack/>
             <GameCanvas/>
             <GameProcess/>

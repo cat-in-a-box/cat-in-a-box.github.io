@@ -4,7 +4,7 @@ import GalleryComponent from "./components/GalleryComponent";
 
 function Gallery() {
     return (
-        <div className="App">
+        <div className={"App"}>
             <HeaderGoBack/>
             <GalleryComponent/>
         </div>

@@ -12,7 +12,7 @@ import Contact from './Contact.jsx';
 
 const Home = () => {
     return (
-        <div className="App">
+        <div className={"App"}>
             <Header/>
             <Face/>
             <About/>

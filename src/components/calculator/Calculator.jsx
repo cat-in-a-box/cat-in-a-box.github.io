@@ -5,7 +5,7 @@ import CalculatorComponent from "./Components/CalculatorComponent.jsx";
 const Calculator = () => {
 
     return (
-        <div className="App">
+        <div className={"App"}>
             <HeaderGoBack/>
             <CalculatorComponent/>
         </div>

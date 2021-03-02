@@ -13,7 +13,7 @@ export default class GalleryComponent extends React.Component {
 
     renderImage() {
         return (
-            <div className="row-container" draggable="false">
+            <div className={"row-container"} draggable={"false"}>
                 <img onClick={() => this.setViewImage(require('../files/pic1.jpeg'))}
                      src={require('../files/pic1.jpeg')} draggable="false" className="thumbnail" alt=""/>
                 <img onClick={() => this.setViewImage(require('../files/pic2.jpeg'))}
@@ -45,9 +45,9 @@ export default class GalleryComponent extends React.Component {
     render() {
         if (this.state.viewImage) {
             return (
-                <div className="viewContainer" onClick={() => this.setViewImage(null)} draggable="false">
-                    <img src={this.state.viewImage} draggable="false" className="viewImage" alt=""/>
-                    <div className="Text">Нажми еще раз на картинку чтобы скрыть её</div>
+                <div className={"viewContainer"} onClick={() => this.setViewImage(null)} draggable={"false"}>
+                    <img src={this.state.viewImage} draggable={"false"} className={"viewImage"} alt={""}/>
+                    <div className={"Text"}>Нажми еще раз на картинку чтобы скрыть её</div>
                 </div>
             );
         }

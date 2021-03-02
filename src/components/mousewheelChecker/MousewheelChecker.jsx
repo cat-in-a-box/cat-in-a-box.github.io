@@ -7,7 +7,7 @@ import Description from './components/Description.jsx';
 const MousewheelChecker = () => {
 
     return (
-        <div className="App">
+        <div className={"App"}>
             <HeaderGoBack/>
             <Description/>
             <WheelCheckArea/>
