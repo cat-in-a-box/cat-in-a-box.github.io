@@ -6,9 +6,10 @@ class WheelCheckRotation extends React.Component {
 
     componentDidMount() {
         // Preload для картинок
-        let imagePreloadArray = [mouseUp, mouseDown]
-        imagePreloadArray.forEach((image) => {
-            new Image().src = image
+        let images = [mouseUp, mouseDown]
+        images.forEach(() => {
+            new Image().src = mouseUp;
+            new Image().src = mouseDown
         });
 
         let mouseArea = document.querySelector('.WheelCheckArea');
