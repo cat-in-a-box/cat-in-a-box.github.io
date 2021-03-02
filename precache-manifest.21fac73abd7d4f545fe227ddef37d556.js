@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fea37469c4e793cc411800adc7bfc1e0",
+    "revision": "d40cf8f5b2ce399c5b83a691acb47a9d",
     "url": "/index.html"
   },
   {
-    "revision": "df71fafca3b9caff7995",
-    "url": "/static/css/main.731b9790.chunk.css"
+    "revision": "e267b9629ba5de54af26",
+    "url": "/static/css/main.8d991f5a.chunk.css"
   },
   {
-    "revision": "a00edbaee9174105cf91",
-    "url": "/static/js/2.b842ca9e.chunk.js"
+    "revision": "17bbfd61e75858d3372c",
+    "url": "/static/js/2.31e4b560.chunk.js"
   },
   {
     "revision": "bfa09cf1d9ed2a7b72cf29cb053d01bb",
-    "url": "/static/js/2.b842ca9e.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.31e4b560.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "df71fafca3b9caff7995",
-    "url": "/static/js/main.009051ad.chunk.js"
+    "revision": "e267b9629ba5de54af26",
+    "url": "/static/js/main.d7692977.chunk.js"
   },
   {
     "revision": "21067e754cfe1a3f33f2",
@@ -33,7 +33,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   },
   {
     "revision": "67787c566222d0f56d24b218c7586a05",
-    "url": "/static/media/calculator2.67787c56.png"
+    "url": "/static/media/calculator.67787c56.png"
   },
   {
     "revision": "c016206e94e7f1c9d5d8b65aa13dcd34",
@@ -52,16 +52,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/javascript.45c28be7.png"
   },
   {
-    "revision": "8ab99692afd63a3f224b309b4c7d90d4",
-    "url": "/static/media/mouse.8ab99692.png"
+    "revision": "6796c24fcf3231700dfe0d7544790e92",
+    "url": "/static/media/mouse.6796c24f.png"
   },
   {
     "revision": "cc965aab4e03f08b2034de102a6c6813",
     "url": "/static/media/mouse.cc965aab.png"
-  },
-  {
-    "revision": "6796c24fcf3231700dfe0d7544790e92",
-    "url": "/static/media/mouse2.6796c24f.png"
   },
   {
     "revision": "afb20c8fbb53f7cd4c761564e1b52027",
@@ -76,12 +72,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/next.fc2db8f3.png"
   },
   {
-    "revision": "db8278321b5e1e0b728c807f0a915ecc",
-    "url": "/static/media/paw.db827832.png"
-  },
-  {
     "revision": "606b7d7f147d30cf01826aa1440ab3ec",
-    "url": "/static/media/paw2.606b7d7f.png"
+    "url": "/static/media/paw.606b7d7f.png"
   },
   {
     "revision": "305e389c89809a6bab83dda88c373542",
@@ -132,12 +124,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/pic9.c5c3de7d.jpeg"
   },
   {
-    "revision": "c6180771d9b9cc752349f1d1b669bea1",
-    "url": "/static/media/profdela.c6180771.png"
-  },
-  {
     "revision": "9c932e8d956caecf121d2eab204cb38a",
-    "url": "/static/media/profdela2.9c932e8d.png"
+    "url": "/static/media/profdela.9c932e8d.png"
   },
   {
     "revision": "7b1889c94ed1d1e63784be98ba712038",
@@ -148,23 +136,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/responsive.57d3e086.png"
   },
   {
-    "revision": "16627c8c7d02ea47840cb29924622844",
-    "url": "/static/media/rick-morty.16627c8c.png"
-  },
-  {
-    "revision": "7ca3e0c1fc0f0689833c4608662eb9ad",
-    "url": "/static/media/rick-morty2.7ca3e0c1.png"
+    "revision": "d3873074af0b595efb0be8a1be3c9695",
+    "url": "/static/media/rick-morty.d3873074.png"
   },
   {
     "revision": "e0b871b47d566fe1bdc5a504bbc30dba",
     "url": "/static/media/sass.e0b871b4.png"
   },
   {
-    "revision": "bbf1876b86d8743ac717d8cd00f2591e",
-    "url": "/static/media/snake.bbf1876b.png"
-  },
-  {
-    "revision": "370fce57f1c7d132e3b2194b270fc448",
-    "url": "/static/media/snake2.370fce57.png"
+    "revision": "e13c2f50c95c63b6849c1f9e687fc774",
+    "url": "/static/media/snake.e13c2f50.png"
   }
 ]);
