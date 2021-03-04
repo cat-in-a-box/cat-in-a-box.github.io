@@ -42,6 +42,7 @@
     background-repeat: repeat;
     color: rgb(66, 66, 66);
     text-decoration: none;
+    scroll-behavior: smooth;
 
     -ms-touch-action: manipulation;
     touch-action: manipulation;
@@ -72,7 +73,7 @@ h1 {
         width: 7em;
     }
 }
-.Header a {
+.Header a, button {
     font-weight: 500;
     letter-spacing: 1px;
     font-size: 1.3em;
@@ -80,15 +81,18 @@ h1 {
     background: linear-gradient(#565656, #565656) no-repeat center bottom;
     background-size: 0 2px;
     transition: all 0.15s;
+    cursor: pointer;
+    border: none;
+    outline: none; /* Убрать подсвечивание кнопок в Хроме */
     @include for-phone-only {
         font-size: 1.1em;
     }
-
 }
-.Header a:hover {
+.Header a:hover, button:hover {
     background-size: 100% 2px;
 }
 .HeaderBackButton {
+    border: none;
     @extend .HeaderButton;
     width: 22em;
     margin-top: 0.8em;
