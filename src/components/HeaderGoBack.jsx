@@ -1,11 +1,12 @@
-import React from "react";
+import React from 'react'
+import { withRouter } from 'react-router-dom'
 
-const HeaderGoBack = () => {
-    return (
-        <div className={"Header"}>
-            <div className={"HeaderBackButton"}><a href={"../"}>Вернуться на главную</a></div>
-        </div>
-    )
-};
-
-export default HeaderGoBack;
+export default withRouter(({ history }) => {
+	return (
+			<div className={'Header'}>
+				<div className={'HeaderBackButton'} onClick={() => history.goBack()}>
+					<button>Вернуться на главную</button>
+				</div>
+			</div>
+	)
+})
