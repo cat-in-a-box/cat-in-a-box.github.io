@@ -17,7 +17,7 @@ const Skills = () => {
 						<div className={'Popup'}>React</div>
 					</div>
 					<div className={'SkillsIcon'}>
-						<img src={require('./files/pics/responsive.png')} alt={'adaptive'}/>
+						<img src={require('./files/pics/responsive.png')} alt={'Adaptive'}/>
 						<div className={'Popup'}>Адаптивность</div>
 					</div>
 					<div className={'SkillsIcon'}>
@@ -27,6 +27,10 @@ const Skills = () => {
 					<div className={'SkillsIcon'}>
 						<img src={require('./files/pics/bootstrap.png')} alt={'Bootstrap'}/>
 						<div className={'Popup'}>Bootstrap</div>
+					</div>
+					<div className={'SkillsIcon'}>
+						<img src={require('./files/pics/rest.png')} alt={'RestApi'}/>
+						<div className={'Popup'}>REST API</div>
 					</div>
 					<div className={'SkillsIcon'}>
 						<img src={require('./files/pics/git.png')} alt={'Git'}/>
