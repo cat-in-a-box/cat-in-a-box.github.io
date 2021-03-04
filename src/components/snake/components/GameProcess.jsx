@@ -3,7 +3,6 @@ import React from 'react';
 export default class GameProcess extends React.Component {
 
     componentDidMount() {
-
         //скорость обновления игры
         const GameRefreshSpeed = 120;
         //цвет бордера канваса
@@ -56,10 +55,16 @@ export default class GameProcess extends React.Component {
          * Постоянно выполняется, чтобы игра игралась
          **/
 
+        let victoryText = document.getElementById("scoreUnderText");
+
         function main() {
-            if (GameEnd()) return;
+            if (GameEnd()) {
+                victoryText.innerHTML = "Не отчаивайтесь, попробуйте еще раз! :)";
+                return;
+            }
             // Заканчивает игру, если соблюдены все условия
             setTimeout(function onTick() {
+                victoryText.innerHTML = "Двигай змейку с помощью стрелок на клавиатуре";
                 changingDirection = false;
                 prepareCanvas();
                 drawFood();
