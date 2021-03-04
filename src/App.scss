@@ -627,20 +627,6 @@ h1 {
     filter: none;
 }
 
-/******   pics preload   ******/
-.WheelPreload1 {
-    content: url("/src/components/mousewheelChecker/files/mouseUp.png");
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-.WheelPreload2 {
-    content: url("/src/components/mousewheelChecker/files/mouseDown.png");
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
 /*******************************************************************/
 /***                   ***     SNAKE   ***                      ***/
 /*****************************************************************/
