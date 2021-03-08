@@ -1,6 +1,6 @@
 # Personal Web Page
 
-Just a personal web page built with <b>React</b> <b>React-router</b>, <b>SCSS</b>, <b>JavaScript</b>
+Just a personal web page built with <b>React</b>, <b>React-Router</b>, <b>SCSS</b>, <b>JavaScript</b>
 and little bit of love.
 
 Provides information about me and my coding skills by showcasing my personal projects:
