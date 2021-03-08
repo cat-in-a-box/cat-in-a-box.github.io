@@ -2,9 +2,9 @@ import React from 'react'
 
 const Skills = () => {
 	return (
-			<div className={'Skills'}>
+			<div id={'Skills'}>
 				<h1>Мои навыки</h1>
-				<div>
+				<div className={'Skills'}>
 					<div className={'SkillsIcon'}>
 						<img src={require('../files/pics/code.png')} alt={'HTML-CSS'}/>
 						<div className={'SkillsPopup'}>HTML и CSS</div>

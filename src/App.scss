@@ -162,14 +162,17 @@ h1 {
 
 /******   skills  ******/
 .Skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
     .SkillsIcon {
-        position: relative;
         transition-delay: 0s;
         transition-duration: 0.15s;
         transition-property: all;
         transition-timing-function: ease;
-        display: inline-flex;
-        margin: 0.75em 2em 0 2em;
+        margin: 0.75em 1.5em 0 1.5em;
         width: 4em;
         background: rgba(0, 0, 0, 0.005);
         @include for-phone-only {
@@ -177,9 +180,6 @@ h1 {
             width: 20%;
         }
         img {
-            position: relative;
-            display: inline-flex;
-            justify-self: center;
             margin: 0 auto 0 auto;
             width: 4em;
             // Код ниже -  чтобы бекграунд не захватывался при движении png файла
@@ -201,6 +201,7 @@ h1 {
             }
         }
     }
+
     .SkillsPopup {
         visibility: hidden;
         width: 120px; // важно учитывать вот это дело, когда центруешь
@@ -219,113 +220,69 @@ h1 {
         border: 0.1em solid rgba(75, 71, 71, 0.42);
     }
 }
-/******   works   ******/
-.Works {
-    margin: 0 auto 0 auto;
+/******   Cards   ******/
+.CardsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    @include for-tablets-landscape-only {
-        display: flex;
-    }
-    @include for-desktop-up {
-        display: flex;
-    }
-    @include for-big-desktop-up {
-        display: flex;
-    }
-    b {
-        background: white;
-        font-weight: 600;
-    }
-    h1 {
-        @include for-phone-only {
-            max-width: 8em;
-            margin-right: auto;
-            margin-left: auto;
-        }
-    }
-}
 
-/******   cards   ******/
-.Card {
-    background: white !important;
-    border-radius: 2em;
-    border: 1px solid rgba(75, 71, 71, 0.349);
-    box-shadow: rgb(211, 211, 211) 2px 2px 30px;
-    overflow: hidden;
-    outline: none;
-    user-select: none;
-    display: inline-block;
-    margin: 1em 0.5em 3em;
-    width: 16em;
-    height: 12em;
-    @include for-phone-only {
-        height: 8em;
-        padding: 2em 0 1em 0;
-        margin-bottom: 1em;
-    }
-    @include for-tablets-portrait-landscape {
-        width: 12em;
-        padding-bottom: 2em;
-    }
-    @include for-desktop-up {
-        padding-top: 1em;
-        margin: 2em;
-        width: 14em;
-        height: 16em;
+    .Card {
+        background: white;
         border-radius: 2em;
-    }
-    &:hover {
-        transition-delay: 0s;
-        transition-duration: 0.15s;
-        transition-property: all;
-        transition-timing-function: ease;
+        border: 1px solid rgba(75, 71, 71, 0.349);
+        box-shadow: rgb(211, 211, 211) 2px 2px 30px;
+        overflow: hidden;
+        outline: none;
+        user-select: none;
+        display: inline-block;
+        margin: 1em 0.5em 3em;
+        height: 8em;
+        padding: 2em 0.3em 2em 0.3em;
         @include for-desktop-up {
-            transform: scale(1.03);
+            padding-top: 3em;
+            margin: 1.5em;
+            height: 8.5em;
+        }
+        &:hover {
+            transition-delay: 0s;
+            transition-duration: 0.15s;
+            transition-property: all;
+            transition-timing-function: ease;
+            @include for-desktop-up {
+                transform: scale(1.03);
+            }
+        }
+        h3 {
+            background: white;
+            font-weight: 600;
+        }
+        p {
+            background: white;
+            font-size: 0.9em;
+        }
+        img {
+            margin-bottom: 5px;
+            width: 25%;
+            background: white;
         }
     }
-    h3 {
-        background: white;
-    }
-    h4 {
-        background: white;
-        font-size: 0.9em;
-    }
-    img {
-        margin: 2em;
-        width: 35%;
-        background: white;
-        @include for-phone-only {
-            margin: 0;
-            width: 22%;
-        }
-    }
-}
-.BigCard {
-    @extend .Card;
-    @include for-tablets-portrait-landscape {
-        padding: 0.7em 0 2em 0;
-        width: 16em;
-    }
-    @include for-desktop-up {
-        width: 28em;
-        height: 13em;
-    }
-    img {
-        margin: 1em;
-        @include for-tablets-portrait-landscape {
-            margin: 2em 2em 3em 2em;
-            width: 60%;
-        }
-        @include for-desktop-up {
-            margin-top: 2em;
-            transform: scale(1.2);
-        }
-    }
-}
 
+    .BigCard {
+        @extend .Card;
+        margin: 2em;
+        width: 28em;
+        height: 9em;
+        img {
+            transform: scale(1.5);
+            margin: 1em;
+        }
+    }
+}
 /******   contact   ******/
 .Contact {
     margin: 8em auto 8em auto;
+
     p {
         margin-top: 0.3em;
         margin-bottom: 0.3em;
@@ -336,6 +293,7 @@ h1 {
 /******   footer   ******/
 .Footer {
     margin: 12em auto 2em auto;
+
     p {
         margin: 0.3em;
         font-size: 0.9em;
@@ -426,24 +384,18 @@ h1 {
 /*****************************************************************/
 
 .Gallery {
-    display: block;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: 5em auto 0 auto;
-    @include for-phones-tablets-only {
-        width: 90%;
-        margin-top: 8%;
-    }
-    @include for-desktop-up {
-        width: 90%;
-    }
 }
 .GalleryThumbnail {
     border: 1px solid rgba(121, 121, 121, 0.39);
     border-radius: 1.5em;
     margin: 1em;
-    width: 12em;
-    @include for-desktop-up {
-        width: 20%;
-    }
+    width: 22rem;
+    height: 12rem;
     &:hover {
         transform: scale(1.02);
     }
@@ -466,7 +418,7 @@ h1 {
         width: 75%;
     }
     @include for-desktop-up {
-        width: 60%;
+        width: 62%;
     }
 }
 .GalleryImage {
