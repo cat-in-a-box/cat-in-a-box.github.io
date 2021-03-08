@@ -15,7 +15,7 @@ function RestartButton(event) {
 	}
 
     return (
-        <a className={"RestartButton"} href={"https://cat-in-a-box.github.io/snake"}>Перезапуск (Пробел)</a>
+        <a className={"SnakeRestartButton"} href={"https://cat-in-a-box.github.io/snake"}>Перезапуск (Пробел)</a>
     )
 }
 

@@ -40,7 +40,7 @@ export default class GameProcess extends React.Component {
         // Вертикальная скорость движения
         let dy = 0;
 
-        const gameCanvas = document.getElementById("gameCanvas");
+        const gameCanvas = document.getElementById("SnakeGameCanvas");
         const ctx = gameCanvas.getContext("2d");
 
         // Старт игры
@@ -55,7 +55,7 @@ export default class GameProcess extends React.Component {
          * Постоянно выполняется, чтобы игра игралась
          **/
 
-        let victoryText = document.getElementById("scoreUnderText");
+        let victoryText = document.getElementById("SnakeScoreUnderText");
 
         function main() {
             if (GameEnd()) {
@@ -111,7 +111,7 @@ export default class GameProcess extends React.Component {
                 // Повышает счёт
                 score += 1;
                 // Отображает счет на экране
-                document.getElementById('score').innerHTML = score;
+                document.getElementById('SnakeScore').innerHTML = score;
                 // Создает новую еду
                 spawnFood();
             } else {

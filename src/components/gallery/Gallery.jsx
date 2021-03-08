@@ -1,11 +1,11 @@
 import React from "react";
-import HeaderGoBack from "../HeaderGoBack.jsx";
+import BackButton from "../BackButton.jsx";
 import GalleryComponent from "./components/GalleryComponent";
 
 function Gallery() {
     return (
-        <div className={"App"}>
-            <HeaderGoBack/>
+        <div>
+            <BackButton/>
             <GalleryComponent/>
         </div>
     );

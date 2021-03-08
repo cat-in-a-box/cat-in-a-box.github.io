@@ -1,5 +1,5 @@
 import React from "react";
-import HeaderGoBack from "../HeaderGoBack.jsx";
+import BackButton from "../BackButton.jsx";
 import GameCanvas from "./components/GameCanvas.jsx";
 import GameProcess from "./components/GameProcess.jsx";
 import RestartButton from "./components/RestartButton.jsx";
@@ -7,8 +7,8 @@ import RestartButton from "./components/RestartButton.jsx";
 const Snake = () => {
 
     return (
-        <div className={"App"}>
-            <HeaderGoBack/>
+        <div>
+            <BackButton/>
             <GameCanvas/>
             <GameProcess/>
             <RestartButton/>

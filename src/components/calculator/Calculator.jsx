@@ -1,12 +1,12 @@
 import React from "react";
-import HeaderGoBack from "../HeaderGoBack.jsx";
+import BackButton from "../BackButton.jsx";
 import CalculatorComponent from "./Components/CalculatorComponent.jsx";
 
 const Calculator = () => {
 
     return (
-        <div className={"App"}>
-            <HeaderGoBack/>
+        <div>
+            <BackButton/>
             <CalculatorComponent/>
         </div>
     );

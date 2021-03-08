@@ -1,24 +1,24 @@
 import React from 'react'
 
-import Header from '../Header'
-import Footer from '../Footer.jsx'
-import Face from './Face.jsx'
-import About from './About.jsx'
-import Skills from './Skills.jsx'
-import Projects from './Projects.jsx'
-import Works from './Works.jsx'
-import Contact from './Contact.jsx'
+import Header from './components/Header'
+import Footer from './components/Footer.jsx'
+import Face from './components/Face.jsx'
+import About from './components/About.jsx'
+import Skills from './components/Skills.jsx'
+import Works from './components/Works.jsx'
+import SmallWorks from './components/SmallWorks.jsx'
+import Contact from './components/Contact.jsx'
 
 
 const Home = () => {
 	return (
-			<div className={'App'}>
+			<div>
 				<Header/>
 				<Face/>
 				<About/>
 				<Skills/>
-				<Projects/>
 				<Works/>
+				<SmallWorks/>
 				<Contact/>
 				<Footer/>
 			</div>

@@ -2,7 +2,7 @@ import React from 'react';
 import mouseUp from '../files/mouseUp.png'
 import mouseDown from '../files/mouseDown.png'
 
-class WheelCheckRotation extends React.Component {
+class WheelCheckProcess extends React.Component {
 
     componentDidMount() {
         // Preload для картинок
@@ -18,16 +18,16 @@ class WheelCheckRotation extends React.Component {
 
         mouseArea.addEventListener('wheel', function (a) {
             if (a.deltaY > 0) {
-                document.getElementById('Wheel').classList.add('Down');
+                document.getElementById('Mouse').classList.add('Down');
                 window.clearTimeout(mouseDownCooldown);
                 mouseDownCooldown = window.setTimeout(function () {
-                    document.getElementById('Wheel').classList.remove('Down')
+                    document.getElementById('Mouse').classList.remove('Down')
                 }, 550);
             } else if (a.deltaY < 0) {
-                document.getElementById('Wheel').classList.add('Up');
+                document.getElementById('Mouse').classList.add('Up');
                 window.clearTimeout(mouseUpCooldown);
                 mouseUpCooldown = window.setTimeout(function () {
-                    document.getElementById('Wheel').classList.remove('Up')
+                    document.getElementById('Mouse').classList.remove('Up')
                 }, 550);
             }
 
@@ -39,4 +39,4 @@ class WheelCheckRotation extends React.Component {
     }
 }
 
-export default WheelCheckRotation;
+export default WheelCheckProcess;

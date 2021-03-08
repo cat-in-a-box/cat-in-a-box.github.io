@@ -1,17 +1,17 @@
 import React from "react";
-import HeaderGoBack from "../HeaderGoBack.jsx";
+import BackButton from "../BackButton.jsx";
 import WheelCheckArea from "./components/WheelCheckArea.jsx";
-import WheelCheckRotation from "./components/WheelCheckRotation.jsx";
-import Description from './components/Description.jsx';
+import WheelCheckProcess from "./components/WheelCheckProcess.jsx";
+import WheelCheckDescription from './components/WheelCheckDescription.jsx';
 
 const MousewheelChecker = () => {
 
     return (
-        <div className={"App"}>
-            <HeaderGoBack/>
-            <Description/>
+        <div>
+            <BackButton/>
+            <WheelCheckDescription/>
             <WheelCheckArea/>
-            <WheelCheckRotation/>
+            <WheelCheckProcess/>
         </div>
     );
 
