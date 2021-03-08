@@ -2,7 +2,7 @@ import React from 'react'
 
 const Header = () => {
 	return (
-			<header className={'Header'}>
+			<header id={'Header'}>
 				<div className={'HeaderButton'}><a href={'#face'}>Главная</a></div>
 				<div className={'HeaderButton'}><a href={'#about'}>Обо мне</a></div>
 				<div className={'HeaderButton'}><a href={'#projects'}>Проекты</a></div>

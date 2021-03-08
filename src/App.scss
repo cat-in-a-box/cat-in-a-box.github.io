@@ -57,7 +57,11 @@ h1 {
 }
 
 /******   header   ******/
-.Header {
+#Header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     outline: none;
     user-select: none;
     padding: 0.7em;
@@ -66,7 +70,6 @@ h1 {
     }
 }
 .HeaderButton {
-    display: inline-block;
     width: 10em;
     @include for-phone-only {
         margin-top: 0.3em;
@@ -106,7 +109,7 @@ h1 {
 /*****************************************************************/
 
 /******   face   ******/
-.Face {
+#Face {
     margin: 0;
     @include for-phone-only {
         margin: 2em 1.5em 0 1.5em;
@@ -139,7 +142,7 @@ h1 {
 }
 
 /******   about   ******/
-.About {
+#About {
     margin: 4em auto 8em auto;
     @include for-phone-only {
         margin: 1em 1em 1em 1em;
@@ -291,7 +294,7 @@ h1 {
 }
 
 /******   footer   ******/
-.Footer {
+#Footer {
     margin: 12em auto 2em auto;
 
     p {

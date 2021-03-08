@@ -3,8 +3,10 @@ import { withRouter } from 'react-router-dom'
 
 export default withRouter(({ history }) => {
 	return (
-			<div className={'BackButton'} onClick={() => history.goBack()}>
-				<button>Вернуться на главную</button>
-			</div>
+			<header id={'Header'}>
+				<div className={'BackButton'} onClick={() => history.goBack()}>
+					<button>Вернуться на главную</button>
+				</div>
+			</header>
 	)
 })
