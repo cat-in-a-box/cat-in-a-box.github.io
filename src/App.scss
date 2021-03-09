@@ -158,13 +158,13 @@ h1 {
     stroke-dashoffset: 0;
     transition: all 0.5s linear;
 }
-#checkbox:checked + .toggle:before {
+#Checkbox:checked + .Toggle:before {
     background: #7dff83;
 }
-#checkbox:checked + .toggle span {
+#Checkbox:checked + .Toggle span {
     transform: translateX(18px);
 }
-#checkbox:checked + .toggle span path {
+#Checkbox:checked + .Toggle span path {
     stroke: #51d421;
     stroke-dasharray: 25;
     stroke-dashoffset: 25;
