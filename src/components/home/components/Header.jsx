@@ -1,4 +1,5 @@
 import React from 'react'
+import DarkModeButton from './DarkModeButton'
 
 const Header = () => {
 	return (
@@ -8,6 +9,7 @@ const Header = () => {
 				<div className={'HeaderButton'}><a href={'#Works'}>Проекты</a></div>
 				<div className={'HeaderButton'}><a href={'#Contacts'}>Контакты</a></div>
 				<div className={'HeaderButton'}><a href={'https://github.com/cat-in-a-box'} target={'blank'}>GitHub</a></div>
+				<DarkModeButton/>
 			</header>
 	)
 }

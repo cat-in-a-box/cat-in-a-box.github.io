@@ -1,0 +1,36 @@
+/*Темная тема, подгружаемая с помощью компонента DarkModeSwitcher*/
+
+/** {*/
+/*    background: none;*/
+/*}*/
+
+body {
+    background: rgb(13, 17, 23) !important;
+    transition: 0.5s;
+}
+h1, h2, h3, h4, a, span {
+    color: #ababab !important;
+}
+
+p {
+    color: #999999 !important;
+}
+#Face .faceImg {
+    border-color: #bababa !important;
+}
+
+.Skills .SkillsIcon img {
+    filter: invert();
+}
+.Card {
+    background: rgba(77, 77, 78, 0.5) !important;
+    box-shadow: none !important;
+}
+
+.BigCard {
+    background: rgba(77, 77, 78, 0.5) !important;
+    box-shadow: none !important;
+}
+
+
+
