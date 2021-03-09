@@ -1,0 +1,71 @@
+/*Темная тема, подгружаемая с помощью компонента DarkModeButton*/
+
+body {
+    background: rgb(17, 22, 29) !important;
+}
+.HeaderFixed {
+    position: fixed;
+    background: rgb(14, 19, 26) !important;
+    border-bottom: solid 1px #585858 !important;
+    z-index: 100;
+    box-shadow: 0 4px 2px -2px rgb(13, 17, 23) !important;
+}
+
+.HeaderButton a, .HeaderButton button .BackButton a, .BackButton button{
+    background: linear-gradient(#a0a0a0, #a0a0a0) no-repeat center bottom !important;
+    background-size: 0 2px !important;
+}
+
+.HeaderButton a:hover, .HeaderButton button:hover .BackButton a:hover, .BackButton button:hover {
+    background-size: 100% 2px !important;
+}
+
+h1, h2, h3, h4, a, span, button {
+    color: #a0a0a0 !important;
+}
+p {
+    color: #8d8d8d !important;
+}
+#Face .faceImg {
+    filter: brightness(85%);
+}
+.Skills .SkillsIcon img {
+    filter: invert() brightness(70%);
+}
+.Skills .SkillsPopup {
+    color: #999999 !important;
+    background: rgba(72, 72, 84, 0.5) !important;
+    box-shadow: none !important;
+}
+.Card {
+    background: rgba(72, 72, 84, 0.5) !important;
+    box-shadow: none !important;
+}
+.Card img, .BigCard img, .BigCard h3, .Card h3, .BigCard p, .Card p{
+    background: none !important;
+}
+.BigCard {
+    background: rgba(72, 72, 84, 0.5) !important;
+    box-shadow: none !important;
+}
+
+
+/*** WORKS ***/
+.GalleryThumbnail, .GalleryImage {
+    filter: brightness(75%);
+}
+.Calculator {
+    border-color: #111111 !important;
+    background: rgb(21, 90, 125) !important;
+}
+.CalculatorDisplayValue, .CalculatorButton {
+    border-color: #111111 !important;
+    background: #6b6b6b !important;
+    color: #131313 !important;
+}
+.CalculatorButtonOperator {
+    border-color: #111111 !important;
+    color: #131313 !important;
+}
+
+
