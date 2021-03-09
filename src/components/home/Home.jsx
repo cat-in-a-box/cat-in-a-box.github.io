@@ -1,6 +1,5 @@
 import React from 'react'
 
-import Header from './components/Header'
 import Footer from './components/Footer.jsx'
 import Face from './components/Face.jsx'
 import About from './components/About.jsx'
@@ -13,7 +12,6 @@ import Contact from './components/Contact.jsx'
 const Home = () => {
 	return (
 			<div>
-				<Header/>
 				<Face/>
 				<About/>
 				<Skills/>

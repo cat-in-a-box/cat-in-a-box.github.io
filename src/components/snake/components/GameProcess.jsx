@@ -8,7 +8,7 @@ export default class GameProcess extends React.Component {
         //цвет бордера канваса
         const CanvasBorderColor = 'black';
         //цвет бекграунда канваса
-        const CanvasBackgroundColor = "white";
+        let CanvasBackgroundColor = "white";
         //цвет тела змеи
         const SnakeColor = 'rgba(145,255,133,0.7)';
         //цвет бордера змеи
@@ -61,6 +61,12 @@ export default class GameProcess extends React.Component {
             if (GameEnd()) {
                 victoryText.innerHTML = "Не отчаивайтесь, попробуйте еще раз! :)";
                 return;
+            }
+            if (localStorage.getItem('darkModeStatus') === 'true') {
+                CanvasBackgroundColor = "rgba(72, 72, 84, 1)";
+            }
+            else {
+                CanvasBackgroundColor = "white";
             }
             // Заканчивает игру, если соблюдены все условия
             setTimeout(function onTick() {

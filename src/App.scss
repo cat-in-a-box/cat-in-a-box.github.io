@@ -38,8 +38,6 @@
     padding: 0;
     font-family: 'Jost', serif;
     font-weight: normal;
-    background-image: url(components/home/files/Background.jpg);
-    background-repeat: repeat;
     color: rgb(66, 66, 66);
     text-decoration: none;
     scroll-behavior: smooth;
@@ -49,6 +47,13 @@
     -webkit-tap-highlight-color: transparent; /* Убрать подсвечивание ссылок */
 
 }
+
+body {
+    background-image: url(components/home/files/Background.jpg);
+    background-repeat: repeat;
+    transition: 0.3s;
+}
+
 h1 {
     font-size: 2.5em;
     font-weight: 500;
@@ -58,27 +63,38 @@ h1 {
 
 /******   header   ******/
 #Header {
+    font-size: 1.1em;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     outline: none;
     user-select: none;
-    padding: 0.7em;
-    @include for-phone-only {
-        margin: 0.3em auto 0 auto;
-    }
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+    z-index: 100;
+    width: 100%;
+    transition: 0.1s;
+}
+
+.HeaderFixed {
+    font-size: 0.95em !important;
+    position: fixed;
+    top: 0;
+    background-image: url(components/home/files/Background.jpg);
+    border-bottom: solid 1px #a4a4a4;
+    z-index: 100;
+    box-shadow: 0 4px 2px -2px rgba(208, 208, 208, 0.5);
 }
 .HeaderButton {
     width: 10em;
-    @include for-phone-only {
-        margin-top: 0.3em;
-        width: 7em;
+    @include for-phones-tablets-only {
+        padding-top: 0.6em;
     }
     a, button {
         font-weight: 500;
         letter-spacing: 1px;
-        font-size: 1.3em;
+        font-size: 1em;
         padding: 1em 0 5px 0;
         background: linear-gradient(#565656, #565656) no-repeat center bottom;
         background-size: 0 2px;
@@ -86,9 +102,6 @@ h1 {
         cursor: pointer;
         border: none;
         outline: none; /* Убрать подсвечивание кнопок в Хроме */
-        @include for-phone-only {
-            font-size: 1.1em;
-        }
         &:hover {
             background-size: 100% 2px;
         }
@@ -98,10 +111,76 @@ h1 {
     @extend .HeaderButton;
     border: none;
     width: 22em;
-    margin-top: 0.8em;
+    margin: 0.8em auto auto;
     @include for-phone-only {
         width: 12em;
     }
+}
+
+/*******************************************************************/
+/***              ***     DarkMode Button   ***                 ***/
+/*****************************************************************/
+
+#DarkModeButton {
+    width: 80px;
+    @include for-phones-tablets-only {
+        padding-top: 0.6em;
+    }
+}
+
+.ToggleButtonFixed {
+    width: 20px !important;
+    height: 20px !important;
+    top: 2px !important;
+    left: 14px !important;
+}
+
+.ToggleBackgroundFixed:before {
+    height: 14px !important;
+}
+#Checkbox:checked + .ToggleBackgroundFixed span {
+    transform: translateX(22px) !important;
+}
+
+.ToggleBackground {
+    position: relative;
+    display: block;
+    width: 42px;
+    height: 24px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transform: translate3d(0, 0, 0);
+}
+.ToggleBackground:before {
+    content: "";
+    position: relative;
+    top: 5px;
+    left: 15px;
+    width: 40px;
+    height: 16px;
+    display: block;
+    background: #969696;
+    border-radius: 12px;
+    transition: background 0.2s ease;
+}
+
+.ToggleBackground span {
+    position: absolute;
+    top: 1px;
+    left: 15px;
+    width: 24px;
+    height: 24px;
+    display: block;
+    background: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgba(107, 107, 107, 0.85);
+    transition: all 0.2s ease;
+}
+#Checkbox:checked + .ToggleBackground:before {
+    background: #7dff83;
+}
+#Checkbox:checked + .ToggleBackground span {
+    transform: translateX(18px);
 }
 
 /*******************************************************************/
@@ -343,6 +422,7 @@ h1 {
         margin: 6em auto 0;
     }
     .CalculatorDisplayValue {
+        background: white;
         border-style: solid;
         border-radius: 0.6em;
         border-width: 2px;
@@ -391,7 +471,7 @@ h1 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 5em auto 0 auto;
+    margin: 3em auto 0 auto;
 }
 .GalleryThumbnail {
     border: 1px solid rgba(121, 121, 121, 0.39);
@@ -460,12 +540,14 @@ h1 {
     }
 }
 .WheelCheckDescription {
-    font-size: 1.2em;
-    margin-top: 2em;
+    font-size: 1.1em;
+    margin-top: 1em;
+    padding-right: 1em;
+    padding-left: 1em;
     color: rgba(0, 0, 0, 0.66)
 }
 #Mouse {
-    padding-top: 8em;
+    padding-top: 7em;
     content: url("components/mousewheelChecker/files/mouse.png");
     position: relative;
     float: right;
