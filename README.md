@@ -1,7 +1,7 @@
 # Personal Web Page
 
 Just a personal web page built with <b>React</b>, <b>React-Router</b>, <b>SCSS</b>, <b>JavaScript</b>
-and little bit of love.
+and little bit of love. Also has Dark Mode implemented by using <b>localStorage</b>.
 
 Provides information about me and my coding skills by showcasing my personal projects:
 
@@ -30,7 +30,7 @@ Provides information about me and my coding skills by showcasing my personal pro
 
 - <b>Gallery</b> <br>
   Check out those nice pictures of animals. <br>
-  Stack: *React, SCSS* <br>
+  Stack: *React, HTML, SCSS* <br>
 
   
 ![](screenshot.jpg)
