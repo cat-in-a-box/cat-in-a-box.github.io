@@ -1,12 +1,12 @@
 import React from 'react'
-import { withRouter } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link'
 
-export default withRouter(({ history }) => {
+const BackButton = () => {
 	return (
-			<header id={'Header'}>
-				<div className={'BackButton'} onClick={() => history.goBack()}>
-					<button>Вернуться на главную</button>
-				</div>
-			</header>
+			<HashLink className={'BackButton'} to={'/#Works'} scroll={(el) => el.scrollIntoView({ behavior: 'instant'})}>
+				<button>❮ Вернуться назад</button>
+			</HashLink>
 	)
-})
+};
+
+export default BackButton;
