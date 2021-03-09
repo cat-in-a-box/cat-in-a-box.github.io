@@ -1,7 +1,8 @@
 # Personal Web Page
 
 Just a personal web page built with <b>React</b>, <b>React-Router</b>, <b>SCSS</b>, <b>JavaScript</b>
-and little bit of love. Also has Dark Mode implemented by using <b>localStorage</b>.
+and little bit of love. <br>
+Also has Dark Mode implemented by using <b>localStorage</b>.
 
 Provides information about me and my coding skills by showcasing my personal projects:
 
