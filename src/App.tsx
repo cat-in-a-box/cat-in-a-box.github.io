@@ -2,12 +2,12 @@ import React from 'react'
 import { Route, BrowserRouter, Switch } from 'react-router-dom'
 import './App.scss'
 
-import Header from './components/home/components/Header.jsx'
-import Home from './components/home/Home.jsx'
-import Gallery from './components/gallery/Gallery.jsx'
-import Snake from './components/snake/Snake.jsx'
-import Calculator from './components/calculator/Calculator.jsx'
-import MousewheelChecker from './components/mousewheelChecker/MousewheelChecker.jsx'
+import Header from './components/home/components/Header'
+import Home from './components/home/Home'
+import Gallery from './components/gallery/Gallery'
+import Snake from './components/snake/Snake'
+import Calculator from './components/calculator/Calculator'
+import MousewheelChecker from './components/mousewheelChecker/MousewheelChecker'
 
 function App() {
 	return (

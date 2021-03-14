@@ -4,10 +4,10 @@ import DarkModeButton from './DarkModeButton'
 
 export default class PreloaderRemover extends Component {
 	componentDidMount() {
-		let navbar = document.getElementById('Header')
-		let toggleBackground = document.getElementById('ToggleBackground')
-		let toggleButton = document.getElementById('ToggleButton')
-		let sticky = navbar.offsetTop + 60
+		let navbar = document.getElementById('Header') as HTMLElement;
+		let toggleBackground = document.getElementById('ToggleBackground') as HTMLElement;
+		let toggleButton = document.getElementById('ToggleButton') as HTMLElement;
+		let sticky:number = navbar.offsetTop + 60;
 
 		window.onscroll = function () {
 			navbarFixing()
