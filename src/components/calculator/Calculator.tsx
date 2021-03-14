@@ -1,9 +1,8 @@
 import React from "react";
-import BackButton from "../BackButton.jsx";
-import CalculatorComponent from "./Components/CalculatorComponent.jsx";
+import BackButton from "../BackButton";
+import CalculatorComponent from "./Components/CalculatorComponent";
 
 const Calculator = () => {
-
     return (
         <div>
             <BackButton/>

@@ -380,6 +380,9 @@ h1 {
         margin: 0.3em;
         font-size: 0.9em;
     }
+    .FooterEmail {
+        font-weight: 500;
+    }
     a {
         background: linear-gradient(#565656, #565656) no-repeat center bottom;
         background-size: 0 1px;
@@ -554,8 +557,8 @@ h1 {
     animation: moving 10s infinite;
     background: transparent;
     /*иногда появляется какой-то непонятный бордер вокруг прозрачной png. Строки снизу это фиксят*/
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF, endColorstr=#00FFFFFF);
-    zoom: 1;
+    //filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF, endColorstr=#00FFFFFF);
+    //zoom: 1;
     width: 12em;
     margin: 0;
     @include for-desktop-up {

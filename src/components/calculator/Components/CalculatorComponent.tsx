@@ -4,7 +4,7 @@ class CalculatorComponent extends React.Component {
     state = {
         displayValue: "0",
         valueWaitingForAnOperation: null,
-        operator: null,
+        operator: '',
         operationPending: false
     };
 
@@ -55,7 +55,7 @@ class CalculatorComponent extends React.Component {
         });
     }
 
-    inputOne(value) {
+    inputOne(value: number) {
         const {displayValue, operationPending} = this.state;
         if (operationPending) {
             this.setState({
@@ -70,7 +70,7 @@ class CalculatorComponent extends React.Component {
         }
     }
 
-    inputTwo(value) {
+    inputTwo(value: number) {
         const {displayValue, operationPending} = this.state;
         if (operationPending) {
             this.setState({
@@ -85,7 +85,7 @@ class CalculatorComponent extends React.Component {
         }
     }
 
-    inputThree(value) {
+    inputThree(value: number) {
         const {displayValue, operationPending} = this.state;
         if (operationPending) {
             this.setState({
@@ -100,7 +100,7 @@ class CalculatorComponent extends React.Component {
         }
     }
 
-    inputFour(value) {
+    inputFour(value: number) {
         const {displayValue, operationPending} = this.state;
         if (operationPending) {
             this.setState({
@@ -115,7 +115,7 @@ class CalculatorComponent extends React.Component {
         }
     }
 
-    inputFive(value) {
+    inputFive(value: number) {
         const {displayValue, operationPending} = this.state;
         if (operationPending) {
             this.setState({
@@ -130,7 +130,7 @@ class CalculatorComponent extends React.Component {
         }
     }
 
-    inputSix(value) {
+    inputSix(value: number) {
         const {displayValue, operationPending} = this.state;
         if (operationPending) {
             this.setState({
@@ -145,7 +145,7 @@ class CalculatorComponent extends React.Component {
         }
     }
 
-    inputSeven(value) {
+    inputSeven(value: number) {
         const {displayValue, operationPending} = this.state;
         if (operationPending) {
             this.setState({
@@ -160,7 +160,7 @@ class CalculatorComponent extends React.Component {
         }
     }
 
-    inputEight(value) {
+    inputEight(value: number) {
         const {displayValue, operationPending} = this.state;
         if (operationPending) {
             this.setState({
@@ -175,7 +175,7 @@ class CalculatorComponent extends React.Component {
         }
     }
 
-    inputNine(value) {
+    inputNine(value: number) {
         const {displayValue, operationPending} = this.state;
         if (operationPending) {
             this.setState({
@@ -190,7 +190,7 @@ class CalculatorComponent extends React.Component {
         }
     }
 
-    inputZero(value) {
+    inputZero(value: number) {
         const {displayValue, operationPending} = this.state;
         if (operationPending) {
             this.setState({

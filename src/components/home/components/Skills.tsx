@@ -14,6 +14,10 @@ const Skills = () => {
 						<div className={'SkillsPopup'}>JavaScript</div>
 					</div>
 					<div className={'SkillsIcon'}>
+						<img src={require('../files/pics/typescript.png')} alt={'TypeScript'}/>
+						<div className={'SkillsPopup'}>TypeScript</div>
+					</div>
+					<div className={'SkillsIcon'}>
 						<img src={require('../files/pics/react.png')} alt={'React'}/>
 						<div className={'SkillsPopup'}>React</div>
 					</div>

@@ -12,7 +12,7 @@ const SmallWorks = () => {
 							<h3>Mousewheel Check</h3>
 							<p>Диагностика колеса мышки</p>
 							<p>Если вдруг ломается</p>
-							<p className={'CardTechnologyText'}>React, HTML, JavaScript</p>
+							<p className={'CardTechnologyText'}>React, HTML, TypeScript</p>
 						</div>
 					</Link>
 					<Link to={'/calculator'} className={'Card'}>
@@ -21,7 +21,7 @@ const SmallWorks = () => {
 							<h3>Calculator</h3>
 							<p>Нажимай кнопки</p>
 							<p>Будто снова в школе</p>
-							<p className={'CardTechnologyText'}>React, HTML, JavaScript</p>
+							<p className={'CardTechnologyText'}>React, HTML, TypeScript</p>
 						</div>
 					</Link>
 					<Link to={'/gallery'} className={'Card'}>
@@ -39,7 +39,7 @@ const SmallWorks = () => {
 							<h3>Snake</h3>
 							<p>Двигай змею по полю</p>
 							<p>Ешь квадратные колбаски</p>
-							<p className={'CardTechnologyText'}>React, Canvas, JavaScript</p>
+							<p className={'CardTechnologyText'}>React, Canvas, TypeScript</p>
 						</div>
 					</Link>
 				</div>
