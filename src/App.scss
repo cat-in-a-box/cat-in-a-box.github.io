@@ -103,6 +103,7 @@ h1 {
         outline: none; /* Убрать подсвечивание кнопок в Хроме */
         &:hover {
             background-size: 100% 2px;
+            transition: 0.3s;
         }
     }
 }
@@ -311,7 +312,7 @@ h1 {
         background: white;
         border-radius: 2em;
         border: 1px solid rgba(75, 71, 71, 0.349);
-        box-shadow: rgb(211, 211, 211) 2px 2px 30px;
+        box-shadow: rgb(220, 220, 220) 2px 2px 30px;
         overflow: hidden;
         outline: none;
         user-select: none;
@@ -321,11 +322,12 @@ h1 {
         height: 8.5em;
         &:hover {
             transition-delay: 0s;
-            transition-duration: 0.15s;
+            transition-duration: 0.1s;
             transition-property: all;
             transition-timing-function: ease;
             @include for-desktop-up {
-                transform: scale(1.03);
+                transform: scale(1.02);
+                box-shadow: rgb(200, 200, 200) 2px 2px 20px;
             }
         }
         .CardTechnologyText {
